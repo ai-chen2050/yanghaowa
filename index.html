@@ -398,14 +398,71 @@
   var tags = ['🌙 睡眠与安抚', '🥣 辅食与挑食', '😤 情绪与发脾气', '👁️ 护眼与屏幕', '🐷 零花钱与财商启蒙', '🗣️ 青春期沟通', '🦷 口腔护理', '📚 学习习惯', '🏃 运动与体能', '🤝 二胎相处', '🎨 兴趣启蒙', '👵 隔代共识'];
   function fill(id, arr) { var t = document.getElementById(id); var html = arr.concat(arr).map(function (s) { return '<span class="stag">' + s + '</span>'; }).join(''); t.innerHTML = html; }
   fill('tk1', tags); fill('tk2', tags.slice().reverse());
-  // 角落的问问
   var lines = ['今天小满的心情怎么样？点我记一下～', '喝水提醒 15:00 · 还有 20 分钟', '你今天带娃也很辛苦，歇会儿吧。', '3-6 岁这一段，最该练的是「认出情绪、给情绪起名」。', '数据都在你手机里，我这儿一个字都没存。'];
-  var pet = document.getElementById('pet'), bub = document.getElementById('petBubble'), line = document.getElementById('petLine'), i = 0, timer;
-  function say() { line.textContent = lines[i % lines.length]; i++; bub.classList.add('show'); pet.classList.add('happy'); setTimeout(function () { pet.classList.remove('happy'); }, 1200); clearTimeout(timer); timer = setTimeout(function () { bub.classList.remove('show'); }, 6000); }
-  pet.addEventListener('click', say);
-  pet.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); say(); } });
-  document.getElementById('petClose').addEventListener('click', function (e) { e.stopPropagation(); bub.classList.remove('show'); });
-  setTimeout(say, 2600);
+  // 角落里会闲逛、可拖动、可点击的问问（照吃好饭的青团团）
+  var pet = document.getElementById('pet'), bub = document.getElementById('petBubble'), line = document.getElementById('petLine'),
+      hint = pet.querySelector('.pet-hint'), i = 0, open = false, roamTimer = null, hideTimer = null,
+      dragging = false, moved = false, sx = 0, sy = 0, ox = 0, oy = 0, pid = null;
+  var REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sz() { return pet.offsetWidth; } function vw() { return innerWidth; } function vh() { return innerHeight; }
+  function cx(x) { return Math.min(Math.max(x, 8), vw() - sz() - 8); }
+  function cy(y) { return Math.min(Math.max(y, 8), vh() - sz() - 8); }
+  // 漫游与拖动共用一套 left/top 坐标
+  pet.style.bottom = 'auto'; pet.style.left = cx(vw() * 0.05) + 'px'; pet.style.top = cy(vh() - sz() - 20) + 'px';
+  function place() {
+    var r = pet.getBoundingClientRect();
+    bub.style.top = 'auto'; bub.style.bottom = (vh() - r.top + 10) + 'px';
+    bub.style.left = Math.min(Math.max(r.left + r.width / 2 - 125, 12), vw() - 262) + 'px';
+  }
+  function grin(ms) { pet.classList.add('happy'); setTimeout(function () { pet.classList.remove('happy'); }, ms || 1200); }
+  function roam() {
+    if (REDUCE || open || dragging) return;
+    var tx = cx(8 + Math.random() * (vw() - sz() - 16));
+    var ty = cy(vh() * 0.4 + Math.random() * (vh() * 0.5 - sz()));
+    var curX = parseFloat(pet.style.left) || 0, curY = parseFloat(pet.style.top) || 0;
+    pet.classList.toggle('flip', tx < curX);
+    var dur = Math.min(5, Math.max(1.8, Math.hypot(tx - curX, ty - curY) / 160));
+    pet.style.transitionDuration = dur + 's, ' + dur + 's';
+    pet.style.left = tx + 'px'; pet.style.top = ty + 'px';
+    roamTimer = setTimeout(roam, dur * 1000 + 4000 + Math.random() * 5000);
+  }
+  function openBubble() {
+    open = true; clearTimeout(roamTimer); clearTimeout(hideTimer);
+    if (hint) hint.style.display = 'none';
+    line.textContent = lines[i % lines.length]; i++;
+    place(); bub.classList.add('show'); grin(1400);
+    hideTimer = setTimeout(closeBubble, 7000);
+  }
+  function closeBubble() {
+    open = false; bub.classList.remove('show'); clearTimeout(hideTimer);
+    if (hint) hint.style.display = '';
+    if (!REDUCE) roamTimer = setTimeout(roam, 2500);
+  }
+  pet.addEventListener('pointerdown', function (e) {
+    pid = e.pointerId; try { pet.setPointerCapture(pid); } catch (_) {}
+    dragging = false; moved = false; sx = e.clientX; sy = e.clientY; clearTimeout(roamTimer);
+    var r = pet.getBoundingClientRect();
+    pet.style.left = r.left + 'px'; pet.style.top = r.top + 'px';
+    ox = e.clientX - r.left; oy = e.clientY - r.top; pet.classList.add('dragging');
+  });
+  pet.addEventListener('pointermove', function (e) {
+    if (pid === null) return;
+    if (!dragging && Math.abs(e.clientX - sx) + Math.abs(e.clientY - sy) > 6) { dragging = true; moved = true; pet.classList.add('happy'); }
+    if (dragging) { pet.style.left = cx(e.clientX - ox) + 'px'; pet.style.top = cy(e.clientY - oy) + 'px'; if (open) place(); }
+  });
+  function endDrag() {
+    if (pid === null) return; try { pet.releasePointerCapture(pid); } catch (_) {}
+    pid = null; pet.classList.remove('dragging');
+    if (moved) { dragging = false; pet.classList.remove('happy'); if (!REDUCE && !open) roamTimer = setTimeout(roam, 2500); }
+    else { open ? closeBubble() : openBubble(); }
+  }
+  pet.addEventListener('pointerup', endDrag); pet.addEventListener('pointercancel', endDrag);
+  pet.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open ? closeBubble() : openBubble(); } });
+  document.getElementById('petClose').addEventListener('click', function (e) { e.stopPropagation(); closeBubble(); });
+  addEventListener('scroll', function () { if (open) place(); }, { passive: true });
+  addEventListener('resize', function () { pet.style.left = cx(parseFloat(pet.style.left) || 0) + 'px'; pet.style.top = cy(parseFloat(pet.style.top) || 0) + 'px'; if (open) place(); });
+  setTimeout(openBubble, 2600);
+  if (!REDUCE) roamTimer = setTimeout(roam, 12000);
 })();
 </script>
 </body>

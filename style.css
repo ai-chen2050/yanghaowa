@@ -336,11 +336,12 @@ footer a { color: var(--sub); }
 #pet { position: fixed; left: 4%; bottom: 18px; width: 96px; height: 96px; z-index: 55; cursor: grab; user-select: none;
        touch-action: none; transition: left 3s cubic-bezier(.4,.05,.4,1), top 3s cubic-bezier(.4,.05,.4,1); will-change: left, top; }
 #pet.dragging { cursor: grabbing; transition: none; }
-#pet img { width: 100%; height: 100%; pointer-events: none; filter: drop-shadow(0 8px 12px rgba(196,122,74,.3)); transition: transform .2s ease; }
+#pet img { position: relative; z-index: 1; width: 100%; height: 100%; pointer-events: none; filter: drop-shadow(0 8px 12px rgba(196,122,74,.3)); transition: transform .2s ease; }
 #pet.flip img { transform: scaleX(-1); }
 #pet img.happy { display: none; } #pet.happy img.idle { display: none; } #pet.happy img.happy { display: block; }
-/* 「点我」贴在头顶：图的顶部是叶子，标签压在叶尖上方一点 */
-#pet .pet-hint { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); white-space: nowrap;
+/* 「点我」贴在头顶：图的顶部是叶子，标签要**整个**在叶尖之上，并且层级压在图片上
+   （标签在 DOM 里排在 img 前面，不给 z-index 会被叶子盖住，2026-09-07 用户截图指出）。 */
+#pet .pet-hint { position: absolute; top: -24px; left: 50%; transform: translateX(-50%); white-space: nowrap; z-index: 2;
     font-size: 11px; font-weight: 700; color: #fff; background: var(--brand); padding: 3px 9px; border-radius: 999px;
     box-shadow: var(--shadow); animation: bob 1.6s ease-in-out infinite; pointer-events: none; }
 @keyframes bob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-4px); } }

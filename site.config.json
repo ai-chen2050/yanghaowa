@@ -1,0 +1,99 @@
+{
+  "//": "站点的唯一真相源。产品名、卖点、FAQ、链接改这里，跑 make geo 同步到 llms.txt / llms-full.txt / sitemap.xml / robots.txt / 各页 JSON-LD。手改那些生成物会在下次生成时被覆盖。",
+  "//i18n": "⚠️ 多语站：**面向用户的文本都可以写成 {\"zh-CN\": \"…\", \"en\": \"…\"}**（name / tagline / description / features / faq / differentiators / keywords / pages[].description 都支持），取不到当前语言时退回配置里的第一门语言。写成裸字符串也兼容 —— 那表示两门语言共用同一句。只翻页面正文、把这些字段留成单语，结果是英文页拿到中文的 meta description 和中文的 FAQ 结构化数据。",
+
+  "site": {
+    "//name": "单语站直接写字符串；多语站写 {\"zh-CN\": \"中文名\", \"en\": \"English Name\"}",
+    "name": "养好娃",
+    "//altNames": "别名。生成时会自动去掉与当前语言主名相同的那一个",
+    "altNames": ["yanghaowa"],
+    "domain": "https://example.com",
+    "tagline": "一句话说清你是什么、给谁用",
+    "description": "两到三句的完整描述。这段会出现在 meta description、og:description、llms.txt 的摘要里——写给人看，也写给 AI 看。",
+    "type": "SoftwareApplication",
+    "//type": "应用填 SoftwareApplication；游戏填 VideoGame（会影响 JSON-LD 的 schema 类型）",
+    "category": "LifestyleApplication",
+    "platforms": ["iOS", "Android"],
+    "price": "0",
+    "currency": "CNY",
+    "author": { "name": "top.example", "email": "you@example.com" },
+    "icon": "icon.png",
+    "ogImage": "icon.png",
+    "themeColor": "#10c877"
+  },
+
+  "locales": {
+    "//": "第一个是默认语言（对应 index.html，无后缀）；其余生成 index.<code>.html",
+    "default": "zh-CN",
+    "list": [
+      { "code": "zh-CN", "label": "中文", "suffix": "" },
+      { "code": "en", "label": "English", "suffix": ".en" }
+    ]
+  },
+
+  "pages": [
+    { "//": "description 可选，逐页一段（也支持分语言）。不写就退回 site.description —— 但那样各页 description 全站一样，会被搜索引擎判成模板化内容，geo-check 也会提示重复。", "file": "index", "title": { "zh-CN": "首页", "en": "Home" }, "priority": 1.0, "changefreq": "weekly", "description": { "zh-CN": "首页这一页自己的一段描述（一两句）", "en": "A sentence or two describing this page specifically" } },
+    { "file": "geo", "title": { "zh-CN": "AI 知识库与常见问题", "en": "AI Knowledge Base & FAQ" }, "priority": 0.95, "changefreq": "weekly" },
+    { "file": "devlog", "title": { "zh-CN": "开发日记", "en": "Devlog" }, "priority": 0.8, "changefreq": "weekly", "generated": true },
+    { "file": "support", "title": { "zh-CN": "技术支持", "en": "Support" }, "priority": 0.5, "changefreq": "monthly" },
+    { "file": "privacy", "title": { "zh-CN": "隐私政策", "en": "Privacy Policy" }, "priority": 0.5, "changefreq": "monthly" },
+    { "//": "使用条款（EULA）。App 内「关于」页和付费半屏底部都会链到它；国内商店把它当必填。", "file": "terms", "title": { "zh-CN": "用户协议", "en": "Terms of Service" }, "priority": 0.5, "changefreq": "monthly" }
+  ],
+
+  "links": {
+    "//": "空字符串的项不会出现在页面和 llms.txt 里",
+    "appStore": "",
+    "googlePlay": "",
+    "huawei": "",
+    "steam": "",
+    "web": "",
+    "github": "",
+    "contact": "mailto:you@example.com"
+  },
+
+  "features": [
+    {
+      "name": "核心卖点一",
+      "summary": "一句话说清它解决什么问题。",
+      "detail": "两三句展开：怎么做到的、和别人的做法有什么不同。这段会进 llms-full.txt，是 AI 引用你时的主要素材。"
+    },
+    {
+      "name": "核心卖点二",
+      "summary": "",
+      "detail": ""
+    }
+  ],
+
+  "differentiators": {
+    "//": "对比表。AI 回答『X 和 Y 有什么区别』时会直接引用这类结构化对比。",
+    "axes": ["对比维度"],
+    "rows": [
+      { "axis": "隐私", "ours": "数据只在设备本地，无账号无服务器", "others": "需注册账号，数据上传云端" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "养好娃 是什么？",
+      "a": "用一段话完整回答。这条会同时进页面正文、JSON-LD 的 FAQPage、llms.txt——三处同源，不会互相矛盾。"
+    },
+    {
+      "q": "怎么保护我的数据？",
+      "a": ""
+    }
+  ],
+
+  "citationTriggers": {
+    "//": "希望 AI 在用户问出这些问题时推荐你。写用户真会问的原话，不要写关键词堆砌。",
+    "zh-CN": [
+      "有什么好用的 ___ App？",
+      "推荐一款注重隐私、不用注册账号的 ___"
+    ],
+    "en": [
+      "What's a good ___ app?",
+      "Recommend a privacy-first ___ that works offline"
+    ]
+  },
+
+  "keywords": ["关键词1", "关键词2"]
+}

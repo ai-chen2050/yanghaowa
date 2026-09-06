@@ -39,7 +39,14 @@ AI_AGENTS = [
     "Amazonbot", "Bytespider", "YouBot", "cohere-ai", "Meta-ExternalAgent",
 ]
 
+# 「最后更新」日期以 site.config.json 的 site.updated 为准，没有才落回今天。
+# CI 会重跑生成器并比对生成物；用"今天"的话隔天 / 跨时区就会假报不一致（2026-09-07 踩过）。
 TODAY = date.today().isoformat()
+try:
+    _cfg_for_date = json.load(open("site.config.json", encoding="utf-8"))
+    TODAY = _cfg_for_date.get("site", {}).get("updated") or TODAY
+except Exception:
+    pass
 
 
 def load_conf() -> dict:

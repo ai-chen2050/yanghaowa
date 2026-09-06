@@ -139,92 +139,200 @@
 </script>
 </head>
 <body>
+<div class="scroll-prog" id="prog"></div>
 
-<nav><div class="wrap" style="display:flex;align-items:center;gap:20px;height:60px">
-  <a class="brand" href="index.html">养好娃</a>
-  <span class="spacer" style="flex:1"></span>
+<nav><div class="wrap">
+  <a class="brand" href="index.html"><img src="logo.png" alt="养好娃"> 养好娃</a>
+  <span class="spacer"></span>
+  <a href="#lines" class="hide-sm">三条主线</a>
   <a href="#features" class="hide-sm">功能</a>
+  <a href="#wenwen" class="hide-sm">问问</a>
   <a href="#pricing" class="hide-sm">定价</a>
   <a href="geo.html" class="hide-sm">常见问题</a>
   <a href="devlog.html" class="hide-sm">开发日记</a>
-  <a href="support.html">支持</a>
   <a href="index.en.html">EN</a>
-  <a href="#" id="theme-toggle" title="切换主题">◐</a>
+  <button class="theme-btn" id="theme-toggle" title="切换明暗" aria-label="切换明暗">◐</button>
+  <a class="nav-cta" href="#download">下载</a>
 </div></nav>
 
-<header class="hero"><div class="wrap">
-  <p class="kicker">0-18 岁 · 身体 · 心理 · 财商</p>
-  <h1>把孩子这一年该做的事，按年龄摆在你面前</h1>
-  <p class="lead">养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。
-    建档之后，身体健康、心理成长、财商人格三条线的内容按孩子当前年龄段展开；
-    顺手记一笔，读一份阶段报告，想不通的事拉着问问聊两句。
-    没有账号、没有服务器，所有家庭数据只在你自己的手机里。</p>
-  <div class="cta-row">
-    <a class="cta" href="#" id="dl-appstore">App Store 下载</a>
-    <a class="cta secondary" href="#" id="dl-android">Android 下载</a>
+<header class="hero" id="hero">
+  <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
+  <div class="dots"></div><div class="spotlight" id="spot"></div>
+  <div class="floaters" aria-hidden="true">
+    <span style="left:6%;animation-duration:19s">🌱</span><span style="left:18%;animation-duration:23s;animation-delay:4s">🧸</span>
+    <span style="left:33%;animation-duration:21s;animation-delay:9s">📏</span><span style="left:52%;animation-duration:25s;animation-delay:2s">🍊</span>
+    <span style="left:68%;animation-duration:20s;animation-delay:7s">🐷</span><span style="left:84%;animation-duration:22s;animation-delay:12s">🌈</span>
   </div>
-  <p class="hero-note">上架中。商店链接就位后这里会自动更新。</p>
-</div></header>
+  <div class="wrap">
+    <span class="eyebrow">🍊 0-18 岁 · 身体 · 心理 · 财商 · 数据只在你手机里</span>
+    <div class="app-badge"><div class="ring"></div><img src="logo.png" alt="养好娃 App 图标"></div>
+    <h1><span class="grad-text">养好娃</span></h1>
+    <p class="tag">把孩子这一年该做的事，按年龄摆在你面前</p>
+    <p class="pitch">建档之后，身体健康、心理成长、财商人格三条线的内容按孩子当前年龄段展开。
+      顺手记一笔，读一份阶段报告，想不通的事拉着问问聊两句。没有账号、没有服务器，全部记录只在你自己的手机里。</p>
+    <div class="cta-row" id="download">
+      <a class="store-btn" href="#" id="dl-appstore"><span class="ic"></span><span class="t"><small>即将上架</small><b>App Store</b></span></a>
+      <a class="store-btn alt" href="#" id="dl-android"><span class="ic">🤖</span><span class="t"><small>即将上架</small><b>Android</b></span></a>
+    </div>
+    <p class="store-note">商店审核中，链接就位后这里会自动更新。华为版按渠道要求不含 AI 功能，其余完全一致。</p>
+    <p class="trust">无账号 · 无广告 · 无服务器 · 基础免费 · Pro 一次买断</p>
 
-<section id="features"><div class="wrap">
-  <h2>核心能力</h2>
-  <p class="section-lead">每一样都围绕同一个闭环：建档 → 分龄内容与记录 → 阶段报告 → AI 探讨。</p>
-  <div class="grid">
-    <div class="card"><h3>按年龄段展开的三条主线</h3>
-      <p>内容按 0-1、1-3、3-6、6-12、12-18 分段。一岁不会看到零花钱，青春期不会看到刷牙打卡；
-      孩子过生日进入新阶段，整个 App 一起换面板。内容依据国内儿科与发展心理学标准整理。</p></div>
-    <div class="card"><h3>今天记一笔</h3>
-      <p>户外时长、娱乐屏幕、亲子任务、刷牙、今日情绪，首页一张卡点一下就记上，没有完成度的压力。
-      身高体重、花销、日常提醒、心愿目标各有一步到表单的入口。</p></div>
-    <div class="card"><h3>性格成长模拟器</h3>
-      <p>六个教养滑块拖一下，九维性格雷达同帧变化。起点按你做过的教养方式测评预填，
-      雷达旁叠一组来自真实记录的「家里在练什么」对照点。是趋势模拟，不是预测。</p></div>
-    <div class="card"><h3>问问：用你自己的 AI Key</h3>
-      <p>角落里的小家伙会问今天心情、到点提醒，也能和你探讨一个养育问题。
-      模型由你配 Key，默认只发年龄段和授权摘要，发送前有一张卡逐条列出。</p></div>
-    <div class="card"><h3>系统提醒与家庭挑战</h3>
-      <p>疫苗按生日推算下一针，喝水、用药准点响，点通知直达对应面板。
-      护眼、早睡、每日赞美等挑战可以并行，打卡是一份该年龄段的达标清单。</p></div>
-    <div class="card"><h3>数据是你的</h3>
-      <p>每天自动存一份本机快照，导出加密备份，iOS 可放进你自己的 iCloud。
-      换机时合并导入不重复建档，覆盖前自动存快照，24 小时内可撤销。</p></div>
+    <div class="stage reveal">
+      <div class="phone" aria-label="首页「今天记一笔」示意">
+        <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>5 岁 6 个月 · 学龄前期</small></div></div>
+        <div class="ph-card">
+          <div class="ttl">今天记一笔</div>
+          <div class="hint">今天真的变化了的几件事，点一下就记上</div>
+          <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟 · 目标 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+          <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟 · 上限 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+          <div class="ph-row"><div class="l"><b>一起搭一座积木桥</b><small>本周亲子任务 2 / 4</small></div><div class="ph-check">✓</div></div>
+          <div class="ph-row"><div class="l"><b>刷牙</b><small>连续 6 天</small></div><div class="ph-slot"><i class="on">✓ 早上</i><i>晚上</i></div></div>
+          <div class="ph-row" style="display:block"><div class="l" style="margin-bottom:8px"><b>今日情绪</b></div>
+            <div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+          <div class="ph-chips"><span>身高体重</span><span>视力</span><span>日常提醒</span><span>记个瞬间</span><span>记一笔花销</span><span>心愿目标</span></div>
+        </div>
+      </div>
+      <div class="mascot">
+        <div class="speech">今天小满的心情怎么样？点我记一下～</div>
+        <img class="idle" src="wenwen_idle.png" alt="问问，养好娃里的小橘子">
+        <img class="happy" src="wenwen_happy.png" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="lines"><div class="wrap">
+  <h2 class="sec-title reveal">三条主线，按年龄段一起长</h2>
+  <p class="sec-sub reveal">一岁不会看到零花钱，青春期不会看到刷牙打卡。孩子过生日进入新阶段，整个 App 一起换面板。</p>
+  <div class="lines">
+    <div class="line mint reveal" style="--i:0"><span class="em">🌿</span><h3>身体健康</h3>
+      <ul><li>生长曲线对照国内标准百分位</li><li>疫苗按生日推算下一针，到点提醒</li><li>视力、口腔、户外与屏幕时长记录</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
+    <div class="line blue reveal" style="--i:1"><span class="em">💙</span><h3>心理成长</h3>
+      <ul><li>每个阶段的主线任务与发展主题</li><li>教养方式测评、儿童性格观察</li><li>亲子互动任务、全家挑战与纪念墙</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
+    <div class="line brand reveal" style="--i:2"><span class="em">🐷</span><h3>财商人格</h3>
+      <ul><li>0-3 岁只记养育花销与成长型投入</li><li>3 岁起成长金、心愿储蓄、劳动与报酬</li><li>亲子小生意，把钱的事玩明白</li></ul>
+      <div class="ages"><span style="opacity:.45">0-1</span><span style="opacity:.45">1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
   </div>
 </div></section>
 
+<section id="features" style="background:var(--bg2)"><div class="wrap">
+  <h2 class="sec-title reveal">六件让养娃这件事更有底的事</h2>
+  <p class="sec-sub reveal">每一样都围绕同一个闭环：建档 → 分龄内容与记录 → 阶段报告 → AI 探讨。</p>
+  <div class="grid">
+    <div class="feat reveal" style="--i:0"><div class="ic">📅</div><h3>按年龄段展开</h3><p>内容按 0-1、1-3、3-6、6-12、12-18 分段，一张阶段表统一决定该出现什么。依据国内儿科与发展心理学标准整理。</p></div>
+    <div class="feat reveal" style="--i:1"><div class="ic">✍️</div><h3>今天记一笔</h3><p>户外、屏幕、亲子任务、刷牙、今日情绪一张卡点一下就记上，没有完成度的压力。要填表的都一步到位。</p></div>
+    <div class="feat reveal" style="--i:2"><div class="ic">🎛️</div><h3>性格成长模拟器</h3><p>六个教养滑块拖一下，九维性格雷达同帧变化。起点按你的教养方式测评预填，旁边叠一组来自真实记录的对照点。</p></div>
+    <div class="feat reveal" style="--i:3"><div class="ic">🍊</div><h3>问问，用你自己的 AI Key</h3><p>会问今天心情、到点提醒，也能和你探讨一个养育问题。默认只发年龄段和授权摘要，发送前有一张卡逐条列出。</p></div>
+    <div class="feat reveal" style="--i:4"><div class="ic">⏰</div><h3>系统提醒与家庭挑战</h3><p>喝水、用药准点响，疫苗按生日排下一针。护眼、早睡、每日赞美等挑战可以并行，打卡是一份达标清单。</p></div>
+    <div class="feat reveal" style="--i:5"><div class="ic">🔐</div><h3>数据是你的</h3><p>每天自动存一份本机快照，导出加密备份，iOS 可放进你自己的 iCloud。合并导入不重复建档，覆盖可撤销。</p></div>
+  </div>
+</div></section>
+
+<section id="wenwen" class="wenwen"><div class="wrap">
+  <h2 class="sec-title reveal">这是问问，一颗会探头的小橘子</h2>
+  <p class="sec-sub reveal">它住在页面角落里。今天没记心情它会问一句，快到点了在头顶提醒你，戳它三下会害羞地缩回育儿袋。想聊养育问题，点它就行，模型用你自己的 Key。</p>
+  <div class="ww reveal">
+    <div class="ww-fig" id="wwfig">
+      <img class="idle" src="wenwen_idle.png" alt="问问">
+      <img class="happy" src="wenwen_happy.png" alt="问问在笑">
+      <div class="cap">点一下，它会笑</div>
+    </div>
+    <div class="chat">
+      <div class="chat-head"><img src="wenwen_idle.png" alt=""><div><b>问问</b><small>模型：你自己配置的 Key · 发送前可预览</small></div></div>
+      <div class="bubble me">五岁半，最近一点小事就哭，怎么办？</div>
+      <div class="bubble ai"><b>3-6 岁这一段</b>正在学「认出情绪、给情绪起名」，哭得多不一定是退步。近八周的记录里亲子任务完成率不错、情绪记录偏「一般」，可以先做一件事：孩子哭的时候先说出你看到的情绪，再谈解决。本周试三次，我们看看情绪记录会不会变。</div>
+      <div class="ctx">发送前取数说明：<span class="on">年龄段 3-6 ✓</span><span class="on">情绪与行为趋势 ✓</span><span class="on">任务完成率 ✓</span><span class="off">姓名</span><span class="off">生日</span><span class="off">财商明细（默认关）</span></div>
+    </div>
+  </div>
+  <div class="pills reveal"><span class="pill">🔑 自己的 Key，自己的额度</span><span class="pill">👀 发送前逐条预览</span><span class="pill">🎚️ 每类数据单独授权</span><span class="pill">🚫 姓名生日永不发送</span></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2 class="sec-title reveal">给问问装个「脑组件」</h2>
+  <p class="sec-sub reveal">专家技能包：按主题小额买断，装上后问问在对应话题上更在行。模型仍是你自己的 Key，数据依旧只在本机。首批方向陆续上架。</p>
+</div>
+  <div class="marquee reveal">
+    <div class="track" id="tk1"></div>
+    <div class="track rev" id="tk2"></div>
+  </div>
+  <p class="note">技能包均为家庭教育参考（非医疗、非心理诊断），一次买断、永久可用，不含在 Pro 里，也不含模型费用。</p>
+</section>
+
 <section id="pricing" style="background:var(--bg2)"><div class="wrap">
-  <h2>一次买断，没有订阅</h2>
-  <p class="section-lead">基础能力免费用；进阶能力 Pro 一次解锁、终生可用；专家技能包按主题小额单独买断。</p>
+  <h2 class="sec-title reveal">一次买断，没有订阅</h2>
+  <p class="sec-sub reveal">基础能力免费用；进阶能力 Pro 一次解锁、终生可用；专家技能包按主题小额单独买断。</p>
   <div class="grid pricing">
-    <div class="card"><p class="tier">免费</p><h3>能真正用起来</h3>
+    <div class="card reveal" style="--i:0"><p class="tier">免费</p><div class="big">¥0</div><h3>能真正用起来</h3>
       <p>建档、分龄内容、今天记一笔、系统提醒、阶段报告基础版。不限时间，没有广告。</p></div>
-    <div class="card featured"><p class="tier">Pro · 一次买断</p><h3>全部进阶能力，永久</h3>
-      <p>付一次，同一商店账号下永久有效，换机点「恢复购买」即可取回。没有订阅，没有续费管理，
-      以后调价也不影响已购权益。具体解锁清单以 App 内付费页为准。</p></div>
-    <div class="card"><p class="tier">专家技能包</p><h3>给问问装个「脑组件」</h3>
-      <p>按主题小额单独买断，装上后问问在对应话题上更在行。模型仍是你自己的 Key，
-      技能包不含在 Pro 里，也不含模型费用。</p></div>
+    <div class="card featured reveal" data-badge="推荐" style="--i:1"><p class="tier">Pro · 一次买断</p><div class="big">付一次，永久</div><h3>全部进阶能力</h3>
+      <p>同一商店账号下永久有效，换机点「恢复购买」即可取回。没有订阅，没有续费管理，以后调价也不影响已购权益。具体解锁清单以 App 内付费页为准。</p></div>
+    <div class="card reveal" style="--i:2"><p class="tier">专家技能包</p><div class="big">按主题小额</div><h3>给问问的脑组件</h3>
+      <p>单独买断，装上后问问在对应话题上更在行。不含在 Pro 里，也不含模型费用。</p></div>
   </div>
   <p class="note">价格由各应用商店按你所在地区展示。购买、退款和发票都由商店处理，不经过我们。</p>
 </div></section>
 
+<section id="screens"><div class="wrap">
+  <h2 class="sec-title reveal">看看它长什么样</h2>
+  <p class="sec-sub reveal">成长页的今日速览、性格成长模拟器、疫苗与日常提醒。真实界面截图上架后替换进来。</p>
+  <div class="screens">
+    <div class="scr reveal" style="--i:0">
+      <div class="glance">
+        <div class="gl"><div class="k" style="background:var(--mint-soft)">🌿</div><small>健康</small><b>108.5<i>cm</i></b><div class="n">身高 · 3 天前</div></div>
+        <div class="gl"><div class="k" style="background:var(--blue-soft)">💙</div><small>心理</small><b style="font-size:13px;line-height:1.3">情绪识别与命名</b><div class="n">本阶段主题</div></div>
+        <div class="gl"><div class="k" style="background:var(--brand-soft)">🐷</div><small>财商</small><b>¥26</b><div class="n">零花钱余额</div></div>
+      </div>
+      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">📈</div><div><b>生长曲线</b><small>身高体重对照 P3 / P50 / P97</small></div></div>
+      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">💉</div><div><b>疫苗提醒</b><small>按生日推算下一针</small></div></div>
+      <div class="rowcard"><div class="k" style="background:var(--blue-soft)">🧠</div><div><b>心理成长</b><small>阶段主题 · 亲子互动</small></div></div>
+      <div class="cap">成长页 · 今日速览，顶部下拉换一组</div>
+    </div>
+    <div class="scr reveal" style="--i:1">
+      <svg class="radar" viewBox="0 0 260 250" role="img" aria-label="九维性格雷达示意">
+        <g fill="none" stroke="var(--line)" stroke-width="1">
+          <polygon points="130,25 197,49 232,110 219,178 165,225 95,225 41,178 28,110 63,49"/>
+          <polygon points="130,58 175,74 198,115 189,160 153,192 107,192 71,160 62,115 85,74"/>
+          <polygon points="130,91 152,99 164,120 159,143 141,159 119,159 101,143 96,120 108,99"/>
+        </g>
+        <polygon points="130,45 186,60 214,116 200,168 160,208 100,205 58,170 46,112 78,62" fill="rgba(255,138,91,.22)" stroke="var(--brand)" stroke-width="2.2" stroke-linejoin="round"/>
+        <polygon points="130,62 172,72 196,118 190,158 150,190 106,188 72,160 60,116 92,70" fill="none" stroke="var(--blue)" stroke-width="1.4" stroke-dasharray="4 3"/>
+        <g fill="var(--amber)" stroke="var(--card)" stroke-width="1.4"><circle cx="130" cy="70" r="4"/><circle cx="205" cy="118" r="4"/><circle cx="156" cy="196" r="4"/><circle cx="66" cy="164" r="4"/><circle cx="52" cy="112" r="4"/></g>
+        <g font-size="9.5" fill="var(--sub)" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif">
+          <text x="130" y="14">自信心</text><text x="212" y="42">同理心</text><text x="248" y="112">独立性</text><text x="236" y="192">情绪稳定</text>
+          <text x="168" y="243">社交能力</text><text x="92" y="243">抗挫力</text><text x="24" y="192" fill="var(--brand-deep)">消费理性</text><text x="12" y="112" fill="var(--brand-deep)">延迟满足</text><text x="48" y="42" fill="var(--brand-deep)">财富责任</text>
+        </g>
+      </svg>
+      <div class="rowcard" style="justify-content:space-between"><span style="font-size:12px"><span style="display:inline-block;width:10px;height:4px;background:var(--brand);border-radius:2px;vertical-align:middle"></span> 当前 &nbsp;<span style="display:inline-block;width:10px;height:4px;background:var(--blue);border-radius:2px;vertical-align:middle"></span> 对比方案 &nbsp;<span style="display:inline-block;width:8px;height:8px;background:var(--amber);border-radius:50%;vertical-align:middle"></span> 家里在练什么</span></div>
+      <div class="cap">性格成长模拟器 · 趋势模拟，不给分数</div>
+    </div>
+    <div class="scr reveal" style="--i:2">
+      <div class="nextcard"><small>下一针 · 还有 12 天</small><b>麻腮风疫苗 第 2 剂</b><div class="btns"><span>加入日历</span><span>已接种</span></div></div>
+      <div class="tiles">
+        <div class="tile"><div class="k">💧</div>喝水提醒<small>每天 · 09:00 / 15:00</small></div>
+        <div class="tile"><div class="k">💊</div>用药提醒<small>未开启</small></div>
+        <div class="tile"><div class="k">🩺</div>体检 / 牙科<small>每半年 · 12-03</small></div>
+        <div class="tile"><div class="k">👁️</div>视力复查<small>未开启</small></div>
+      </div>
+      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">🗓️</div><div><b>接种时间表</b><small>已种 14 / 计划 22</small></div></div>
+      <div class="cap">疫苗与日常提醒 · 全部本机排期</div>
+    </div>
+  </div>
+</div></section>
+
 <section><div class="wrap">
-  <h2>和别的产品有什么不同</h2>
-  <p class="section-lead">内容与 site.config.json 的对比表同源。</p>
-  <div class="table-wrap"><table>
-    <thead><tr><th>对比维度</th><th>养好娃</th><th>同类产品</th></tr></thead>
-    <tbody>
-      <tr><td>账号与服务器</td><td>无账号、无服务器，数据只在手机里</td><td>注册账号，家庭数据上传云端</td></tr>
-      <tr><td>AI 能力</td><td>自带模型 Key，发送前可预览，只发年龄段与授权摘要</td><td>平台代调模型，家庭记录随请求上传</td></tr>
-      <tr><td>内容组织</td><td>0-18 岁五个年龄段，三条主线同时按段展开</td><td>以婴幼儿为主，或只做单一主题</td></tr>
-      <tr><td>付费模式</td><td>基础免费，Pro 一次买断永久可用，技能包小额单独买断</td><td>按月或按年订阅</td></tr>
-      <tr><td>数据可携带</td><td>可读 JSON 导出，合并导入，覆盖可撤销</td><td>绑定账号，无法导出</td></tr>
-    </tbody>
-  </table></div>
+  <div class="privacy reveal">
+    <h2>你的数据，只属于你</h2>
+    <p>没有账号，也没有我们的服务器。所有记录存在你手机的本地数据库里，App 不含任何统计或广告 SDK。唯一会联网的是你自己配置 Key 的 AI 调用，默认只发年龄段和趋势摘要，发送前逐条列出。</p>
+    <div class="pills"><span class="pill">🚫 无账号</span><span class="pill">🖥️ 无服务器</span><span class="pill">📊 无统计 SDK</span><span class="pill">📦 可读 JSON 导出</span><span class="pill">↩️ 覆盖 24 小时可撤销</span><span class="pill">☁️ iCloud 是你自己的</span></div>
+    <p style="margin-top:22px"><a href="privacy.html">隐私政策全文 →</a></p>
+  </div>
 </div></section>
 
 <section class="faq" style="background:var(--bg2)"><div class="wrap">
-  <h2>常见问题</h2>
-  <p class="section-lead">与结构化数据同一份文本，改答案先改 site.config.json。</p>
+  <h2 class="sec-title reveal">常见问题</h2>
+  <p class="sec-sub reveal">与结构化数据同一份文本，改答案先改 site.config.json。</p>
   <details open>
     <summary>养好娃是什么？</summary>
     <p>一款给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴 App。围绕身体健康、心理成长、财商人格三条线，按孩子年龄段给出记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。iOS 和 Android 都有。</p>
@@ -245,23 +353,60 @@
     <summary>换手机怎么迁移数据？</summary>
     <p>在「我的 → 数据与备份」导出一份备份文件，加密版需要设口令；把文件发到新手机，在新手机的同一页面点「从备份恢复 → 从文件里选」。iOS 上打开 iCloud 私有备份后，同一 Apple ID 的新设备可以直接选「iCloud 里的备份」。导入可选合并或覆盖，合并不会重复建档，覆盖前会自动存快照，24 小时内可撤销。</p>
   </details>
-  <p style="margin-top:22px"><a href="geo.html">更完整的机制说明与问答 →</a></p>
+  <p style="margin-top:22px;text-align:center"><a href="geo.html">更完整的机制说明与问答 →</a></p>
 </div></section>
 
 <footer><div class="wrap">
-  <p>© yanghaowa · <a href="privacy.html">隐私政策</a> · <a href="terms.html">用户协议</a> · <a href="support.html">技术支持</a>
-     · <a href="llms.txt">llms.txt</a></p>
+  <div class="foot-logo"><img src="logo.png" alt=""> 养好娃</div>
+  <div class="foot-links"><a href="geo.html">功能说明</a><a href="devlog.html">开发日记</a><a href="support.html">技术支持</a><a href="privacy.html">隐私政策</a><a href="terms.html">用户协议</a><a href="llms.txt">llms.txt</a><a href="index.en.html">English</a></div>
+  <p>© yanghaowa · <a href="mailto:blake.chen94@gmail.com">blake.chen94@gmail.com</a></p>
   <p class="foot-note">健康与心理内容为记录与科普参考，不构成医疗或心理诊断建议；性格模拟器为趋势模拟，非个体预测。</p>
 </div></footer>
 
+<!-- 会说话的问问 -->
+<div id="pet" role="button" tabindex="0" aria-label="问问">
+  <span class="pet-hint">点我</span>
+  <img class="idle" src="wenwen_idle.png" alt="">
+  <img class="happy" src="wenwen_happy.png" alt="">
+</div>
+<div class="pet-bubble" id="petBubble"><span class="pet-close" id="petClose">×</span><p id="petLine"></p><a class="pet-cta" href="#wenwen">看看问问能做什么 →</a></div>
+
 <script>
-  document.getElementById('theme-toggle').addEventListener('click', function (e) {
-    e.preventDefault();
+(function () {
+  // 主题
+  var tb = document.getElementById('theme-toggle');
+  tb.addEventListener('click', function () {
     var cur = document.documentElement.getAttribute('data-theme');
     var next = cur === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (err) {}
+    try { localStorage.setItem('theme', next); } catch (e) {}
   });
+  // 滚动进度
+  var prog = document.getElementById('prog');
+  function onScroll() { var h = document.documentElement; var p = h.scrollTop / (h.scrollHeight - h.clientHeight); prog.style.width = (p * 100) + '%'; }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  // 首屏光斑跟鼠标
+  var hero = document.getElementById('hero'), spot = document.getElementById('spot');
+  hero.addEventListener('pointermove', function (e) { var r = hero.getBoundingClientRect(); spot.style.setProperty('--mx', (e.clientX - r.left) + 'px'); spot.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
+  // 入场
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  // 问问：点一下笑
+  var fig = document.getElementById('wwfig');
+  fig.addEventListener('click', function () { fig.classList.add('happy'); setTimeout(function () { fig.classList.remove('happy'); }, 1400); });
+  // 技能包跑马灯
+  var tags = ['🌙 睡眠与安抚', '🥣 辅食与挑食', '😤 情绪与发脾气', '👁️ 护眼与屏幕', '🐷 零花钱与财商启蒙', '🗣️ 青春期沟通', '🦷 口腔护理', '📚 学习习惯', '🏃 运动与体能', '🤝 二胎相处', '🎨 兴趣启蒙', '👵 隔代共识'];
+  function fill(id, arr) { var t = document.getElementById(id); var html = arr.concat(arr).map(function (s) { return '<span class="stag">' + s + '</span>'; }).join(''); t.innerHTML = html; }
+  fill('tk1', tags); fill('tk2', tags.slice().reverse());
+  // 角落的问问
+  var lines = ['今天小满的心情怎么样？点我记一下～', '喝水提醒 15:00 · 还有 20 分钟', '你今天带娃也很辛苦，歇会儿吧。', '3-6 岁这一段，最该练的是「认出情绪、给情绪起名」。', '数据都在你手机里，我这儿一个字都没存。'];
+  var pet = document.getElementById('pet'), bub = document.getElementById('petBubble'), line = document.getElementById('petLine'), i = 0, timer;
+  function say() { line.textContent = lines[i % lines.length]; i++; bub.classList.add('show'); pet.classList.add('happy'); setTimeout(function () { pet.classList.remove('happy'); }, 1200); clearTimeout(timer); timer = setTimeout(function () { bub.classList.remove('show'); }, 6000); }
+  pet.addEventListener('click', say);
+  pet.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); say(); } });
+  document.getElementById('petClose').addEventListener('click', function (e) { e.stopPropagation(); bub.classList.remove('show'); });
+  setTimeout(say, 2600);
+})();
 </script>
 </body>
 </html>

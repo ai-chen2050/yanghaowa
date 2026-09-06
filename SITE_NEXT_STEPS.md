@@ -49,8 +49,8 @@ make serve        # http://localhost:4000 看一眼
 
 ## 5. 部署
 
-- [ ] 推到 GitHub
-- [ ] 仓库 Settings → Pages → Source 选 **GitHub Actions**
+- [x] 推到 GitHub
+- [x] 仓库 Settings → Pages → Source 选 **GitHub Actions**
 - [ ] 自定义域名：Settings → Pages → Custom domain，并在 DNS 加 CNAME
 - [ ] 部署后线上验：
       ```bash

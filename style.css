@@ -3,31 +3,33 @@
    明暗两套：跟随系统 + 手动切换（data-theme 覆盖）。 */
 
 :root {
-  --bg: #fbfdfc;
-  --bg2: #f1f8f5;
-  --ink: #0d221a;
-  --sub: #4a6a5d;
-  --card: #ffffff;
-  --line: #e0eee7;
-  --brand: #10c877;
-  --brand-deep: #08a862;
-  --shadow: 0 12px 36px rgba(10, 70, 48, .10);
+  /* 与 App 的 design-spec/tokens.json 同源：暖米底、珊瑚橙主色、褐色正文。 */
+  --bg: #FFFAF4;
+  --bg2: #FFF2E6;
+  --ink: #5A3C2D;
+  --sub: #826656;
+  --card: #FFFFFF;
+  --line: #F6ECE3;
+  --brand: #FF8A5B;
+  --brand-deep: #AA5427;
+  --mint: #6FB3A0;
+  --shadow: 0 12px 36px rgba(196, 122, 74, .12);
   --radius: 16px;
   --maxw: 1000px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #07100c; --bg2: #0a1610; --ink: #e4f4ec; --sub: #8bb0a0;
-    --card: rgba(255,255,255,.045); --line: rgba(255,255,255,.09);
-    --brand: #2ee6a0; --brand-deep: #2ee6a0;
+    --bg: #221812; --bg2: #1B120D; --ink: #F5E9DF; --sub: #C7A992;
+    --card: #2C201A; --line: #3F2F24;
+    --brand: #FF9A70; --brand-deep: #FFB994; --mint: #7FC3B0;
     --shadow: 0 12px 36px rgba(0,0,0,.5);
   }
 }
 :root[data-theme="dark"] {
-  --bg: #07100c; --bg2: #0a1610; --ink: #e4f4ec; --sub: #8bb0a0;
-  --card: rgba(255,255,255,.045); --line: rgba(255,255,255,.09);
-  --brand: #2ee6a0; --brand-deep: #2ee6a0;
+--bg: #221812; --bg2: #1B120D; --ink: #F5E9DF; --sub: #C7A992;
+  --card: #2C201A; --line: #3F2F24;
+  --brand: #FF9A70; --brand-deep: #FFB994; --mint: #7FC3B0;
   --shadow: 0 12px 36px rgba(0,0,0,.5);
 }
 
@@ -66,7 +68,7 @@ nav a { font-size: 14px; font-weight: 600; color: var(--sub); }
 .hero .lead { font-size: 17px; color: var(--sub); margin-top: 16px; max-width: 60ch; }
 .cta {
   display: inline-block; margin-top: 26px; padding: 14px 28px;
-  background: var(--brand); color: #04241a; font-weight: 800;
+  background: var(--brand); color: #FFFFFF; font-weight: 800;
   border-radius: 999px; box-shadow: var(--shadow);
 }
 .cta:hover { text-decoration: none; filter: brightness(1.06); }
@@ -146,3 +148,18 @@ footer a { color: var(--sub); }
   section { padding: 52px 0; }
   nav .hide-sm { display: none; }
 }
+
+
+/* ── 养好娃自有区块 ── */
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.cta.secondary { background: var(--card); color: var(--brand-deep); border: 1.5px solid var(--brand); }
+.hero-note, .foot-note { color: var(--sub); font-size: 13px; margin-top: 12px; }
+.note { color: var(--sub); font-size: 14px; margin-top: 18px; text-align: center; }
+.pricing .tier { color: var(--brand-deep); font-weight: 700; font-size: 13px; letter-spacing: .02em; margin-bottom: 6px; }
+.pricing .card.featured { border: 1.5px solid var(--brand); box-shadow: var(--shadow); position: relative; }
+.pricing .card.featured::before {
+  content: "推荐"; position: absolute; top: -12px; right: 18px;
+  background: var(--brand); color: #fff; font-size: 12px; font-weight: 700;
+  padding: 3px 10px; border-radius: 999px;
+}
+html[lang="en"] .pricing .card.featured::before { content: "Popular"; }

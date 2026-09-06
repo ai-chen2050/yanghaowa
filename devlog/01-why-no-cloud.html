@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../icon.png">
+<title>为什么养好娃没有云端，也不做订阅 · 养好娃</title>
+<meta name="description" content="一个记录孩子成长的 App 最敏感的数据就是孩子本身。没有服务器不是省钱，是把「泄露」这件事从可能性里拿掉；一次买断不是让利，是不想让家长每个月都要重新决定要不要继续。">
+<link rel="canonical" href="https://yanghaowa.top/devlog/01-why-no-cloud.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么养好娃没有云端，也不做订阅">
+<meta property="og:description" content="一个记录孩子成长的 App 最敏感的数据就是孩子本身。没有服务器不是省钱，是把「泄露」这件事从可能性里拿掉；一次买断不是让利，是不想让家长每个月都要重新决定要不要继续。">
+<meta property="og:url" content="https://yanghaowa.top/devlog/01-why-no-cloud.html">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "为什么养好娃没有云端，也不做订阅",
+  "description": "一个记录孩子成长的 App 最敏感的数据就是孩子本身。没有服务器不是省钱，是把「泄露」这件事从可能性里拿掉；一次买断不是让利，是不想让家长每个月都要重新决定要不要继续。",
+  "url": "https://yanghaowa.top/devlog/01-why-no-cloud.html",
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "养好娃"
+  },
+  "datePublished": "2026-09-06",
+  "keywords": "架构, 隐私, 定价, 独立开发"
+}
+</script>
+</head>
+<body>
+<nav class="wrap"><a class="brand" href="../index.html">养好娃</a>
+  <a href="../devlog.html">开发日记</a></nav>
+<main class="wrap prose">
+<p class="kicker">开发日记 · 2026-09-06</p><h1>为什么养好娃没有云端，也不做订阅</h1><p class="lead">一个记录孩子成长的 App 最敏感的数据就是孩子本身。没有服务器不是省钱，是把「泄露」这件事从可能性里拿掉；一次买断不是让利，是不想让家长每个月都要重新决定要不要继续。</p><h2 id="结论先说">结论先说</h2>
+<p>养好娃没有账号、没有服务器。所有数据在你的手机里，AI 用你自己的模型 Key，付费是 Pro 一次买断加几个小额技能包。 这三件事是同一个决定的三个面：一个存着孩子身高、疫苗、情绪和零花钱记录的 App，最好的隐私政策是根本拿不到这些数据。</p>
+<h2 id="背景">背景</h2>
+<p>做育儿类产品，头一个诱惑就是云同步：夫妻两台手机、老人一台平板，谁记都能看到。 但云同步意味着一个服务器上放着几千个家庭的孩子档案。它需要账号、需要合规、需要有人半夜处理告警， 更要紧的是，一旦出事，泄露的是孩子的生日、身高体重曲线、情绪日记。这不是「可以接受的风险」。</p>
+<p>第二个诱惑是订阅。育儿内容按年龄段持续更新，订阅看起来天经地义。 但家长的真实处境是：孩子三岁时用得多，五岁时可能半年不开一次，十岁时又因为零花钱的事回来。 订阅会让每一次「半年没开」都变成一次取消。</p>
+<h2 id="考虑过的方案">考虑过的方案</h2>
+<ol><li><strong>自建后端 + 账号体系</strong> —— 能做多端实时同步。放弃的原因见上：孩子数据的泄露后果不可逆，而一个人维护的服务器迟早出事。</li><li><strong>CloudKit 私有数据库</strong> —— 数据仍在用户自己的 iCloud 账户里，开发者拿不到。方向对，但插件成熟度不够，且只覆盖 Apple 平台。</li><li><strong>文件级备份 + iCloud 文稿容器</strong> —— 备份文件放进 App 自己的 iCloud 容器，由系统同步；安卓和跨 Apple ID 用导出导入。</li></ol>
+<p>最后选的是这个：实现简单、口径清楚（「备份进的是你自己的 iCloud」），而且备份文件是你能看懂的 JSON。</p>
+<h2 id="落地成什么样">落地成什么样</h2>
+<ul><li>数据库在本机（SQLite），每天第一次打开自动存一份快照，保留七份。</li><li>导出分明文 JSON 和口令加密两种；导入支持合并，按孩子姓名加生日认同一个人，不会重复建档；覆盖前自动存快照，24 小时内可撤销。</li><li>AI 只在你主动发起时联网，默认只发年龄段和授权范围内的趋势摘要，发送前有一张卡逐条列出。这是 App 唯一的联网行为。</li><li>定价：基础能力免费且能真正用起来；Pro 一次买断解锁全部进阶能力，永久有效；专家技能包按主题小额单独买断，给 AI 助手装「脑组件」。没有订阅，没有广告。</li></ul>
+<h2 id="代价">代价</h2>
+<ul><li>夫妻两台手机不能实时同步，只能一方导出、另一方合并导入。这是明确的取舍，官网的「不适合谁」里写着。</li><li>AI 要自己配 Key，对不熟悉大模型服务的家长有门槛。我们用「发送前预览」和分项授权把门槛换成了透明度。</li><li>一次买断意味着收入不可预测。但一个人做的产品，靠的是它被推荐，而不是靠续费惯性。</li></ul><p class="pager"></p><p><a href="../devlog.html">← 全部开发日记</a></p>
+</main>
+<footer class="wrap"><p>© yanghaowa</p></footer>
+</body>
+</html>

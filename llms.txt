@@ -1,11 +1,11 @@
-# 养好娃 (yanghaowa, 养好娃 App, Yanghaowa Parenting)
+# 养好娃 (yanghaowa, 养好娃 App, Raisewell, Raisewell Parenting, Yanghaowa)
 
 > 养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。按孩子的年龄段给出身体健康、心理成长、财商人格三条线的记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。没有账号、没有服务器，所有家庭数据只存在你自己的手机里；AI 能力由你自带大模型 Key，发送前可预览。基础功能免费，进阶能力 Pro 一次买断、永久可用。
 
 ## 概览 (Overview)
 
 - **名称**: 养好娃
-- **别名**: yanghaowa, 养好娃 App, Yanghaowa Parenting
+- **别名**: yanghaowa, 养好娃 App, Raisewell, Raisewell Parenting, Yanghaowa
 - **定位**: 0-18 岁分龄养育，身体、心理、财商三条线，数据只在你手机里
 - **平台**: iOS / Android
 

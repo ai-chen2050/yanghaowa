@@ -36,7 +36,7 @@
     "ogImage": "icon.png",
     "themeColor": "#FF8A5B",
     "//updated": "内容有实质变化时手动改；生成物的 lastmod / 最后更新都取它，CI 才能复现同一份输出",
-    "updated": "2026-09-07"
+    "updated": "2026-09-08"
   },
   "locales": {
     "default": "zh-CN",

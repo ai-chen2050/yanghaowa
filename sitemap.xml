@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/index.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/index.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/index.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -24,7 +24,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/geo.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/geo.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/geo.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -33,7 +33,7 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/geo.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/geo.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/geo.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -41,47 +41,97 @@
     <loc>https://yanghaowa.top/devlog.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/devlog.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/devlog.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://yanghaowa.top/support.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/support.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/support.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yanghaowa.top/support.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/support.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/support.html"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yanghaowa.top/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/privacy.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/privacy.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yanghaowa.top/privacy.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/privacy.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/privacy.html"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yanghaowa.top/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/terms.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/terms.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yanghaowa.top/terms.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/terms.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/terms.html"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yanghaowa.top/privacy.huawei.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/privacy.huawei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/privacy.huawei.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/privacy.huawei.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yanghaowa.top/privacy.huawei.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/privacy.huawei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/privacy.huawei.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/privacy.huawei.html"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://yanghaowa.top/terms.huawei.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/terms.huawei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/terms.huawei.en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/terms.huawei.html"/>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://yanghaowa.top/terms.huawei.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://yanghaowa.top/terms.huawei.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yanghaowa.top/terms.huawei.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yanghaowa.top/terms.huawei.html"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

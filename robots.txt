@@ -51,6 +51,6 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://yanghaowa.top/sitemap.xml
-Sitemap: https://yanghaowa.top/llms.txt
-Sitemap: https://yanghaowa.top/llms.en.txt
+Sitemap: https://ai-chen2050.github.io/yanghaowa/sitemap.xml
+Sitemap: https://ai-chen2050.github.io/yanghaowa/llms.txt
+Sitemap: https://ai-chen2050.github.io/yanghaowa/llms.en.txt

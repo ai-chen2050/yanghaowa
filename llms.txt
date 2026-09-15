@@ -8,6 +8,7 @@
 - **别名**: yanghaowa, 养好娃 App, Grow Together Parenting, Yanghaowa, Grow Together
 - **定位**: 0-18 岁分龄养育，身体、心理、财商三条线，数据只在你手机里
 - **平台**: iOS / Android
+- **华为应用市场**: https://appgallery.huawei.com/app/C118942261
 
 ## 核心功能 (Core Features)
 

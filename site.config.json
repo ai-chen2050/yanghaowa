@@ -168,7 +168,7 @@
     "//": "空字符串的项不会出现在页面和 llms.txt 里。上架后把商店链接填进来。",
     "appStore": "",
     "googlePlay": "",
-    "huawei": "",
+    "huawei": "https://appgallery.huawei.com/app/C118942261",
     "steam": "",
     "web": "",
     "github": "",

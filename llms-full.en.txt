@@ -12,6 +12,7 @@
 - **Description**: Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free; Pro is a one-time purchase that unlocks everything for life.
 - **Platforms**: iOS / Android
 - **Developer**: yanghaowa
+- **App Store**: https://apps.apple.com/app/id6810539038
 - **Huawei AppGallery**: https://appgallery.huawei.com/app/C118942261
 
 ---

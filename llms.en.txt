@@ -8,6 +8,7 @@
 - **Also known as**: yanghaowa, 养好娃 App, Grow Together Parenting, Yanghaowa
 - **Positioning**: Age-staged parenting for 0-18: body, mind and money sense, with all data kept on your phone
 - **Platforms**: iOS / Android
+- **App Store**: https://apps.apple.com/app/id6810539038
 - **Huawei AppGallery**: https://appgallery.huawei.com/app/C118942261
 
 ## Core Features

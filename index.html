@@ -204,6 +204,8 @@
   <a class="brand" href="index.html"><img src="logo.png" alt="养好娃"> 养好娃</a>
   <span class="spacer"></span>
   <a href="#lines" class="hide-sm">三条主线</a>
+  <a href="#video" class="hide-sm">宣传片</a>
+  <a href="#sandbox" class="hide-sm">实机沙盘</a>
   <a href="#features" class="hide-sm">功能</a>
   <a href="#wenwen" class="hide-sm">问问</a>
   <a href="#pricing" class="hide-sm">定价</a>
@@ -232,6 +234,7 @@
     <div class="cta-row" id="download">
       <a class="store-btn" href="https://apps.apple.com/app/id6810539038" id="dl-appstore" target="_blank" rel="noopener"><span class="ic"><svg width="22" height="22" viewBox="0 0 170 170" fill="currentColor" aria-hidden="true"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12-14.44-6-9.19-10.74-20.08-14.22-32.66-3.48-12.58-5.22-24.16-5.22-34.73 0-16.1 4.11-29.47 12.33-40.11 8.22-10.65 18.57-16.08 31.05-16.32 5.09 0 10.73 1.35 16.92 4.05 6.18 2.7 10.23 4.12 12.14 4.25 1.57-.13 5.76-1.58 12.58-4.35 6.81-2.77 12.63-4.05 17.46-3.85 13.55.67 24.32 5.75 32.32 15.24-11.4 6.88-16.96 16.48-16.69 28.79.27 10.15 4.35 18.59 12.24 25.32 7.89 6.73 17.13 10.45 27.71 11.16-2.22 6.8-4.88 13.62-7.98 20.46zM119.22 31.84c0-7.72 2.76-14.88 8.28-21.49 5.53-6.61 12.43-10.35 20.7-11.23.13 1.07.2 2.07.2 3.01 0 7.72-2.86 15.02-8.58 21.91-5.73 6.89-12.83 10.67-21.3 11.34-.26-1.19-.39-2.37-.39-3.54z"/></svg></span><span class="t"><small>已上架</small><b>App Store</b></span></a>
       <a class="store-btn alt" href="https://appgallery.huawei.com/app/C118942261" id="dl-huawei" target="_blank" rel="noopener"><span class="ic">📱</span><span class="t"><small>已上架</small><b>华为应用市场</b></span></a>
+      <a class="store-btn alt" href="#video" id="heroWatchBtn"><span class="ic">🎬</span><span class="t"><small>实机演示</small><b>观看 78 秒宣传片</b></span></a>
     </div>
     <p class="store-note">iOS 版已上架 App Store；华为版按渠道要求不含 AI 功能，其余完全一致。</p>
     <p class="trust">无账号 · 无广告 · 无服务器 · 基础免费 · Pro 一次买断</p>
@@ -259,6 +262,205 @@
     </div>
   </div>
 </header>
+
+<!-- 官方产品宣传片 (#video) -->
+<section id="video" class="promo-video-sec">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin-bottom:32px;">
+      <span class="kicker">Official Product Film · 1080p 60fps</span>
+      <h2 class="sec-title" style="margin:10px 0 8px;">78 秒看懂「养好娃」0-18 岁全周期成长体验</h2>
+      <p class="sec-sub">分龄三线、iPhone Duo 展开态虚拟客厅、九维性格雷达、拍立得时光家书与纯本地隐私</p>
+    </div>
+    <div class="video-stage">
+      <div class="video-bar">
+        <span class="pg-dots"><span></span><span></span><span></span></span>
+        <span>养好娃 · 0-18 岁本地化家庭教育 官方实机宣传片</span>
+        <span class="video-badge-row">
+          <span class="video-pill-tag">🎵 Pop 05 Chill</span>
+          <span class="video-pill-tag">HD 1080P</span>
+        </span>
+      </div>
+      <div class="video-frame">
+        <video id="promoVideo" class="promo-video-player" controls preload="metadata" playsinline poster="cover.png">
+          <source src="promo.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 视频播放，请直接下载观看。
+        </video>
+      </div>
+      <div class="video-chapters" aria-label="宣传片章节快跳">
+        <button class="chapter-pill active" type="button" data-seek="0"><time>00:00</time><span>0-18岁分龄主线</span></button>
+        <button class="chapter-pill" type="button" data-seek="10"><time>00:10</time><span>iPhone Duo 展开态</span></button>
+        <button class="chapter-pill" type="button" data-seek="20"><time>00:20</time><span>身体·心理·财商三线</span></button>
+        <button class="chapter-pill" type="button" data-seek="30"><time>00:30</time><span>3D伴宠问问与BYOK</span></button>
+        <button class="chapter-pill" type="button" data-seek="40"><time>00:40</time><span>拍立得回忆相框墙</span></button>
+        <button class="chapter-pill" type="button" data-seek="50"><time>00:50</time><span>时光家书未来胶囊</span></button>
+        <button class="chapter-pill" type="button" data-seek="60.5"><time>01:00</time><span>零云端纯本地隐私</span></button>
+        <button class="chapter-pill" type="button" data-seek="70.5"><time>01:10</time><span>品牌终章</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业级互动沙盘 (#sandbox) -->
+<section id="sandbox" class="playground-sec" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center;margin-bottom:36px;">
+      <span class="kicker">Interactive Sandboxes · 实机沙盘互动</span>
+      <h2 class="sec-title" style="margin:10px 0 8px;">体验「养好娃」三大核心交互工作台</h2>
+      <p class="sec-sub">0-18 岁分龄主线切换、iPhone Duo 双屏折叠仿真、拍立得时光家书</p>
+    </div>
+
+    <!-- 沙盘 1: 0-18岁分龄生命周期切换台 -->
+    <div class="pg-shell" style="margin-bottom: 48px;">
+      <div class="pg-window">
+        <div class="pg-bar">
+          <span class="pg-dots"><span></span><span></span><span></span></span>
+          <span>Sandbox 01 · 0-18 岁分龄生命周期切换台</span>
+          <span>动态面板按年龄展开</span>
+        </div>
+        <div class="pg-body">
+          <div class="stage-nav-tabs">
+            <button class="stage-tab-btn" data-stage="0-1">👶 0-1 岁 婴儿萌芽</button>
+            <button class="stage-tab-btn" data-stage="1-3">🧒 1-3 岁 幼童探索</button>
+            <button class="stage-tab-btn active" data-stage="3-6">👧 3-6 岁 学龄前期</button>
+            <button class="stage-tab-btn" data-stage="6-18">🧑‍🎓 6-18 岁 学龄与青春期</button>
+          </div>
+          <div id="stageSandboxView"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 沙盘 2: iPhone Duo 3D 双屏折叠手账与 3D 客厅仿真模拟器 -->
+    <div class="pg-shell" style="margin-bottom: 48px;">
+      <div class="pg-window">
+        <div class="pg-bar">
+          <span class="pg-dots"><span></span><span></span><span></span></span>
+          <span>Sandbox 02 · iPhone Duo 3D 双屏折叠仿真模拟器</span>
+          <span>展开态 8.1" 双屏 vs 折叠外屏</span>
+        </div>
+        <div class="pg-body">
+          <div class="duo-mode-switch">
+            <button class="duo-mode-btn active" data-mode="unfolded">📖 展开态双屏 (8.1" 虚拟客厅 + 育儿手账)</button>
+            <button class="duo-mode-btn" data-mode="folded">📱 折叠态外屏 (5.4" 单手顺手记)</button>
+          </div>
+          <div class="duo-stage-box" id="duoInteractiveStage" data-duo-mode="unfolded">
+            <!-- 展开态 -->
+            <div class="duo-device-outer duo-unfolded-view">
+              <div class="duo-screen duo-screen-left">
+                <div class="duo-living-room">
+                  <span class="living-tag">🏠 3D 虚拟客厅 · 陪伴空间</span>
+                  <div class="living-mascot-spot">
+                    <img src="wenwen_happy.png" alt="问问在客厅">
+                    <br>
+                    <span class="living-bubble">🍊 欢迎回家！今天小满有记得喝水吗？</span>
+                  </div>
+                  <div style="font-size:11px;color:var(--sub);text-align:center;">左屏恒定空间 · 随自然时间变换光影</div>
+                </div>
+              </div>
+              <div class="duo-hinge-seam"></div>
+              <div class="duo-screen duo-screen-right">
+                <div class="duo-journal-pane">
+                  <div class="journal-header">
+                    <strong>小满的成长手账</strong>
+                    <small>双屏联动分栏</small>
+                  </div>
+                  <div class="stage-metric-card" style="padding:12px;">
+                    <div class="metric-top"><span class="metric-label">今日户外</span><span class="metric-badge">45/120m</span></div>
+                    <div class="metric-val" style="font-size:16px;">🌱 滨江骑车 45 分钟</div>
+                  </div>
+                  <div class="stage-metric-card" style="padding:12px;">
+                    <div class="metric-top"><span class="metric-label">九维性格投点</span><span class="metric-badge">探索力 +1</span></div>
+                    <div class="metric-val" style="font-size:16px;">🎯 观察秋叶叶脉</div>
+                  </div>
+                  <div class="stage-metric-card" style="padding:12px;">
+                    <div class="metric-top"><span class="metric-label">问问伴聊记录</span><span class="metric-badge">本地</span></div>
+                    <div style="font-size:12px;color:var(--sub);">探讨了「孩子发脾气时如何同频共情」</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 折叠外屏态 -->
+            <div class="duo-device-outer duo-folded-view">
+              <div class="duo-outer-screen">
+                <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>外屏单手模式</small></div></div>
+                <div class="ph-card" style="margin:0;box-shadow:none;border:none;background:transparent;padding:0;">
+                  <div class="ttl">顺手记一笔</div>
+                  <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>今日心情</b></div><div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+                </div>
+                <div style="margin-top:auto;text-align:center;font-size:11px;color:var(--sub);">单手握持 · 展开即进 3D 客厅</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 沙盘 3: 拍立得时光家书与未来胶囊工作台 -->
+    <div class="pg-shell">
+      <div class="pg-window">
+        <div class="pg-bar">
+          <span class="pg-dots"><span></span><span></span><span></span></span>
+          <span>Sandbox 03 · 拍立得时光家书与未来胶囊工作台</span>
+          <span>可翻转查看封存家书</span>
+        </div>
+        <div class="pg-body">
+          <div class="polaroid-sandbox-grid">
+            <div class="polaroid-pick-list">
+              <div class="polaroid-choice active" data-memory="bike">
+                <strong>🚴 第一次独立骑过小石桥</strong>
+                <span>5 岁 2 个月 · 拆掉辅助轮的勇敢时刻</span>
+              </div>
+              <div class="polaroid-choice" data-memory="grad">
+                <strong>🎓 幼儿园向日葵班毕业礼</strong>
+                <span>6 岁 0 个月 · 想当给星星画画的宇航员</span>
+              </div>
+              <div class="polaroid-choice" data-memory="leaf">
+                <strong>🍂 秋天捡的第一片银杏落叶</strong>
+                <span>4 岁 8 个月 · 大自然送给小松鼠的金扇子</span>
+              </div>
+            </div>
+
+            <div class="capsule-interactive-stage">
+              <div class="capsule-card-wrap" id="capsuleCardWrap">
+                <!-- 正面：拍立得回忆相框 -->
+                <div class="capsule-front" id="polaroidFrame">
+                  <div class="polaroid-tape"></div>
+                  <div class="polaroid-photo-frame">
+                    <img src="wenwen_happy.png" alt="回忆瞬间照片">
+                  </div>
+                  <div class="polaroid-words">
+                    <h4 id="polaroidCaption">第一次独立骑过小石桥</h4>
+                    <p id="polaroidDate">5 岁 2 个月 · 滨江公园 · 2026年春</p>
+                  </div>
+                </div>
+
+                <!-- 背面：封存时光家书 -->
+                <div class="capsule-back">
+                  <div class="capsule-letter-head">
+                    <span>💌 密存时光家书 (Time Capsule)</span>
+                    <span class="capsule-wax-seal">封</span>
+                  </div>
+                  <div class="capsule-letter-body" id="capsuleLetterText">
+                    亲爱的小满：今天你终于拆掉了自行车的辅助轮。摇摇晃晃骑了七八米后摔了一跤，但你爬起来拍了拍裤子上的灰，回头冲我们笑得满头大汗。那一刻爸爸妈妈眼眶湿润了。愿你一生都葆有拆掉辅助轮的勇敢。
+                  </div>
+                  <div class="capsule-letter-foot">
+                    <span>写于孩子 5 岁春天 · 本地 AES-256 加密</span>
+                    <span>18 岁生日自动启封</span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="flip-ctrl-btn" type="button" id="flipLetterBtn">✉️ 展开翻阅时光家书</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <section id="lines"><div class="wrap">
   <h2 class="sec-title reveal">三条主线，按年龄段一起长</h2>
@@ -318,6 +520,63 @@
   </div>
   <p class="note">技能包均为家庭教育参考（非医疗、非心理诊断），一次买断、永久可用，不含在 Pro 里，也不含模型费用。</p>
 </section>
+
+<!-- 7-Axis 详细对比表格 (#compare) -->
+<section id="compare" class="compare-sec"><div class="wrap">
+  <div class="sec-head" style="text-align:center;margin-bottom:32px;">
+    <span class="kicker">7-Axis Comparison · 深度对比</span>
+    <h2 class="sec-title" style="margin:10px 0 8px;">为什么「养好娃」是真正懂家庭的长期工具</h2>
+    <p class="sec-sub">7 大关键维度横向对比：看清本质，拒绝绑架，保护孩子的数字隐私</p>
+  </div>
+  <div class="table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>对比维度</th>
+          <th class="ours-col">🍊 养好娃 (Grow Together)</th>
+          <th>典型云端竞品 / 记录打卡软件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>账号与数据存储</strong></td>
+          <td><span class="badge-yes">✓ 纯本地零云端</span> 无需手机号注册，全家数据只在你的手机中</td>
+          <td><span class="badge-no">✕ 强制注册</span> 上传至第三方云端服务器，存在隐私泄露风险</td>
+        </tr>
+        <tr>
+          <td><strong>年龄覆盖跨度</strong></td>
+          <td><span class="badge-yes">✓ 0-18 岁全周期</span> 婴儿、幼童、学龄、青春期动态分龄切换</td>
+          <td><span class="badge-no">✕ 局限婴儿期</span> 仅支持 0-3 岁喝奶换尿布，孩子长大后被迫弃用</td>
+        </tr>
+        <tr>
+          <td><strong>养育主线维度</strong></td>
+          <td><span class="badge-yes">✓ 身体·心理·财商</span> 3 条主线齐头并进，涵盖性格雷达与独立人格</td>
+          <td><span class="badge-no">✕ 维度单一</span> 仅记录身高体重或机械式打卡，缺少心理与财商指导</td>
+        </tr>
+        <tr>
+          <td><strong>AI 隐私与控制权</strong></td>
+          <td><span class="badge-yes">✓ 自带 Key (BYOK)</span> 发送前数据完全透明可预览，关键隐私字段不出端</td>
+          <td><span class="badge-no">✕ 黑盒上传</span> 后台自动上传聊天记录与家庭信息训练大模型</td>
+        </tr>
+        <tr>
+          <td><strong>折叠双屏深度适配</strong></td>
+          <td><span class="badge-yes">✓ 原生 iPhone Duo</span> 展开态双屏左客厅+右手账，折叠外屏单手秒记</td>
+          <td><span class="badge-no">✕ 粗暴单屏拉伸</span> 无折叠屏优化，多任务体验割裂</td>
+        </tr>
+        <tr>
+          <td><strong>数据导出与换机迁移</strong></td>
+          <td><span class="badge-yes">✓ 开放 JSON 备份</span> 支持明文/AES加密导出与智能同人合并导入</td>
+          <td><span class="badge-no">✕ 数据封锁</span> 无法完整导出原始数据，换机时历史记录丢失</td>
+        </tr>
+        <tr>
+          <td><strong>商业模式与付费</strong></td>
+          <td><span class="badge-yes">✓ 一次买断终身享</span> 基础功能永久免费，Pro ¥128 买断无自动续费陷阱</td>
+          <td><span class="badge-no">✕ 繁重高价年订</span> 每年数百元连续订阅，停止扣费即锁定历史记录</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div></section>
 
 <section id="pricing" style="background:var(--bg2)"><div class="wrap">
   <h2 class="sec-title reveal">一次买断，没有订阅</h2>
@@ -430,99 +689,6 @@
 </div>
 <div class="pet-bubble" id="petBubble"><span class="pet-close" id="petClose">×</span><p id="petLine"></p><a class="pet-cta" href="#wenwen">看看问问能做什么 →</a></div>
 
-<script>
-(function () {
-  // 主题
-  var tb = document.getElementById('theme-toggle');
-  tb.addEventListener('click', function () {
-    var cur = document.documentElement.getAttribute('data-theme');
-    var next = cur === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-  // 滚动进度
-  var prog = document.getElementById('prog');
-  function onScroll() { var h = document.documentElement; var p = h.scrollTop / (h.scrollHeight - h.clientHeight); prog.style.width = (p * 100) + '%'; }
-  addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  // 首屏光斑跟鼠标
-  var hero = document.getElementById('hero'), spot = document.getElementById('spot');
-  hero.addEventListener('pointermove', function (e) { var r = hero.getBoundingClientRect(); spot.style.setProperty('--mx', (e.clientX - r.left) + 'px'); spot.style.setProperty('--my', (e.clientY - r.top) + 'px'); });
-  // 入场
-  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-  // 问问：点一下笑
-  var fig = document.getElementById('wwfig');
-  fig.addEventListener('click', function () { fig.classList.add('happy'); setTimeout(function () { fig.classList.remove('happy'); }, 1400); });
-  // 技能包跑马灯
-  var tags = ['🌙 睡眠与安抚', '🥣 辅食与挑食', '😤 情绪与发脾气', '👁️ 护眼与屏幕', '🐷 零花钱与财商启蒙', '🗣️ 青春期沟通', '🦷 口腔护理', '📚 学习习惯', '🏃 运动与体能', '🤝 二胎相处', '🎨 兴趣启蒙', '👵 隔代共识'];
-  function fill(id, arr) { var t = document.getElementById(id); var html = arr.concat(arr).map(function (s) { return '<span class="stag">' + s + '</span>'; }).join(''); t.innerHTML = html; }
-  fill('tk1', tags); fill('tk2', tags.slice().reverse());
-  var lines = ['今天小满的心情怎么样？点我记一下～', '喝水提醒 15:00 · 还有 20 分钟', '你今天带娃也很辛苦，歇会儿吧。', '3-6 岁这一段，最该练的是「认出情绪、给情绪起名」。', '数据都在你手机里，我这儿一个字都没存。'];
-  // 角落里会闲逛、可拖动、可点击的问问（照吃好饭的青团团）
-  var pet = document.getElementById('pet'), bub = document.getElementById('petBubble'), line = document.getElementById('petLine'),
-      hint = pet.querySelector('.pet-hint'), i = 0, open = false, roamTimer = null, hideTimer = null,
-      dragging = false, moved = false, sx = 0, sy = 0, ox = 0, oy = 0, pid = null;
-  var REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function sz() { return pet.offsetWidth; } function vw() { return innerWidth; } function vh() { return innerHeight; }
-  function cx(x) { return Math.min(Math.max(x, 8), vw() - sz() - 8); }
-  function cy(y) { return Math.min(Math.max(y, 8), vh() - sz() - 8); }
-  // 漫游与拖动共用一套 left/top 坐标
-  pet.style.bottom = 'auto'; pet.style.left = cx(vw() * 0.05) + 'px'; pet.style.top = cy(vh() - sz() - 20) + 'px';
-  function place() {
-    var r = pet.getBoundingClientRect();
-    bub.style.top = 'auto'; bub.style.bottom = (vh() - r.top + 10) + 'px';
-    bub.style.left = Math.min(Math.max(r.left + r.width / 2 - 125, 12), vw() - 262) + 'px';
-  }
-  function grin(ms) { pet.classList.add('happy'); setTimeout(function () { pet.classList.remove('happy'); }, ms || 1200); }
-  function roam() {
-    if (REDUCE || open || dragging) return;
-    var tx = cx(8 + Math.random() * (vw() - sz() - 16));
-    var ty = cy(vh() * 0.4 + Math.random() * (vh() * 0.5 - sz()));
-    var curX = parseFloat(pet.style.left) || 0, curY = parseFloat(pet.style.top) || 0;
-    pet.classList.toggle('flip', tx < curX);
-    var dur = Math.min(5, Math.max(1.8, Math.hypot(tx - curX, ty - curY) / 160));
-    pet.style.transitionDuration = dur + 's, ' + dur + 's';
-    pet.style.left = tx + 'px'; pet.style.top = ty + 'px';
-    roamTimer = setTimeout(roam, dur * 1000 + 4000 + Math.random() * 5000);
-  }
-  function openBubble() {
-    open = true; clearTimeout(roamTimer); clearTimeout(hideTimer);
-    if (hint) hint.style.display = 'none';
-    line.textContent = lines[i % lines.length]; i++;
-    place(); bub.classList.add('show'); grin(1400);
-    hideTimer = setTimeout(closeBubble, 7000);
-  }
-  function closeBubble() {
-    open = false; bub.classList.remove('show'); clearTimeout(hideTimer);
-    if (hint) hint.style.display = '';
-    if (!REDUCE) roamTimer = setTimeout(roam, 2500);
-  }
-  pet.addEventListener('pointerdown', function (e) {
-    pid = e.pointerId; try { pet.setPointerCapture(pid); } catch (_) {}
-    dragging = false; moved = false; sx = e.clientX; sy = e.clientY; clearTimeout(roamTimer);
-    var r = pet.getBoundingClientRect();
-    pet.style.left = r.left + 'px'; pet.style.top = r.top + 'px';
-    ox = e.clientX - r.left; oy = e.clientY - r.top; pet.classList.add('dragging');
-  });
-  pet.addEventListener('pointermove', function (e) {
-    if (pid === null) return;
-    if (!dragging && Math.abs(e.clientX - sx) + Math.abs(e.clientY - sy) > 6) { dragging = true; moved = true; pet.classList.add('happy'); }
-    if (dragging) { pet.style.left = cx(e.clientX - ox) + 'px'; pet.style.top = cy(e.clientY - oy) + 'px'; if (open) place(); }
-  });
-  function endDrag() {
-    if (pid === null) return; try { pet.releasePointerCapture(pid); } catch (_) {}
-    pid = null; pet.classList.remove('dragging');
-    if (moved) { dragging = false; pet.classList.remove('happy'); if (!REDUCE && !open) roamTimer = setTimeout(roam, 2500); }
-    else { open ? closeBubble() : openBubble(); }
-  }
-  pet.addEventListener('pointerup', endDrag); pet.addEventListener('pointercancel', endDrag);
-  pet.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open ? closeBubble() : openBubble(); } });
-  document.getElementById('petClose').addEventListener('click', function (e) { e.stopPropagation(); closeBubble(); });
-  addEventListener('scroll', function () { if (open) place(); }, { passive: true });
-  addEventListener('resize', function () { pet.style.left = cx(parseFloat(pet.style.left) || 0) + 'px'; pet.style.top = cy(parseFloat(pet.style.top) || 0) + 'px'; if (open) place(); });
-  setTimeout(openBubble, 2600);
-  if (!REDUCE) roamTimer = setTimeout(roam, 12000);
-})();
-</script>
+<script defer src="app.js"></script>
 </body>
 </html>

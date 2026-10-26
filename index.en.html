@@ -9,7 +9,7 @@
 <!-- Generated from site.config.json by tools/gen_geo.py. Do not edit by hand. -->
 <!-- GEO:AUTO START -->
 <title>Grow Together · Age-staged parenting for 0-18: body, mind and money sense, with all data kept on your phone</title>
-<meta name="description" content="Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, one-time Pro.">
+<meta name="description" content="Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, lifetime or subscription Pro.">
 <meta name="keywords" content="养好娃, 育儿 App, 分龄养育, 儿童成长记录, 生长曲线, 疫苗提醒, 财商教育, 亲子互动, 性格成长模拟器, 家庭教育, 本地存储 隐私, 一次买断, yanghaowa, parenting app, child growth tracker, local-first, bring your own key">
 <link rel="canonical" href="https://ai-chen2050.github.io/yanghaowa/index.en.html">
 <link rel="alternate" hreflang="zh-CN" href="https://ai-chen2050.github.io/yanghaowa/index.html">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://ai-chen2050.github.io/yanghaowa/index.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Grow Together · Age-staged parenting for 0-18: body, mind and money sense, with all data kept on your phone">
-<meta property="og:description" content="Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, one-time Pro.">
+<meta property="og:description" content="Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, lifetime or subscription Pro.">
 <meta property="og:url" content="https://ai-chen2050.github.io/yanghaowa/index.en.html">
 <meta property="og:image" content="https://ai-chen2050.github.io/yanghaowa/icon.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
       "@type": "SoftwareApplication",
       "@id": "https://ai-chen2050.github.io/yanghaowa/#product",
       "name": "Grow Together",
-      "description": "Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free; Pro is a one-time purchase that unlocks everything for life.",
+      "description": "Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free forever; Pro unlocks everything via a one-time lifetime purchase or flexible yearly and monthly subscriptions.",
       "url": "https://ai-chen2050.github.io/yanghaowa/",
       "alternateName": [
         "yanghaowa",
@@ -86,7 +86,7 @@
           "name": "Is it paid? How does pricing work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The download is free and the basics work: profiles, age-staged content, one-tap logging and reminders. Advanced features are unlocked by Pro, a one-time purchase that lasts for life, with no subscription and no ads. Topic skill packs are small separate one-time purchases that make the assistant sharper on that topic; they are not part of Pro and do not include model costs. Prices are shown in your local store, and \"Restore purchases\" brings everything back on a new phone."
+            "text": "Downloading is free and core features work forever with zero ads: child profile, age-staged content, one-tap logging, reminders, local snapshots and plain JSON export. Advanced features (unlimited child profiles, unlimited memory wall, unlimited sealed time capsules, half-year comparison reports, full-history trends, iCloud private sync and encrypted .yhw backup) are unlocked by Pro with two flexible options: a one-time $27.99 (¥188) lifetime purchase (¥69 one-time on Huawei AppGallery), or a $24.99/year (¥168/yr, saving 22%) or $2.99/month (¥18/mo) auto-renewable subscription that you can cancel anytime in system settings. Six topic skill packs ($0.99 / ¥6 each, one-time) make Wenwen sharper on specific topics; they are separate from Pro and exclude model API costs. Tap \"Restore purchases\" on a new phone to bring everything back."
           }
         },
         {
@@ -201,13 +201,14 @@
 <div class="scroll-prog" id="prog"></div>
 
 <nav><div class="wrap">
-  <a class="brand" href="index.en.html"><img src="logo.png" alt="Grow Together"> Grow Together</a>
+  <a class="brand" href="index.en.html"><img src="logo.png" alt="Grow Together"> Grow Together <span class="ver-pill">v1.1.0</span></a>
   <span class="spacer"></span>
   <a href="#lines" class="hide-sm">Three threads</a>
   <a href="#video" class="hide-sm">Film</a>
   <a href="#sandbox" class="hide-sm">Sandboxes</a>
   <a href="#features" class="hide-sm">Features</a>
-  <a href="#wenwen" class="hide-sm">Wenwen</a>
+  <a href="#shots" class="hide-sm">Screenshots</a>
+  <a href="#compare" class="hide-sm">Compare</a>
   <a href="#pricing" class="hide-sm">Pricing</a>
   <a href="geo.en.html" class="hide-sm">FAQ</a>
   <a href="devlog.html" class="hide-sm">Devlog</a>
@@ -217,6 +218,7 @@
 </div></nav>
 
 <header class="hero" id="hero">
+  <canvas id="heroCanvas"></canvas>
   <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
   <div class="dots"></div><div class="spotlight" id="spot"></div>
   <div class="floaters" aria-hidden="true">
@@ -233,31 +235,43 @@
       Log the day in a tap, read a stage report, and talk a question through with Wenwen. No account, no server: every record stays on your own phone.</p>
     <div class="cta-row" id="download">
       <a class="store-btn" href="https://apps.apple.com/app/id6810539038" id="dl-appstore" target="_blank" rel="noopener"><span class="ic"><svg width="22" height="22" viewBox="0 0 170 170" fill="currentColor" aria-hidden="true"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12-14.44-6-9.19-10.74-20.08-14.22-32.66-3.48-12.58-5.22-24.16-5.22-34.73 0-16.1 4.11-29.47 12.33-40.11 8.22-10.65 18.57-16.08 31.05-16.32 5.09 0 10.73 1.35 16.92 4.05 6.18 2.7 10.23 4.12 12.14 4.25 1.57-.13 5.76-1.58 12.58-4.35 6.81-2.77 12.63-4.05 17.46-3.85 13.55.67 24.32 5.75 32.32 15.24-11.4 6.88-16.96 16.48-16.69 28.79.27 10.15 4.35 18.59 12.24 25.32 7.89 6.73 17.13 10.45 27.71 11.16-2.22 6.8-4.88 13.62-7.98 20.46zM119.22 31.84c0-7.72 2.76-14.88 8.28-21.49 5.53-6.61 12.43-10.35 20.7-11.23.13 1.07.2 2.07.2 3.01 0 7.72-2.86 15.02-8.58 21.91-5.73 6.89-12.83 10.67-21.3 11.34-.26-1.19-.39-2.37-.39-3.54z"/></svg></span><span class="t"><small>Available now</small><b>App Store</b></span></a>
-      <a class="store-btn alt" href="https://appgallery.huawei.com/app/C118942261" id="dl-huawei" target="_blank" rel="noopener"><span class="ic">📱</span><span class="t"><small>Available now</small><b>Huawei AppGallery</b></span></a>
+      <a class="store-btn alt" href="https://appgallery.huawei.com/app/C118942261" id="dl-huawei" target="_blank" rel="noopener"><span class="ic"><svg class="hw-mark" width="22" height="22" viewBox="0 0 100 100" fill="none"><g fill="#E41F13"><path d="M50 16c2.8 4.2 4.6 9.8 4.6 16 0 9.8-4.6 18-4.6 18s-4.6-8.2-4.6-18c0-6.2 1.8-11.8 4.6-16z"/><path d="M68 23.5c4.8 1.5 9.8 4.8 13.8 9.5 6.3 7.5 7.6 17 7.6 17s-9-2.5-16.5-8.8c-4.8-4-8-9-8.9-13.8-.7-1.4 1.7-2.9 4-3.9z"/><path d="M80 43.5c4.8-1.5 10.6.2 15.5 3.5 7.8 5.2 11.5 13.8 11.5 13.8s-8.8 3-17 0c-5.2-1.9-9.5-5.2-12.4-8.8-1.2-1.5-.4-7 2.4-8.5z" transform="scale(0.85) translate(8, 8)"/></g></svg></span><span class="t"><small>Available now</small><b>Huawei AppGallery</b></span></a>
       <a class="store-btn alt" href="#video" id="heroWatchBtn"><span class="ic">🎬</span><span class="t"><small>Watch Film</small><b>78s Product Tour</b></span></a>
     </div>
-    <p class="store-note">The iOS edition is available on the App Store; the Huawei edition ships without AI features as the channel requires, everything else is identical.</p>
-    <p class="trust">No account · No ads · No server · Free core · One-time Pro</p>
+    <div class="trust-strip">
+      <span class="trust-pill">🛡️ <b>Local-First</b> Zero cloud servers</span>
+      <span class="trust-pill">👶 <b>0-18 Full Lifespan</b> Age-staged gating</span>
+      <span class="trust-pill">👑 <b>Pro Lifetime</b> or flexible yearly/monthly</span>
+      <span class="trust-pill">🤖 <b>Bring Your Own Key</b> Pre-send itemised card</span>
+      <span class="trust-pill">📱 <b>Optimised for iPhone Duo</b> 3D dual-screen fold</span>
+    </div>
 
-    <div class="stage reveal">
-      <div class="phone" aria-label="Home card mock-up">
-        <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>Mia</b><small>5 y 6 m · Preschool</small></div></div>
-        <div class="ph-card">
-          <div class="ttl">Log today</div>
-          <div class="hint">The few things that actually changed today, one tap each</div>
-          <div class="ph-row"><div class="l"><b>Time outdoors</b><small>45 min · goal 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-          <div class="ph-row"><div class="l"><b>Fun screen time</b><small>30 min · limit 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-          <div class="ph-row"><div class="l"><b>Build a block bridge together</b><small>This week 2 / 4</small></div><div class="ph-check">✓</div></div>
-          <div class="ph-row"><div class="l"><b>Brushing</b><small>6-day streak</small></div><div class="ph-slot"><i class="on">✓ Morning</i><i>Night</i></div></div>
-          <div class="ph-row" style="display:block"><div class="l" style="margin-bottom:8px"><b>Today's mood</b></div>
-            <div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
-          <div class="ph-chips"><span>Height</span><span>Eyesight</span><span>Reminders</span><span>A moment</span><span>Expense</span><span>Wish goal</span></div>
-        </div>
+    <!-- Hero Showcase with iPhone Duo and Phone -->
+    <div class="hero-showcase reveal">
+      <div class="hero-duo-card" data-shot="shots/s-duo-home.jpg" data-cap="iPhone Duo Unfolded 8.1-inch · Left 3D living room + Right daily journal">
+        <span class="hero-duo-badge">📖 Native iPhone Duo Unfolded 8.1" · 3D Panorama</span>
+        <img src="shots/s-duo-home.jpg" alt="iPhone Duo unfolded dual-screen interface" loading="eager" fetchpriority="high">
       </div>
-      <div class="mascot">
-        <div class="speech">How was Mia's day? Tap me to log it</div>
-        <img class="idle" src="wenwen_idle.png" alt="Wenwen, the little orange in Grow Together">
-        <img class="happy" src="wenwen_happy.png" alt="">
+      <div class="hero-right-col">
+        <div class="phone" aria-label="Home card mock-up">
+          <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>Mia</b><small>5 y 6 m · Preschool</small></div></div>
+          <div class="ph-card">
+            <div class="ttl">Log today</div>
+            <div class="hint">The few things that actually changed today, one tap each</div>
+            <div class="ph-row"><div class="l"><b>Time outdoors</b><small>45 min · goal 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+            <div class="ph-row"><div class="l"><b>Fun screen time</b><small>30 min · limit 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+            <div class="ph-row"><div class="l"><b>Build a block bridge together</b><small>This week 2 / 4</small></div><div class="ph-check">✓</div></div>
+            <div class="ph-row"><div class="l"><b>Brushing</b><small>6-day streak</small></div><div class="ph-slot"><i class="on">✓ Morning</i><i class="on">Night</i></div></div>
+            <div class="ph-row" style="display:block"><div class="l" style="margin-bottom:8px"><b>Today's mood</b></div>
+              <div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+            <div class="ph-chips"><span>Height</span><span>Eyesight</span><span>Reminders</span><span>A moment</span><span>Expense</span><span>Wish goal</span></div>
+          </div>
+        </div>
+        <div class="mascot">
+          <div class="speech">How was Mia's day? Tap me to log it～</div>
+          <img class="idle" src="wenwen_idle.png" alt="Wenwen, the little orange in Grow Together">
+          <img class="happy" src="wenwen_happy.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -290,7 +304,7 @@
         <button class="chapter-pill active" type="button" data-seek="0"><time>00:00</time><span>Ages 0-18 Staged</span></button>
         <button class="chapter-pill" type="button" data-seek="10"><time>00:10</time><span>iPhone Duo Unfolded</span></button>
         <button class="chapter-pill" type="button" data-seek="20"><time>00:20</time><span>Body · Mind · Money</span></button>
-        <button class="chapter-pill" type="button" data-seek="30"><time>00:30</time><span>Wenwen AI & BYOK</span></button>
+        <button class="chapter-pill" type="button" data-seek="30"><time>00:30</time><span>Wenwen AI &amp; BYOK</span></button>
         <button class="chapter-pill" type="button" data-seek="40"><time>00:40</time><span>Polaroid Memory Wall</span></button>
         <button class="chapter-pill" type="button" data-seek="50"><time>00:50</time><span>Time Capsule Letter</span></button>
         <button class="chapter-pill" type="button" data-seek="60.5"><time>01:00</time><span>Zero-Cloud Local Privacy</span></button>
@@ -304,92 +318,154 @@
 <section id="sandbox" class="playground-sec" style="background:var(--bg2)">
   <div class="wrap">
     <div class="sec-head" style="text-align:center;margin-bottom:36px;">
-      <span class="kicker">Interactive Sandboxes · Hands-On Exploration</span>
-      <h2 class="sec-title" style="margin:10px 0 8px;">Explore Grow Together's Three Core Consoles</h2>
-      <p class="sec-sub">0-18 age-band switcher, iPhone Duo dual-screen simulator, and sealed time capsule letter</p>
+      <span class="kicker">Interactive Sandboxes · Live Demos</span>
+      <h2 class="sec-title" style="margin:10px 0 8px;">Experience Grow Together's 3 Core Workbenches</h2>
+      <p class="sec-sub">0-18 age-band switching, 9-axis personality radar, iPhone Duo 3D living room, and polaroid time capsules</p>
     </div>
 
-    <!-- Sandbox 1: Age-Band Life Cycle Console -->
+    <!-- Sandbox 01: 0-18 Age-Band Life Cycle & 9-Axis Radar Console -->
     <div class="pg-shell" style="margin-bottom: 48px;">
       <div class="pg-window">
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
-          <span>Sandbox 01 · 0-18 Age-Band Life Cycle Console</span>
-          <span>Panels unfold dynamically by age</span>
+          <span>Sandbox 01 · 0-18 Age-Band Life Cycle &amp; 9-Axis Personality Radar</span>
+          <span>Dynamic age gating + Developmental psychology trends</span>
         </div>
         <div class="pg-body">
           <div class="stage-nav-tabs">
-            <button class="stage-tab-btn" data-stage="0-1">👶 0-1 Yrs Infant Routine</button>
-            <button class="stage-tab-btn" data-stage="1-3">🧒 1-3 Yrs Toddler Autonomy</button>
-            <button class="stage-tab-btn active" data-stage="3-6">👧 3-6 Yrs Preschool & EQ</button>
-            <button class="stage-tab-btn" data-stage="6-18">🧑‍🎓 6-18 Yrs School & Money</button>
+            <button class="stage-tab-btn" data-stage="0-1">👶 0-1 yrs Infant</button>
+            <button class="stage-tab-btn" data-stage="1-3">🧒 1-3 yrs Toddler</button>
+            <button class="stage-tab-btn active" data-stage="3-6">👧 3-6 yrs Preschool</button>
+            <button class="stage-tab-btn" data-stage="6-18">🧑‍🎓 6-18 yrs School &amp; Teen</button>
           </div>
           <div id="stageSandboxView"></div>
+
+          <!-- 9-Axis Personality Radar Console -->
+          <div class="radar-console-box">
+            <div class="radar-console-left">
+              <span class="eyebrow" style="font-size:12px;padding:4px 10px;">🧠 Emotional Growth Core Engine · Personality Simulator</span>
+              <h4 style="font-size:17px;font-weight:900;color:var(--ink);margin:10px 0 4px;">Parenting Style ↔ 9-Axis Personality Radar Morphing</h4>
+              <p style="font-size:13px;color:var(--sub);line-height:1.55;">Drag parenting style sliders to watch the radar adapt in real-time. Baseline pre-fills from parenting quiz; dots come from home logs (trends, never scores).</p>
+              <div class="radar-presets">
+                <button class="preset-chip active" data-preset="authoritative">🌟 Warm &amp; Firm · Authoritative</button>
+                <button class="preset-chip" data-preset="gentle">🌱 High Empathy · Nurturing</button>
+                <button class="preset-chip" data-preset="autonomy">🚀 Autonomous · Exploratory</button>
+                <button class="preset-chip" data-preset="strict">⚡ High Discipline · Strict</button>
+              </div>
+              <div class="radar-sliders-mini">
+                <div class="slider-pill"><span>Strictness</span><b id="sv1">65%</b></div>
+                <div class="slider-pill"><span>Responsiveness</span><b id="sv2">88%</b></div>
+                <div class="slider-pill"><span>Expectations</span><b id="sv3">75%</b></div>
+                <div class="slider-pill"><span>Control</span><b id="sv4">35%</b></div>
+                <div class="slider-pill"><span>Material reward</span><b id="sv5">60%</b></div>
+                <div class="slider-pill"><span>Clear rules</span><b id="sv6">85%</b></div>
+              </div>
+              <div class="radar-verdict" id="simRadarVerdict">【Warm &amp; Firm · Authoritative】High responsiveness + clear boundaries: All 9 personality facets balance healthily, boosting confidence, empathy, resilience and delayed gratification.</div>
+            </div>
+            <div class="radar-svg-stage">
+              <svg viewBox="0 0 200 200" style="width:100%;max-width:240px;height:auto;display:inline-block;" aria-label="9-axis personality radar chart">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <circle cx="100" cy="100" r="55" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <circle cx="100" cy="100" r="30" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <polygon points="100,20 156,44 178,96 156,148 124,176 76,176 44,148 22,96 44,44" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <!-- Dynamic morphing polygon -->
+                <polygon id="simRadarPolygon" points="100,26 146,42 168,84 152,130 124,158 76,158 46,128 34,84 56,42" fill="rgba(255,138,91,0.32)" stroke="var(--brand)" stroke-width="2.5" stroke-linejoin="round"/>
+                <!-- Reference dots from home logging -->
+                <circle cx="100" cy="32" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="148" cy="46" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="162" cy="88" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="120" cy="154" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="50" cy="122" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="60" cy="48" r="3.5" fill="var(--mint-deep)"/>
+                <!-- 9 axis labels -->
+                <text x="100" y="14" font-size="8" fill="var(--ink)" text-anchor="middle" font-weight="700">Confidence</text>
+                <text x="162" y="38" font-size="8" fill="var(--ink)" text-anchor="middle">Empathy</text>
+                <text x="188" y="99" font-size="8" fill="var(--ink)" text-anchor="middle">Independence</text>
+                <text x="166" y="156" font-size="8" fill="var(--ink)" text-anchor="middle">Stability</text>
+                <text x="130" y="190" font-size="8" fill="var(--ink)" text-anchor="middle">Social skills</text>
+                <text x="70" y="190" font-size="8" fill="var(--ink)" text-anchor="middle">Resilience</text>
+                <text x="34" y="156" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">Prudence</text>
+                <text x="14" y="99" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">Delay</text>
+                <text x="36" y="38" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">Money duty</text>
+              </svg>
+              <div style="font-size:11px;color:var(--sub);margin-top:6px;display:flex;justify-content:center;gap:12px;">
+                <span><i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--brand);vertical-align:middle;"></i> Simulated trend</span>
+                <span><i style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mint-deep);vertical-align:middle;"></i> Practised at home</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Sandbox 2: iPhone Duo 3D Simulator -->
+    <!-- Sandbox 02: iPhone Duo 3D Dual-Screen Foldable Living Room & Journal Simulator -->
     <div class="pg-shell" style="margin-bottom: 48px;">
       <div class="pg-window">
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
-          <span>Sandbox 02 · iPhone Duo 3D Dual-Screen Simulator</span>
-          <span>8.1" Unfolded Workspace vs 5.4" Outer Screen</span>
+          <span>Sandbox 02 · iPhone Duo 3D Living Room &amp; Dual-Screen Journal Workbench</span>
+          <span>Click left screen hotspots · Right screen responds in real time</span>
         </div>
         <div class="pg-body">
           <div class="duo-mode-switch">
-            <button class="duo-mode-btn active" data-mode="unfolded">📖 Unfolded Dual Screen (8.1" 3D Living Room + Journal)</button>
-            <button class="duo-mode-btn" data-mode="folded">📱 Folded Outer Screen (5.4" One-Tap Logging)</button>
+            <button class="duo-mode-btn active" data-mode="unfolded">📖 Unfolded 8.1" Dual Screen (3D Living Room + Parenting Journal)</button>
+            <button class="duo-mode-btn" data-mode="folded">📱 Folded 5.4" Outer Screen (Single-Hand Quick Log)</button>
           </div>
           <div class="duo-stage-box" id="duoInteractiveStage" data-duo-mode="unfolded">
             <!-- Unfolded View -->
             <div class="duo-device-outer duo-unfolded-view">
               <div class="duo-screen duo-screen-left">
-                <div class="duo-living-room">
-                  <span class="living-tag">🏠 3D Virtual Living Room</span>
-                  <div class="living-mascot-spot">
-                    <img src="wenwen_happy.png" alt="Wenwen in living room">
-                    <br>
-                    <span class="living-bubble">🍊 Welcome home! Did Mia remember to drink water today?</span>
-                  </div>
-                  <div style="font-size:11px;color:var(--sub);text-align:center;">Persistent 3D Space · Lighting follows real daylight</div>
+                <div class="duo-living-art">
+                  <img class="room-bg" src="assets/living-room-3d.jpg" alt="3D panoramic family living room artwork" loading="lazy">
+                  <!-- Clickable hotspots -->
+                  <button class="room-hotspot hs-wall active" data-hs="wall">🖼️ Memory Wall</button>
+                  <button class="room-hotspot hs-mail" data-hs="mail">💌 Time Mailbox</button>
+                  <button class="room-hotspot hs-mascot" data-hs="mascot">🍊 Wenwen &amp; Mia</button>
+                  <button class="room-hotspot hs-book" data-hs="book">📖 Growth Journal</button>
+                  <div class="room-foot-banner">👇 Click any hotspot in the room to reveal details on the right screen</div>
                 </div>
               </div>
               <div class="duo-hinge-seam"></div>
               <div class="duo-screen duo-screen-right">
                 <div class="duo-journal-pane">
                   <div class="journal-header">
-                    <strong>Mia's Growth Journal</strong>
-                    <small>Dual-Screen Split Panes</small>
+                    <strong id="duoRightTitle">🖼️ Mia's Memory Wall · Dual-Screen Sync</strong>
+                    <small id="duoRightSub">Click left screen photo frames to interact · Export albums</small>
                   </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">Outdoors Today</span><span class="metric-badge">45/120m</span></div>
-                    <div class="metric-val" style="font-size:16px;">🌱 Riverside Cycling 45 mins</div>
-                  </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">9-Axis Radar Log</span><span class="metric-badge">Curiosity +1</span></div>
-                    <div class="metric-val" style="font-size:16px;">🎯 Observing Autumn Leaf Veins</div>
-                  </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">Wenwen Parenting Note</span><span class="metric-badge">Local</span></div>
-                    <div style="font-size:12px;color:var(--sub);">Explored: "How to stay calm and mirror emotions during tantrums"</div>
+                  <div id="duoRightBody">
+                    <div class="ph-card" style="margin:0">
+                      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                        <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px">
+                          <img src="assets/memory-bike.jpg" alt="" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin-bottom:6px">
+                          <b style="font-size:12.5px;display:block">First ride without training wheels</b>
+                          <small style="font-size:11px;color:var(--sub)">Apr 2026 · 5 y 2 m</small>
+                        </div>
+                        <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px">
+                          <img src="assets/memory-grad.jpg" alt="" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin-bottom:6px">
+                          <b style="font-size:12.5px;display:block">First drawing framed on the wall</b>
+                          <small style="font-size:11px;color:var(--sub)">Sep 2026 · Sunflower garden</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rowcard"><span class="k" style="background:var(--brand-soft)">✨</span><div><b>Living room frames rotate automatically</b><small>Pro unlocks unlimited photos &amp; PDF memory album export</small></div></div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Folded Outer View -->
+            <!-- Folded Outer Screen View -->
             <div class="duo-device-outer duo-folded-view">
               <div class="duo-outer-screen">
-                <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>Mia</b><small>Outer Screen Mode</small></div></div>
+                <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>Mia</b><small>5.4" Outer screen quick log</small></div></div>
                 <div class="ph-card" style="margin:0;box-shadow:none;border:none;background:transparent;padding:0;">
-                  <div class="ttl">Log today in a tap</div>
-                  <div class="ph-row"><div class="l"><b>Outdoors</b><small>45 mins</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-                  <div class="ph-row"><div class="l"><b>Screen Time</b><small>30 mins</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-                  <div class="ph-row"><div class="l"><b>Today's Mood</b></div><div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+                  <div class="ttl">Log today</div>
+                  <div class="ph-row"><div class="l"><b>Outdoors</b><small>45 min · goal 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>Screen</b><small>30 min · limit 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>Today's mood</b></div><div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
                 </div>
-                <div style="margin-top:auto;text-align:center;font-size:11px;color:var(--sub);">Single Hand Quick Log · Unfold to Enter Living Room</div>
+                <div style="margin-top:auto;text-align:center;font-size:11.5px;color:var(--sub);background:var(--card);padding:8px;border-radius:12px;border:1px solid var(--line);">
+                  One-handed quick logging · Unfold anytime for 3D living room
+                </div>
               </div>
             </div>
           </div>
@@ -397,62 +473,62 @@
       </div>
     </div>
 
-    <!-- Sandbox 3: Polaroid Memory & Sealed Time Capsule -->
+    <!-- Sandbox 03: Polaroid Time Capsule & Letter to the Future -->
     <div class="pg-shell">
       <div class="pg-window">
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
-          <span>Sandbox 03 · Polaroid Memory & Time Capsule Keepsake</span>
-          <span>Flip to view sealed letter</span>
+          <span>Sandbox 03 · Polaroid Time Capsule &amp; Sealed Letters</span>
+          <span>Curated milestone photography · Flip to read wax-sealed letter</span>
         </div>
         <div class="pg-body">
           <div class="polaroid-sandbox-grid">
             <div class="polaroid-pick-list">
               <div class="polaroid-choice active" data-memory="bike">
-                <strong>🚴 First Time Riding Two Wheels</strong>
-                <span>Age 5y 2m · Ditching training wheels with brave smiles</span>
+                <strong>🚴 First Ride Across the Bridge</strong>
+                <span>5 y 2 m · Removing training wheels · Riverside Park</span>
               </div>
               <div class="polaroid-choice" data-memory="grad">
-                <strong>🎓 Kindergarten Graduation Ceremony</strong>
-                <span>Age 6y 0m · Aspiring astronaut who paints stars</span>
+                <strong>🎓 Kindergarten Sunflower Graduation</strong>
+                <span>6 y 0 m · Dreaming of painting stars · Preschool yard</span>
               </div>
               <div class="polaroid-choice" data-memory="leaf">
-                <strong>🍂 First Golden Autumn Leaf Picked</strong>
-                <span>Age 4y 8m · Golden fan gifted by nature</span>
+                <strong>🍂 First Golden Ginkgo Leaf of Autumn</strong>
+                <span>4 y 8 m · Nature's golden fan for little squirrels</span>
               </div>
             </div>
 
             <div class="capsule-interactive-stage">
               <div class="capsule-card-wrap" id="capsuleCardWrap">
-                <!-- Front: Polaroid Frame -->
+                <!-- Front: Polaroid Photo Frame with real photography -->
                 <div class="capsule-front" id="polaroidFrame">
                   <div class="polaroid-tape"></div>
                   <div class="polaroid-photo-frame">
-                    <img src="wenwen_happy.png" alt="Precious childhood moment">
+                    <img id="polaroidImg" src="assets/memory-bike.jpg" alt="Childhood milestone photo">
                   </div>
                   <div class="polaroid-words">
-                    <h4 id="polaroidCaption">First Time Riding Two Wheels</h4>
-                    <p id="polaroidDate">Age 5y 2m · Park Sunshine · Spring 2026</p>
+                    <h4 id="polaroidCaption">First Ride Across the Bridge</h4>
+                    <p id="polaroidDate">5 y 2 m · Riverside Park · Spring 2026</p>
                   </div>
                 </div>
 
-                <!-- Back: Time Capsule Letter -->
+                <!-- Back: Sealed Letter to the Future -->
                 <div class="capsule-back">
                   <div class="capsule-letter-head">
                     <span>💌 Sealed Time Capsule Letter</span>
-                    <span class="capsule-wax-seal">★</span>
+                    <span class="capsule-wax-seal">SEAL</span>
                   </div>
                   <div class="capsule-letter-body" id="capsuleLetterText">
-                    Dear Mia: Today you finally ditched the training wheels. You wobbled, fell once, scraped your knee, but immediately brushed off the dust and looked back at us grinning with sparkling eyes. We cried with joy. Remember this courage!
+                    Dear Mia: Today you finally rode without training wheels. You wobbled for several metres before tumbling down, but you jumped right back up, dusted off your knees, and smiled at us covered in sweat. Our eyes welled with tears. May you always keep that courage to take off the training wheels of life.
                   </div>
                   <div class="capsule-letter-foot">
-                    <span>Written in child's 5th spring · Local AES-256</span>
+                    <span>Written in child's 5th spring · Local AES-256 encrypted</span>
                     <span>Opens automatically on 18th birthday</span>
                   </div>
                 </div>
               </div>
 
-              <button class="flip-ctrl-btn" type="button" id="flipLetterBtn">✉️ Open Time Capsule Letter</button>
+              <button class="flip-ctrl-btn" type="button" id="flipLetterBtn">✉️ Flip to Read Sealed Time Letter</button>
             </div>
           </div>
         </div>
@@ -462,35 +538,56 @@
   </div>
 </section>
 
+<!-- Three Threads Section (#lines) -->
 <section id="lines"><div class="wrap">
   <h2 class="sec-title reveal">Three threads that grow with the child</h2>
-  <p class="sec-sub reveal">No pocket money at age one, no brushing check-ins for a teenager. When a birthday moves the child into a new band, the whole app changes together.</p>
+  <p class="sec-sub reveal">A one-year-old never sees pocket money; a teenager never sees tooth-brushing check-ins. On their birthday, the whole app transforms for the new stage.</p>
   <div class="lines">
-    <div class="line mint reveal" style="--i:0"><span class="em">🌿</span><h3>Physical health</h3>
-      <ul><li>Growth curves against national percentiles</li><li>Vaccines scheduled from the birthday, with reminders</li><li>Vision, teeth, outdoor and screen time logs</li></ul>
-      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
-    <div class="line blue reveal" style="--i:1"><span class="em">💙</span><h3>Emotional growth</h3>
-      <ul><li>Main tasks and a theme for every stage</li><li>Parenting-style quiz, child temperament observation</li><li>Family activities, challenges and a memory wall</li></ul>
-      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
-    <div class="line brand reveal" style="--i:2"><span class="em">🐷</span><h3>Money sense</h3>
-      <ul><li>Ages 0-3: household spending and growth investment only</li><li>From 3: growth fund, wish savings, chores and rewards</li><li>A small family business game to make money make sense</li></ul>
-      <div class="ages"><span style="opacity:.45">0-1</span><span style="opacity:.45">1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
+    <div class="line mint reveal" style="--i:0">
+      <div class="line-art">
+        <img src="assets/pillar-health.jpg" alt="Physical health 3D concept artwork" loading="lazy">
+        <span class="line-art-tag">WHO Growth Charts · Vaccines</span>
+      </div>
+      <span class="em">🌿</span><h3>Physical health</h3>
+      <ul><li>Growth curves against domestic and WHO percentiles (P3/P50/P97)</li><li>Vaccines calculated from birthday with exact alarm notifications</li><li>Hyperopia reserve tracking, cavity prevention, outdoor &amp; screen gating</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
+    <div class="line blue reveal" style="--i:1">
+      <div class="line-art">
+        <img src="assets/pillar-mind.jpg" alt="Emotional growth 3D concept artwork" loading="lazy">
+        <span class="line-art-tag">Developmental Psychology · 9-Axis</span>
+      </div>
+      <span class="em">💙</span><h3>Emotional growth</h3>
+      <ul><li>Stage themes, sensitive developmental windows, and emotional IQ</li><li>Parenting quiz pre-fills; 9-axis personality radar morphs in real time</li><li>Weekly family challenges, habit streaks, and unlimited memory walls</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
+    <div class="line brand reveal" style="--i:2">
+      <div class="line-art">
+        <img src="assets/pillar-money.jpg" alt="Money sense 3D concept artwork" loading="lazy">
+        <span class="line-art-tag">Growth Fund · Wish Savings</span>
+      </div>
+      <span class="em">🐷</span><h3>Money sense</h3>
+      <ul><li>Ages 0-3 only track parenting costs; age 3 unlocks the child's growth fund</li><li>Wish jars, tiered savings, and distinguishing "needs" from "wants"</li><li>Household duties vs earned rewards, mini family ventures &amp; financial ethics</li></ul>
+      <div class="ages"><span style="opacity:.45">0-1</span><span style="opacity:.45">1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
   </div>
 </div></section>
 
+<!-- Features Section (#features) -->
 <section id="features" style="background:var(--bg2)"><div class="wrap">
-  <h2 class="sec-title reveal">Six things that make parenting feel more grounded</h2>
-  <p class="sec-sub reveal">Everything serves one loop: profile → age-staged content and logs → stage report → AI discussion.</p>
+  <h2 class="sec-title reveal">Six things that bring peace of mind</h2>
+  <p class="sec-sub reveal">Each built around the same complete loop: Profile → Age-staged logs → Stage reports → AI exploration. (Tap any card to preview real screenshot)</p>
   <div class="grid">
-    <div class="feat reveal" style="--i:0"><div class="ic">📅</div><h3>Unfolds by age band</h3><p>Content is split into 0-1, 1-3, 3-6, 6-12 and 12-18, gated by a single stage map. Compiled from Chinese paediatric and developmental-psychology standards.</p></div>
-    <div class="feat reveal" style="--i:1"><div class="ic">✍️</div><h3>Log today in one tap</h3><p>Outdoors, screen time, the family activity, brushing and mood on one card, with no streak pressure. Anything that needs a form opens in one step.</p></div>
-    <div class="feat reveal" style="--i:2"><div class="ic">🎛️</div><h3>Personality growth simulator</h3><p>Six parenting sliders, a nine-axis radar that updates in the same frame. Starts from your own quiz, with dots from your real logs beside it.</p></div>
-    <div class="feat reveal" style="--i:3"><div class="ic">🍊</div><h3>Wenwen, on your own AI key</h3><p>Asks about today's mood, surfaces reminders and talks parenting through with you. Only the age band and allowed summaries are sent, and you see the list first.</p></div>
-    <div class="feat reveal" style="--i:4"><div class="ic">⏰</div><h3>Reminders and family challenges</h3><p>Water and medicine ring on time; vaccines follow the birthday. Eye care, early bedtime and daily praise challenges run side by side with checklists.</p></div>
-    <div class="feat reveal" style="--i:5"><div class="ic">🔐</div><h3>Your data stays yours</h3><p>A local snapshot every day, encrypted exports, and on iOS your own iCloud. Merge on import without duplicating a child; overwrite can be undone.</p></div>
+    <div class="feat reveal" style="--i:0" data-shot="shots/s-home.jpg" data-cap="Home Screen · Today's Quick Log &amp; Age-Staged Tasks"><div class="ic">📅</div><h3>Unfolds by age</h3><p>Content is partitioned into 0-1, 1-3, 3-6, 6-12, and 12-18. A unified stage matrix decides what appears, based on paediatric and developmental guidelines.</p><span class="more">View real screenshot →</span></div>
+    <div class="feat reveal" style="--i:1" data-shot="shots/s-home.jpg" data-cap="Home Screen · One-tap logging for outdoors, screen, and moods"><div class="ic">✍️</div><h3>Log today in a tap</h3><p>Outdoors, screen time, family activities, brushing, and today's mood all sit on one card. Tap to log without perfectionist pressure.</p><span class="more">View real screenshot →</span></div>
+    <div class="feat reveal" style="--i:2" data-shot="shots/s-interests.jpg" data-cap="Emotional Growth · 8-Ray Spark Map &amp; Personality Observations"><div class="ic">🎛️</div><h3>Personality simulator</h3><p>Drag six parenting sliders and watch the nine-axis radar update simultaneously. Starts from your parenting quiz, layered with dots from real family logs.</p><span class="more">View real screenshot →</span></div>
+    <div class="feat reveal" style="--i:3" data-shot="shots/s-report.jpg" data-cap="Stage Reports · Six Months of Mia: Visible Growth &amp; Delay of Gratification"><div class="ic">🍊</div><h3>Wenwen on your own key</h3><p>Asks how the day went, reminds you on time, and discusses parenting questions. Sends only age bands and trend summaries with itemised preview.</p><span class="more">View real screenshot →</span></div>
+    <div class="feat reveal" style="--i:4" data-shot="shots/s-growth.jpg" data-cap="Physical Health · WHO Growth Curves &amp; Health Records"><div class="ic">⏰</div><h3>Reminders &amp; challenges</h3><p>Water and medicine alerts ring on schedule; vaccines sequence from birthday. Eye-care, sleep, and praise challenges run side-by-side.</p><span class="more">View real screenshot →</span></div>
+    <div class="feat reveal" style="--i:5" data-shot="shots/s-privacy.jpg" data-cap="Data &amp; Privacy · Your child's records stay solely on your phone"><div class="ic">🔐</div><h3>Your data is yours</h3><p>Automatic daily SQLite snapshots, encrypted export, and private iCloud support on iOS. Merge import never duplicates profiles; overwrites can be undone.</p><span class="more">View real screenshot →</span></div>
   </div>
 </div></section>
 
+<!-- Wenwen Assistant Section (#wenwen) -->
 <section id="wenwen" class="wenwen"><div class="wrap">
   <h2 class="sec-title reveal">Meet Wenwen, a little orange that peeks out</h2>
   <p class="sec-sub reveal">It lives in a corner of the screen. It asks about today's mood if none is logged, shows a reminder above its head when one is due, and hides in its pouch if you poke it three times. Tap it to talk parenting; the model runs on your own key.</p>
@@ -510,6 +607,7 @@
   <div class="pills reveal"><span class="pill">🔑 Your key, your quota</span><span class="pill">👀 Preview every line first</span><span class="pill">🎚️ Per-scope permissions</span><span class="pill">🚫 Names and birthdays never sent</span></div>
 </div></section>
 
+<!-- Skill Packs Section (#skills) -->
 <section id="skills"><div class="wrap">
   <h2 class="sec-title reveal">Give Wenwen a brain module</h2>
   <p class="sec-sub reveal">Skill packs are small one-time purchases by topic that make Wenwen sharper on that subject. The model is still your own key and data stays on the device. First topics rolling out.</p>
@@ -521,7 +619,7 @@
   <p class="note">Skill packs are parenting references, not medical or psychological advice. One-time purchase, yours for life, not part of Pro, model costs not included.</p>
 </section>
 
-<!-- 7-Axis Comparison Table (#compare) -->
+<!-- 7-Axis Comparison (#compare) -->
 <section id="compare" class="compare-sec"><div class="wrap">
   <div class="sec-head" style="text-align:center;margin-bottom:32px;">
     <span class="kicker">7-Axis Comparison · In-Depth Evaluation</span>
@@ -539,7 +637,7 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>Account & Storage</strong></td>
+          <td><strong>Account &amp; Storage</strong></td>
           <td><span class="badge-yes">✓ Local-First Zero-Cloud</span> No phone number required, all records stay strictly on your phone</td>
           <td><span class="badge-no">✕ Forced Registration</span> Uploaded to 3rd-party cloud servers with data leakage risks</td>
         </tr>
@@ -554,7 +652,7 @@
           <td><span class="badge-no">✕ Single Dimension</span> Merely height/weight logs or chore check-offs without EQ guidance</td>
         </tr>
         <tr>
-          <td><strong>AI Privacy & Control</strong></td>
+          <td><strong>AI Privacy &amp; Control</strong></td>
           <td><span class="badge-yes">✓ Bring Your Own Key (BYOK)</span> Transparent preview before requests; sensitive fields never sent</td>
           <td><span class="badge-no">✕ Black-Box Upload</span> Silently uploads family notes to train proprietary cloud models</td>
         </tr>
@@ -564,80 +662,241 @@
           <td><span class="badge-no">✕ Crude Single Stretched</span> No dual-screen optimizations, broken multi-tasking</td>
         </tr>
         <tr>
-          <td><strong>Export & Data Freedom</strong></td>
+          <td><strong>Export &amp; Data Freedom</strong></td>
           <td><span class="badge-yes">✓ Open JSON Backup</span> Plaintext or AES encryption, smart merge import without duplicates</td>
           <td><span class="badge-no">✕ Data Lock-In</span> Inability to export raw files, historical logs lost upon phone switch</td>
         </tr>
         <tr>
-          <td><strong>Pricing & Business Model</strong></td>
-          <td><span class="badge-yes">✓ One-Time Pro Purchase</span> Core features free for life; ¥128 lifetime Pro without recurring subscriptions</td>
-          <td><span class="badge-no">✕ Heavy Annual Subscription</span> Ongoing recurring fees; historical records locked if you cancel</td>
+          <td><strong>Commercial Model &amp; Pricing</strong></td>
+          <td><span class="badge-yes">✓ Lifetime or Flexible Subscription</span> Core features free forever; Pro offers <strong>.99 (¥188) lifetime purchase</strong> (Huawei AppGallery edition ¥69), or <strong>.99/year (~.08/mo, save 22%) / .99/month</strong> flexible subscription. Zero forced lock-in.</td>
+          <td><span class="badge-no">✕ Forced Expensive Lock-in</span> Hundreds of dollars every year; past records locked out immediately if subscription lapses.</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div></section>
 
+<!-- Commercial Pricing Matrix (#pricing) -->
 <section id="pricing" style="background:var(--bg2)"><div class="wrap">
-  <h2 class="sec-title reveal">One purchase, no subscription</h2>
-  <p class="sec-sub reveal">The core is free. Pro unlocks the advanced features once, for life. Skill packs are small separate one-time purchases.</p>
-  <div class="grid pricing">
-    <div class="card reveal" style="--i:0"><p class="tier">Free</p><div class="big">$0</div><h3>Genuinely usable</h3>
-      <p>Profiles, age-staged content, one-tap logging, reminders and the basic stage report. No time limit, no ads.</p></div>
-    <div class="card featured reveal" data-badge="Popular" style="--i:1"><p class="tier">Pro · one-time</p><div class="big">Pay once, forever</div><h3>Everything advanced</h3>
-      <p>Valid for life under the same store account; "Restore purchases" brings it back on a new phone. No subscription, no renewals, and later price changes never affect what you own. The exact list is on the in-app purchase page.</p></div>
-    <div class="card reveal" style="--i:2"><p class="tier">Skill packs</p><div class="big">Small, by topic</div><h3>Brain modules for Wenwen</h3>
-      <p>Separate one-time purchases that make the assistant sharper on that topic. Not part of Pro, model costs not included.</p></div>
+  <div class="sec-head" style="text-align:center;margin-bottom:24px;">
+    <span class="kicker">Transparent Commercial Pricing · Honest Value</span>
+    <h2 class="sec-title" style="margin:10px 0 8px;">Transparent, No-Gimmick Pricing</h2>
+    <p class="sec-sub">Core features free forever with zero ads · Pro offers both "Lifetime Purchase" and "Flexible Subscription"</p>
   </div>
-  <p class="note">Prices are shown by each app store for your region. Purchases, refunds and receipts are handled by the store, not by us.</p>
+
+  <div class="pricing-head-controls">
+    <div class="billing-switch-wrap">
+      <span style="font-size:12.5px;font-weight:700;color:var(--sub);margin:0 6px;">Subscription billing:</span>
+      <button class="billing-opt active" type="button" data-bill="yearly">Yearly <span class="save-pill">Save 22%</span></button>
+      <button class="billing-opt" type="button" data-bill="monthly">Monthly</button>
+    </div>
+  </div>
+
+  <div class="pricing-grid">
+    <!-- Plan 1: Core Free -->
+    <div class="price-card reveal" style="--i:0">
+      <span class="tier-tag">🌱 Core Free</span>
+      <h3>Free Forever</h3>
+      <p class="tier-desc">Core daily logging and age-band guidance out of the box. Ideal for single-child families with zero advertising.</p>
+      <div class="price-num-row"><span class="amt">zsh</span><span class="unit">/ Free forever</span></div>
+      <div class="price-sub-note">Zero cost · Core capabilities for life</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span>1 child growth profile with dedicated threads</span></li>
+        <li><i>✓</i><span>0-18 age-band guidance and one-tap daily logging</span></li>
+        <li><i>✓</i><span>Growth percentile curves &amp; birthday vaccine schedule</span></li>
+        <li><i>✓</i><span>Daily automatic local SQLite snapshot</span></li>
+        <li><i>✓</i><span>Human-readable plain JSON export &amp; undoable restore</span></li>
+        <li><i>✓</i><span class="muted">Memory wall limited to 10 milestone photos</span></li>
+        <li><i>✓</i><span class="muted">Time capsule letters limited to 3 letters</span></li>
+        <li><i>✓</i><span class="muted">Stage reports viewable in text summary only</span></li>
+      </ul>
+      <a class="price-cta" href="#download">Get Started Free</a>
+    </div>
+
+    <!-- Plan 2: Pro Lifetime (Featured) -->
+    <div class="price-card featured reveal" style="--i:1">
+      <span class="ribbon">👑 Most Popular · 8-in-1 Lifetime</span>
+      <span class="tier-tag">👑 Pro Lifetime Purchase</span>
+      <h3>Pay Once · Keep for Life</h3>
+      <p class="tier-desc">Pay once to accompany your child throughout ages 0-18. Valid permanently under your store account; all future updates included.</p>
+      <div class="price-num-row"><span class="amt">.99</span><span class="unit">/ One-time purchase</span></div>
+      <div class="price-sub-note">Lifetime access · No recurring fees (Huawei edition ¥69)</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span><strong>Unlimited child profiles</strong>: flick left/right between siblings</span></li>
+        <li><i>✓</i><span><strong>Unlimited memory wall</strong>: capture every spark and export HD albums</span></li>
+        <li><i>✓</i><span><strong>Unlimited time letters</strong>: wax-sealed with photos for 18th birthday</span></li>
+        <li><i>✓</i><span><strong>Full-cycle trends &amp; spark map</strong>: unlock report comparisons &amp; deep insights</span></li>
+        <li><i>✓</i><span><strong>Custom child avatars</strong>: freely crop memorable childhood photos</span></li>
+        <li><i>✓</i><span><strong>iCloud private sync &amp; encrypted backup</strong>: seamless device migration</span></li>
+        <li><i>✓</i><span><strong>Family cross-device sharing</strong>: restore on multiple iPhones/iPads/Macs</span></li>
+        <li><i>✓</i><span><strong>BYOK AI deep analysis</strong>: unlock Wenwen's in-depth guidance on stage reports</span></li>
+      </ul>
+      <a class="price-cta" href="#download">Unlock All Pro Privileges for Life</a>
+    </div>
+
+    <!-- Plan 3: Pro Flexible Subscription -->
+    <div class="price-card reveal" style="--i:2">
+      <span class="tier-tag">⚡ Pro Flexible Subscription</span>
+      <h3>Flexible · Cancel Anytime</h3>
+      <p class="tier-desc">Perfect for parents trying it out or preferring subscriptions. Enjoy all 8 Pro privileges throughout your subscription.</p>
+      <div class="price-num-row">
+        <span class="amt" id="subPriceAmt" data-yearly=".99" data-monthly=".99">.99</span>
+        <span class="unit" id="subPriceUnit" data-yearly-unit="/ year" data-monthly-unit="/ month">/ year</span>
+      </div>
+      <div class="price-sub-note" id="subPriceNote" data-yearly-note="~.08 / month · Save 22% compared to monthly" data-monthly-note="Monthly auto-renew · Cancel anytime in system settings">~.08 / month · Save 22% compared to monthly</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span>Full access to all 8 Pro privileges during subscription</span></li>
+        <li><i>✓</i><span>Unlimited child profiles, memory walls &amp; sealed time letters</span></li>
+        <li><i>✓</i><span>Half-year comparative reports, interest maps &amp; deep trends</span></li>
+        <li><i>✓</i><span>iCloud private encrypted sync &amp; smart restore</span></li>
+        <li><i>✓</i><span>Cancel anytime in iOS Settings / Subscriptions</span></li>
+        <li><i>✓</i><span>Seamlessly upgrade to Lifetime later with zero data loss</span></li>
+      </ul>
+      <a class="price-cta" href="#download">Start Pro Subscription</a>
+    </div>
+  </div>
+
+  <!-- Topic Skill Packs Banner -->
+  <div class="skill-addon-banner reveal">
+    <div>
+      <span class="eyebrow" style="font-size:12px;padding:3px 9px;">🧠 Modular Add-ons</span>
+      <h3 style="font-size:18px;font-weight:900;color:var(--ink);margin:8px 0 4px;">Topic Skill Packs · zsh.99 (¥6) / each</h3>
+      <p style="font-size:13.5px;color:var(--sub);line-height:1.6;">Fine-tuned expert AI knowledge components that make Wenwen sharper on specific parenting themes. Standalone one-time purchases; does not bundle model API costs.</p>
+    </div>
+    <div class="skill-addon-chips">
+      <span>🌙 Sleep &amp; Soothing · zsh.99</span>
+      <span>😤 Emotions &amp; Tantrums · zsh.99</span>
+      <span>🎒 Kindergarten Transition · zsh.99</span>
+      <span>🐷 Money Sense · zsh.99</span>
+      <span>📚 Study Habits · zsh.99</span>
+      <span>🗣️ Teen Communication · zsh.99</span>
+    </div>
+  </div>
+
+  <div class="pricing-trust-bar">
+    <span>🔒 Official store billing &amp; receipts (Apple / Huawei)</span>
+    <span>🔄 1-tap "Restore Purchases" on new devices</span>
+    <span>🛡️ Local encryption, zero privacy leaks</span>
+    <span>❌ Absolutely zero hidden fees</span>
+  </div>
 </div></section>
 
-<section id="screens"><div class="wrap">
-  <h2 class="sec-title reveal">What it looks like</h2>
-  <p class="sec-sub reveal">Today's overview on the growth page, the personality simulator, vaccines and reminders. Real screenshots replace these once the stores are live.</p>
-  <div class="screens">
-    <div class="scr reveal" style="--i:0">
-      <div class="glance">
-        <div class="gl"><div class="k" style="background:var(--mint-soft)">🌿</div><small>Health</small><b>108.5<i>cm</i></b><div class="n">Height · 3 d ago</div></div>
-        <div class="gl"><div class="k" style="background:var(--blue-soft)">💙</div><small>Mind</small><b style="font-size:13px;line-height:1.3">Naming feelings</b><div class="n">This stage</div></div>
-        <div class="gl"><div class="k" style="background:var(--brand-soft)">🐷</div><small>Money</small><b>$26</b><div class="n">Pocket money</div></div>
-      </div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">📈</div><div><b>Growth curve</b><small>Height and weight against P3 / P50 / P97</small></div></div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">💉</div><div><b>Vaccine reminders</b><small>Next dose from the birthday</small></div></div>
-      <div class="rowcard"><div class="k" style="background:var(--blue-soft)">🧠</div><div><b>Emotional growth</b><small>Stage theme · family activities</small></div></div>
-      <div class="cap">Growth page · pull down to shuffle the overview</div>
+<!-- Real Device Screenshots Gallery (#shots) & Lightbox (#lb) -->
+<section id="shots"><div class="wrap">
+  <div class="shots-head-bar">
+    <div>
+      <span class="kicker">Real Device Experience · In-App Gallery</span>
+      <h2 class="sec-title" style="text-align:left;margin:6px 0 2px;">See What the Real App Looks Like</h2>
+      <p style="color:var(--sub);font-size:14.5px;">No simplified wireframes. Browse high-resolution real captures from flagship iPhones and foldables (click to enlarge).</p>
     </div>
-    <div class="scr reveal" style="--i:1">
-      <svg class="radar" viewBox="0 0 260 250" role="img" aria-label="Nine-axis personality radar">
-        <g fill="none" stroke="var(--line)" stroke-width="1">
-          <polygon points="130,25 197,49 232,110 219,178 165,225 95,225 41,178 28,110 63,49"/>
-          <polygon points="130,58 175,74 198,115 189,160 153,192 107,192 71,160 62,115 85,74"/>
-          <polygon points="130,91 152,99 164,120 159,143 141,159 119,159 101,143 96,120 108,99"/>
-        </g>
-        <polygon points="130,45 186,60 214,116 200,168 160,208 100,205 58,170 46,112 78,62" fill="rgba(255,138,91,.22)" stroke="var(--brand)" stroke-width="2.2" stroke-linejoin="round"/>
-        <polygon points="130,62 172,72 196,118 190,158 150,190 106,188 72,160 60,116 92,70" fill="none" stroke="var(--blue)" stroke-width="1.4" stroke-dasharray="4 3"/>
-        <g fill="var(--amber)" stroke="var(--card)" stroke-width="1.4"><circle cx="130" cy="70" r="4"/><circle cx="205" cy="118" r="4"/><circle cx="156" cy="196" r="4"/><circle cx="66" cy="164" r="4"/><circle cx="52" cy="112" r="4"/></g>
-        <g font-size="9" fill="var(--sub)" text-anchor="middle" font-family="-apple-system, sans-serif">
-          <text x="130" y="14">Confidence</text><text x="214" y="42">Empathy</text><text x="246" y="112">Independence</text><text x="236" y="192">Stability</text>
-          <text x="168" y="243">Social</text><text x="92" y="243">Resilience</text><text x="26" y="192" fill="var(--brand-deep)">Spending</text><text x="14" y="112" fill="var(--brand-deep)">Delay</text><text x="46" y="42" fill="var(--brand-deep)">Money duty</text>
-        </g>
-      </svg>
-      <div class="rowcard" style="justify-content:space-between"><span style="font-size:12px"><span style="display:inline-block;width:10px;height:4px;background:var(--brand);border-radius:2px;vertical-align:middle"></span> Current &nbsp;<span style="display:inline-block;width:10px;height:4px;background:var(--blue);border-radius:2px;vertical-align:middle"></span> Comparison &nbsp;<span style="display:inline-block;width:8px;height:8px;background:var(--amber);border-radius:50%;vertical-align:middle"></span> What the family practises</span></div>
-      <div class="cap">Personality simulator · trends, never scores</div>
+    <div class="shots-filter-tabs">
+      <button class="shot-tab active" data-filter="all">All Screens</button>
+      <button class="shot-tab" data-filter="duo">iPhone Duo Unfolded</button>
+      <button class="shot-tab" data-filter="daily">Daily &amp; Reports</button>
+      <button class="shot-tab" data-filter="grow">Health &amp; Mind</button>
+      <button class="shot-tab" data-filter="priv">Privacy &amp; Security</button>
     </div>
-    <div class="scr reveal" style="--i:2">
-      <div class="nextcard"><small>Next dose · in 12 days</small><b>MMR, dose 2</b><div class="btns"><span>Add to calendar</span><span>Done</span></div></div>
-      <div class="tiles">
-        <div class="tile"><div class="k">💧</div>Water<small>Daily · 09:00 / 15:00</small></div>
-        <div class="tile"><div class="k">💊</div>Medicine<small>Off</small></div>
-        <div class="tile"><div class="k">🩺</div>Check-ups / dental<small>Every 6 months · Dec 3</small></div>
-        <div class="tile"><div class="k">👁️</div>Vision check<small>Off</small></div>
+  </div>
+
+  <div class="shots-rail">
+    <!-- Duo Unfolded 1 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-home.jpg" data-cap="iPhone Duo Unfolded · 3D Panoramic Living Room + Daily Quick Log">
+      <img src="shots/s-duo-home.jpg" alt="iPhone Duo unfolded home screen" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">iPhone Duo 8.1"</span>
+        <strong>3D Panoramic Living Room</strong>
+        <span>Left screen living room life, right screen today's quick journal</span>
       </div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">🗓️</div><div><b>Vaccine schedule</b><small>Done 14 / planned 22</small></div></div>
-      <div class="cap">Vaccines and reminders · all scheduled on the device</div>
+    </div>
+
+    <!-- Duo Unfolded 2 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-report.jpg" data-cap="iPhone Duo Unfolded · 3D Living Room + Six-Month Stage Report">
+      <img src="shots/s-duo-report.jpg" alt="iPhone Duo unfolded stage report" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Stage Report</span>
+        <strong>Six Months of Mia · Growth Summary</strong>
+        <span>Steady height growth and subtle milestones in delayed gratification</span>
+      </div>
+    </div>
+
+    <!-- Duo Unfolded 3 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-memory.jpg" data-cap="iPhone Duo Unfolded · 3D Living Room + Memory Photo Wall">
+      <img src="shots/s-duo-memory.jpg" alt="iPhone Duo unfolded memory wall" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Time Frames</span>
+        <strong>Mia's Memory Wall</strong>
+        <span>Milestones catalogued by month; one-tap export to family album</span>
+      </div>
+    </div>
+
+    <!-- Single 1: Home Log -->
+    <div class="shot-card" data-cat="daily" data-shot="shots/s-home.jpg" data-cap="Home Screen · 5 y 2 m Preschool Daily Quick Log">
+      <img src="shots/s-home.jpg" alt="Grow Together home screen screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Home Core</span>
+        <strong>Log Today in a Tap</strong>
+        <span>Parenting is agriculture, not industry · Outdoors, vision &amp; mood logging</span>
+      </div>
+    </div>
+
+    <!-- Single 2: Stage Report -->
+    <div class="shot-card" data-cat="daily" data-shot="shots/s-report.jpg" data-cap="Stage Report · Visible Height and Habit Progress">
+      <img src="shots/s-report.jpg" alt="Stage report screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Half-Year Review</span>
+        <strong>Six Months of Mia</strong>
+        <span>Grew 1.5 cm · Saved up for a desired toy for the first time</span>
+      </div>
+    </div>
+
+    <!-- Single 3: Growth Curves -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-growth.jpg" data-cap="Physical Health · WHO Growth Standards Under Age 7">
+      <img src="shots/s-growth.jpg" alt="Growth curves screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Growth Curves</span>
+        <strong>Standard Percentiles</strong>
+        <span>P3 / P50 / P97 comparison with annual velocity and deviation alerts</span>
+      </div>
+    </div>
+
+    <!-- Single 4: Spark Map -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-interests.jpg" data-cap="Emotional Growth · 8-Ray Spark Map &amp; Maturity Stages">
+      <img src="shots/s-interests.jpg" alt="Spark map screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Mind &amp; Potential</span>
+        <strong>Spark Map</strong>
+        <span>Art, building, nature, stories and more: observations, never scores</span>
+      </div>
+    </div>
+
+    <!-- Single 5: Thread Hub -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-hub.jpg" data-cap="Growth Hub · Health, Mind, and Money Thread Panels">
+      <img src="shots/s-hub.jpg" alt="Growth hub screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Growth Hub</span>
+        <strong>Daily Overview &amp; Thread Panels</strong>
+        <span>Health, Mind, and Money at a glance with age-band gating</span>
+      </div>
+    </div>
+
+    <!-- Single 6: Privacy Statement -->
+    <div class="shot-card" data-cat="priv" data-shot="shots/s-privacy.jpg" data-cap="Privacy Statement · Child Records Stay Exclusively on Your Device">
+      <img src="shots/s-privacy.jpg" alt="Local privacy screenshot" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">Local-First Security</span>
+        <strong>Solely on Your Device</strong>
+        <span>No accounts · No servers · Never collects personal family data</span>
+      </div>
     </div>
   </div>
 </div></section>
+
+<!-- Lightbox Modal -->
+<div id="lb" class="lightbox" aria-hidden="true" role="dialog">
+  <button id="lbClose" class="lb-close" type="button" aria-label="Close lightbox">×</button>
+  <img id="lbImg" src="" alt="Real device capture enlarged">
+  <span id="lbCap" class="lb-cap"></span>
+</div>
 
 <section><div class="wrap">
   <div class="privacy reveal">
@@ -661,7 +920,7 @@
   </details>
   <details>
     <summary>Is it paid? How does pricing work?</summary>
-    <p>The download is free and the basics work: profiles, age-staged content, one-tap logging and reminders. Advanced features are unlocked by Pro, a one-time purchase that lasts for life, with no subscription and no ads. Topic skill packs are small separate one-time purchases that make the assistant sharper on that topic; they are not part of Pro and do not include model costs. Prices are shown in your local store, and "Restore purchases" brings everything back on a new phone.</p>
+    <p>Downloading is free and core features work forever with zero ads: child profile, age-staged content, one-tap logging, reminders, local snapshots and plain JSON export. Advanced features (unlimited child profiles, unlimited memory wall, unlimited sealed time capsules, half-year comparison reports, full-history trends, iCloud private sync and encrypted .yhw backup) are unlocked by Pro with two flexible options: a one-time .99 (¥188) lifetime purchase (¥69 one-time on Huawei AppGallery), or a .99/year (¥168/yr, saving 22%) or .99/month (¥18/mo) auto-renewable subscription that you can cancel anytime in system settings. Six topic skill packs (zsh.99 / ¥6 each, one-time) make Wenwen sharper on specific topics; they are separate from Pro and exclude model API costs. Tap "Restore purchases" on a new phone to bring everything back.</p>
   </details>
   <details>
     <summary>What does the AI need, and what does it send?</summary>

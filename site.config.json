@@ -19,8 +19,8 @@
       "en": "Age-staged parenting for 0-18: body, mind and money sense, with all data kept on your phone"
     },
     "description": {
-      "zh-CN": "养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。按孩子的年龄段给出身体健康、心理成长、财商人格三条线的记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。没有账号、没有服务器，所有家庭数据只存在你自己的手机里；AI 能力由你自带大模型 Key，发送前可预览。基础功能免费，进阶能力 Pro 一次买断、永久可用。",
-      "en": "Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free; Pro is a one-time purchase that unlocks everything for life."
+      "zh-CN": "养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。按孩子的年龄段给出身体健康、心理成长、财商人格三条线的记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。没有账号、没有服务器，所有家庭数据只存在你自己的手机里；AI 能力由你自带大模型 Key，发送前可预览。基础功能永久免费，Pro 进阶权益支持一次买断终身可用或按年、按月灵活订阅。",
+      "en": "Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free forever; Pro unlocks everything via a one-time lifetime purchase or flexible yearly and monthly subscriptions."
     },
     "type": "SoftwareApplication",
     "category": "LifestyleApplication",
@@ -67,8 +67,8 @@
       "priority": 1.0,
       "changefreq": "weekly",
       "description": {
-        "zh-CN": "养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 一次买断。",
-        "en": "Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, one-time Pro."
+        "zh-CN": "养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 支持终身买断与年度/月度订阅。",
+        "en": "Grow Together: an age-staged parenting app for 0-18 covering health, emotional growth and money sense. Local-only data, bring-your-own AI key, lifetime or subscription Pro."
       }
     },
     {
@@ -133,8 +133,8 @@
       "priority": 0.5,
       "changefreq": "monthly",
       "description": {
-        "zh-CN": "养好娃用户协议：许可范围、无账号的数据责任、Pro 一次买断与技能包、AI 自带 Key 的边界、免责声明。",
-        "en": "Grow Together terms: licence, data responsibility without accounts, one-time Pro and skill packs, bring-your-own-key AI boundaries, disclaimers."
+        "zh-CN": "养好娃用户协议：许可范围、无账号的数据责任、Pro 终身买断与订阅及技能包、AI 自带 Key 的边界、免责声明。",
+        "en": "Grow Together terms: licence, data responsibility without accounts, Pro lifetime and subscriptions, skill packs, bring-your-own-key AI boundaries, disclaimers."
       }
     },
     {
@@ -315,12 +315,12 @@
           "en": "Pricing"
         },
         "ours": {
-          "zh-CN": "基础免费，Pro 一次买断永久可用，技能包小额单独买断",
-          "en": "Free core, one-time Pro for life, small one-time skill packs"
+          "zh-CN": "基础永久免费，Pro 支持 ¥188 终身买断或 ¥168/年、¥18/月订阅（华为渠道 ¥69 买断），技能包 ¥6 独立买断",
+          "en": "Free core forever, Pro via $27.99 one-time lifetime or $24.99/yr & $2.99/mo subscriptions, plus $0.99 skill packs"
         },
         "others": {
-          "zh-CN": "按月或按年订阅",
-          "en": "Monthly or yearly subscription"
+          "zh-CN": "仅强制连续订阅，不提供买断，停订即锁历史记录",
+          "en": "Mandatory recurring subscription only, locking history when cancelled"
         }
       },
       {
@@ -366,8 +366,8 @@
         "en": "Is it paid? How does pricing work?"
       },
       "a": {
-        "zh-CN": "下载免费，建档、分龄内容、记一笔、提醒这些基础能力都能用。进阶能力由 Pro 一次买断解锁，永久可用，没有订阅、没有广告。另有按主题的专家技能包，小额单独买断，装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型费用。具体价格以你所在地区的商店页为准，换机后在付费页点「恢复购买」即可取回权益。",
-        "en": "The download is free and the basics work: profiles, age-staged content, one-tap logging and reminders. Advanced features are unlocked by Pro, a one-time purchase that lasts for life, with no subscription and no ads. Topic skill packs are small separate one-time purchases that make the assistant sharper on that topic; they are not part of Pro and do not include model costs. Prices are shown in your local store, and \"Restore purchases\" brings everything back on a new phone."
+        "zh-CN": "下载免费，建档、分龄内容、记一笔、提醒、本机快照与 JSON 导出等核心能力永久免费、无广告。进阶能力（多孩档案、无限纪念墙、无限封时光信、半年对比报告、全周期趋势回看、iCloud 私有同步与加密备份）由 Pro 解锁，提供两种灵活方式：既可选择 ¥188 一次性终身买断（永久有效，华为应用市场渠道版为 ¥69 单档买断），也可选择 ¥168/年（折合 ¥14/月，立省 22%）或 ¥18/月的自动续费订阅，订阅可随时在系统设置中取消。另有 6 个按主题的专家技能包（各 ¥6 单独买断），装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型推理费用。换机后在同一商店账号下点「恢复购买」即可一键取回全部权益。",
+        "en": "Downloading is free and core features work forever with zero ads: child profile, age-staged content, one-tap logging, reminders, local snapshots and plain JSON export. Advanced features (unlimited child profiles, unlimited memory wall, unlimited sealed time capsules, half-year comparison reports, full-history trends, iCloud private sync and encrypted .yhw backup) are unlocked by Pro with two flexible options: a one-time $27.99 (¥188) lifetime purchase (¥69 one-time on Huawei AppGallery), or a $24.99/year (¥168/yr, saving 22%) or $2.99/month (¥18/mo) auto-renewable subscription that you can cancel anytime in system settings. Six topic skill packs ($0.99 / ¥6 each, one-time) make Wenwen sharper on specific topics; they are separate from Pro and exclude model API costs. Tap \"Restore purchases\" on a new phone to bring everything back."
       }
     },
     {

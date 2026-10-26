@@ -9,7 +9,7 @@
 <!-- 下面这一段由 tools/gen_geo.py 从 site.config.json 生成，勿手改 -->
 <!-- GEO:AUTO START -->
 <title>养好娃 · 0-18 岁分龄养育，身体、心理、财商三条线，数据只在你手机里</title>
-<meta name="description" content="养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 一次买断。">
+<meta name="description" content="养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 支持终身买断与年度/月度订阅。">
 <meta name="keywords" content="养好娃, 育儿 App, 分龄养育, 儿童成长记录, 生长曲线, 疫苗提醒, 财商教育, 亲子互动, 性格成长模拟器, 家庭教育, 本地存储 隐私, 一次买断, yanghaowa, parenting app, child growth tracker, local-first, bring your own key">
 <link rel="canonical" href="https://ai-chen2050.github.io/yanghaowa/index.html">
 <link rel="alternate" hreflang="zh-CN" href="https://ai-chen2050.github.io/yanghaowa/index.html">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://ai-chen2050.github.io/yanghaowa/index.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="养好娃 · 0-18 岁分龄养育，身体、心理、财商三条线，数据只在你手机里">
-<meta property="og:description" content="养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 一次买断。">
+<meta property="og:description" content="养好娃官网：0-18 岁分龄养育工具，身体健康、心理成长、财商人格三条线，数据只在本机，AI 自带 Key，Pro 支持终身买断与年度/月度订阅。">
 <meta property="og:url" content="https://ai-chen2050.github.io/yanghaowa/index.html">
 <meta property="og:image" content="https://ai-chen2050.github.io/yanghaowa/icon.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -30,7 +30,7 @@
       "@type": "SoftwareApplication",
       "@id": "https://ai-chen2050.github.io/yanghaowa/#product",
       "name": "养好娃",
-      "description": "养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。按孩子的年龄段给出身体健康、心理成长、财商人格三条线的记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。没有账号、没有服务器，所有家庭数据只存在你自己的手机里；AI 能力由你自带大模型 Key，发送前可预览。基础功能免费，进阶能力 Pro 一次买断、永久可用。",
+      "description": "养好娃是给 0-18 岁孩子家长用的本地化家庭教育与成长陪伴工具。按孩子的年龄段给出身体健康、心理成长、财商人格三条线的记录与指导，闭环是建档、分龄内容与记录、阶段报告、AI 探讨。没有账号、没有服务器，所有家庭数据只存在你自己的手机里；AI 能力由你自带大模型 Key，发送前可预览。基础功能永久免费，Pro 进阶权益支持一次买断终身可用或按年、按月灵活订阅。",
       "url": "https://ai-chen2050.github.io/yanghaowa/",
       "alternateName": [
         "yanghaowa",
@@ -86,7 +86,7 @@
           "name": "要付费吗？怎么收费？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "下载免费，建档、分龄内容、记一笔、提醒这些基础能力都能用。进阶能力由 Pro 一次买断解锁，永久可用，没有订阅、没有广告。另有按主题的专家技能包，小额单独买断，装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型费用。具体价格以你所在地区的商店页为准，换机后在付费页点「恢复购买」即可取回权益。"
+            "text": "下载免费，建档、分龄内容、记一笔、提醒、本机快照与 JSON 导出等核心能力永久免费、无广告。进阶能力（多孩档案、无限纪念墙、无限封时光信、半年对比报告、全周期趋势回看、iCloud 私有同步与加密备份）由 Pro 解锁，提供两种灵活方式：既可选择 ¥188 一次性终身买断（永久有效，华为应用市场渠道版为 ¥69 单档买断），也可选择 ¥168/年（折合 ¥14/月，立省 22%）或 ¥18/月的自动续费订阅，订阅可随时在系统设置中取消。另有 6 个按主题的专家技能包（各 ¥6 单独买断），装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型推理费用。换机后在同一商店账号下点「恢复购买」即可一键取回全部权益。"
           }
         },
         {
@@ -201,22 +201,24 @@
 <div class="scroll-prog" id="prog"></div>
 
 <nav><div class="wrap">
-  <a class="brand" href="index.html"><img src="logo.png" alt="养好娃"> 养好娃</a>
+  <a class="brand" href="index.html"><img src="logo.png" alt="养好娃"> 养好娃 <span class="ver-pill">v1.1.0</span></a>
   <span class="spacer"></span>
   <a href="#lines" class="hide-sm">三条主线</a>
   <a href="#video" class="hide-sm">宣传片</a>
   <a href="#sandbox" class="hide-sm">实机沙盘</a>
   <a href="#features" class="hide-sm">功能</a>
-  <a href="#wenwen" class="hide-sm">问问</a>
+  <a href="#shots" class="hide-sm">实机截图</a>
+  <a href="#compare" class="hide-sm">对比</a>
   <a href="#pricing" class="hide-sm">定价</a>
-  <a href="geo.html" class="hide-sm">常见问题</a>
+  <a href="geo.html" class="hide-sm">机制问答</a>
   <a href="devlog.html" class="hide-sm">开发日记</a>
   <a href="index.en.html">EN</a>
   <button class="theme-btn" id="theme-toggle" title="切换明暗" aria-label="切换明暗">◐</button>
-  <a class="nav-cta" href="#download">下载</a>
+  <a class="nav-cta" href="#download">即刻下载</a>
 </div></nav>
 
 <header class="hero" id="hero">
+  <canvas id="heroCanvas"></canvas>
   <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div>
   <div class="dots"></div><div class="spotlight" id="spot"></div>
   <div class="floaters" aria-hidden="true">
@@ -225,7 +227,7 @@
     <span style="left:68%;animation-duration:20s;animation-delay:7s">🐷</span><span style="left:84%;animation-duration:22s;animation-delay:12s">🌈</span>
   </div>
   <div class="wrap">
-    <span class="eyebrow">🍊 0-18 岁 · 身体 · 心理 · 财商 · 数据只在你手机里</span>
+    <span class="eyebrow">🍊 0-18 岁全周期 · 身体 · 心理 · 财商 · 数据只在手机里</span>
     <div class="app-badge"><div class="ring"></div><img src="logo.png" alt="养好娃 App 图标"></div>
     <h1><span class="grad-text">养好娃</span></h1>
     <p class="tag">把孩子这一年该做的事，按年龄摆在你面前</p>
@@ -233,31 +235,43 @@
       顺手记一笔，读一份阶段报告，想不通的事拉着问问聊两句。没有账号、没有服务器，全部记录只在你自己的手机里。</p>
     <div class="cta-row" id="download">
       <a class="store-btn" href="https://apps.apple.com/app/id6810539038" id="dl-appstore" target="_blank" rel="noopener"><span class="ic"><svg width="22" height="22" viewBox="0 0 170 170" fill="currentColor" aria-hidden="true"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.74 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12-14.44-6-9.19-10.74-20.08-14.22-32.66-3.48-12.58-5.22-24.16-5.22-34.73 0-16.1 4.11-29.47 12.33-40.11 8.22-10.65 18.57-16.08 31.05-16.32 5.09 0 10.73 1.35 16.92 4.05 6.18 2.7 10.23 4.12 12.14 4.25 1.57-.13 5.76-1.58 12.58-4.35 6.81-2.77 12.63-4.05 17.46-3.85 13.55.67 24.32 5.75 32.32 15.24-11.4 6.88-16.96 16.48-16.69 28.79.27 10.15 4.35 18.59 12.24 25.32 7.89 6.73 17.13 10.45 27.71 11.16-2.22 6.8-4.88 13.62-7.98 20.46zM119.22 31.84c0-7.72 2.76-14.88 8.28-21.49 5.53-6.61 12.43-10.35 20.7-11.23.13 1.07.2 2.07.2 3.01 0 7.72-2.86 15.02-8.58 21.91-5.73 6.89-12.83 10.67-21.3 11.34-.26-1.19-.39-2.37-.39-3.54z"/></svg></span><span class="t"><small>已上架</small><b>App Store</b></span></a>
-      <a class="store-btn alt" href="https://appgallery.huawei.com/app/C118942261" id="dl-huawei" target="_blank" rel="noopener"><span class="ic">📱</span><span class="t"><small>已上架</small><b>华为应用市场</b></span></a>
+      <a class="store-btn alt" href="https://appgallery.huawei.com/app/C118942261" id="dl-huawei" target="_blank" rel="noopener"><span class="ic"><svg class="hw-mark" width="22" height="22" viewBox="0 0 100 100" fill="none"><g fill="#E41F13"><path d="M50 16c2.8 4.2 4.6 9.8 4.6 16 0 9.8-4.6 18-4.6 18s-4.6-8.2-4.6-18c0-6.2 1.8-11.8 4.6-16z"/><path d="M68 23.5c4.8 1.5 9.8 4.8 13.8 9.5 6.3 7.5 7.6 17 7.6 17s-9-2.5-16.5-8.8c-4.8-4-8-9-8.9-13.8-.7-1.4 1.7-2.9 4-3.9z"/><path d="M80 43.5c4.8-1.5 10.6.2 15.5 3.5 7.8 5.2 11.5 13.8 11.5 13.8s-8.8 3-17 0c-5.2-1.9-9.5-5.2-12.4-8.8-1.2-1.5-.4-7 2.4-8.5z" transform="scale(0.85) translate(8, 8)"/></g></svg></span><span class="t"><small>已上架</small><b>华为应用市场</b></span></a>
       <a class="store-btn alt" href="#video" id="heroWatchBtn"><span class="ic">🎬</span><span class="t"><small>实机演示</small><b>观看 78 秒宣传片</b></span></a>
     </div>
-    <p class="store-note">iOS 版已上架 App Store；华为版按渠道要求不含 AI 功能，其余完全一致。</p>
-    <p class="trust">无账号 · 无广告 · 无服务器 · 基础免费 · Pro 一次买断</p>
+    <div class="trust-strip">
+      <span class="trust-pill">🛡️ <b>纯本地无云端</b> 零服务器</span>
+      <span class="trust-pill">👶 <b>0-18 岁全覆盖</b> 分龄门控</span>
+      <span class="trust-pill">👑 <b>Pro 支持终身买断</b> 或灵活年/月订阅</span>
+      <span class="trust-pill">🤖 <b>自带 AI Key</b> 发送前逐条预览</span>
+      <span class="trust-pill">📱 <b>深度适配 iPhone Duo</b> 双屏折叠</span>
+    </div>
 
-    <div class="stage reveal">
-      <div class="phone" aria-label="首页「今天记一笔」示意">
-        <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>5 岁 6 个月 · 学龄前期</small></div></div>
-        <div class="ph-card">
-          <div class="ttl">今天记一笔</div>
-          <div class="hint">今天真的变化了的几件事，点一下就记上</div>
-          <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟 · 目标 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-          <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟 · 上限 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-          <div class="ph-row"><div class="l"><b>一起搭一座积木桥</b><small>本周亲子任务 2 / 4</small></div><div class="ph-check">✓</div></div>
-          <div class="ph-row"><div class="l"><b>刷牙</b><small>连续 6 天</small></div><div class="ph-slot"><i class="on">✓ 早上</i><i>晚上</i></div></div>
-          <div class="ph-row" style="display:block"><div class="l" style="margin-bottom:8px"><b>今日情绪</b></div>
-            <div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
-          <div class="ph-chips"><span>身高体重</span><span>视力</span><span>日常提醒</span><span>记个瞬间</span><span>记一笔花销</span><span>心愿目标</span></div>
-        </div>
+    <!-- 首屏双机大舞台展示 -->
+    <div class="hero-showcase reveal">
+      <div class="hero-duo-card" data-shot="shots/s-duo-home.jpg" data-cap="iPhone Duo 展开态 8.1 英寸 · 左侧 3D 虚拟客厅 + 右侧顺手记手账">
+        <span class="hero-duo-badge">📖 原生 iPhone Duo 展开态 8.1" · 3D 全景客厅</span>
+        <img src="shots/s-duo-home.jpg" alt="iPhone Duo 展开态双屏界面" loading="eager" fetchpriority="high">
       </div>
-      <div class="mascot">
-        <div class="speech">今天小满的心情怎么样？点我记一下～</div>
-        <img class="idle" src="wenwen_idle.png" alt="问问，养好娃里的小橘子">
-        <img class="happy" src="wenwen_happy.png" alt="">
+      <div class="hero-right-col">
+        <div class="phone" aria-label="首页「今天记一笔」示意">
+          <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>5 岁 6 个月 · 学龄前期</small></div></div>
+          <div class="ph-card">
+            <div class="ttl">今天记一笔</div>
+            <div class="hint">今天真的变化了的几件事，点一下就记上</div>
+            <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟 · 目标 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+            <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟 · 上限 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+            <div class="ph-row"><div class="l"><b>搭积木小石桥</b><small>本周亲子任务 2 / 4</small></div><div class="ph-check">✓</div></div>
+            <div class="ph-row"><div class="l"><b>早晚刷牙</b><small>连续 6 天达标</small></div><div class="ph-slot"><i class="on">✓ 早</i><i class="on">晚</i></div></div>
+            <div class="ph-row" style="display:block"><div class="l" style="margin-bottom:8px"><b>今日情绪</b></div>
+              <div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+            <div class="ph-chips"><span>身高体重</span><span>视力</span><span>日常提醒</span><span>记瞬间</span><span>记花销</span><span>心愿储蓄</span></div>
+          </div>
+        </div>
+        <div class="mascot">
+          <div class="speech">今天小满的心情怎么样？点我记一下～</div>
+          <img class="idle" src="wenwen_idle.png" alt="问问，养好娃里的小橘子">
+          <img class="happy" src="wenwen_happy.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -306,16 +320,16 @@
     <div class="sec-head" style="text-align:center;margin-bottom:36px;">
       <span class="kicker">Interactive Sandboxes · 实机沙盘互动</span>
       <h2 class="sec-title" style="margin:10px 0 8px;">体验「养好娃」三大核心交互工作台</h2>
-      <p class="sec-sub">0-18 岁分龄主线切换、iPhone Duo 双屏折叠仿真、拍立得时光家书</p>
+      <p class="sec-sub">0-18 岁分龄主线切换、九维性格雷达模拟、iPhone Duo 3D 客厅联动、拍立得时光家书</p>
     </div>
 
-    <!-- 沙盘 1: 0-18岁分龄生命周期切换台 -->
+    <!-- 沙盘 1: 0-18岁分龄生命周期切换台 + 九维性格成长模拟器 -->
     <div class="pg-shell" style="margin-bottom: 48px;">
       <div class="pg-window">
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
-          <span>Sandbox 01 · 0-18 岁分龄生命周期切换台</span>
-          <span>动态面板按年龄展开</span>
+          <span>Sandbox 01 · 0-18 岁分龄生命周期与九维性格雷达工作台</span>
+          <span>按年龄动态展开三线 + 发展心理学趋势推演</span>
         </div>
         <div class="pg-body">
           <div class="stage-nav-tabs">
@@ -325,6 +339,61 @@
             <button class="stage-tab-btn" data-stage="6-18">🧑‍🎓 6-18 岁 学龄与青春期</button>
           </div>
           <div id="stageSandboxView"></div>
+
+          <!-- 内嵌：九维性格成长模拟器控制台 -->
+          <div class="radar-console-box">
+            <div class="radar-console-left">
+              <span class="eyebrow" style="font-size:12px;padding:4px 10px;">🧠 心理成长核心引擎 · 性格模拟器</span>
+              <h4 style="font-size:17px;font-weight:900;color:var(--ink);margin:10px 0 4px;">父母教养方式 ↔ 九维性格雷达同帧推演</h4>
+              <p style="font-size:13px;color:var(--sub);line-height:1.55;">拖动六大教养滑块，雷达实时形变；起点由教养测评预填，点位来自本地日常记录投点（不打分、仅供思考）。</p>
+              <div class="radar-presets">
+                <button class="preset-chip active" data-preset="authoritative">🌟 温和坚定 · 权威型</button>
+                <button class="preset-chip" data-preset="gentle">🌱 高共情 · 陪伴型</button>
+                <button class="preset-chip" data-preset="autonomy">🚀 低控制 · 自主探索型</button>
+                <button class="preset-chip" data-preset="strict">⚡ 高严管 · 集训型</button>
+              </div>
+              <div class="radar-sliders-mini">
+                <div class="slider-pill"><span>严格程度</span><b id="sv1">65%</b></div>
+                <div class="slider-pill"><span>回应程度</span><b id="sv2">88%</b></div>
+                <div class="slider-pill"><span>期望水平</span><b id="sv3">75%</b></div>
+                <div class="slider-pill"><span>控制强度</span><b id="sv4">35%</b></div>
+                <div class="slider-pill"><span>物质满足</span><b id="sv5">60%</b></div>
+                <div class="slider-pill"><span>规则清晰</span><b id="sv6">85%</b></div>
+              </div>
+              <div class="radar-verdict" id="simRadarVerdict">【温和而坚定 · 权威型】高情感回应 + 清晰规则边界：九维性格均衡舒展，自信心、同理心、抗挫力与延迟满足同步稳步拉升。</div>
+            </div>
+            <div class="radar-svg-stage">
+              <svg viewBox="0 0 200 200" style="width:100%;max-width:240px;height:auto;display:inline-block;" aria-label="九维性格雷达图">
+                <circle cx="100" cy="100" r="80" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <circle cx="100" cy="100" r="55" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <circle cx="100" cy="100" r="30" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <polygon points="100,20 156,44 178,96 156,148 124,176 76,176 44,148 22,96 44,44" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <!-- 动态变化性格雷达多边形 -->
+                <polygon id="simRadarPolygon" points="100,26 146,42 168,84 152,130 124,158 76,158 46,128 34,84 56,42" fill="rgba(255,138,91,0.32)" stroke="var(--brand)" stroke-width="2.5" stroke-linejoin="round"/>
+                <!-- 真实记录投点 (家里在练什么) -->
+                <circle cx="100" cy="32" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="148" cy="46" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="162" cy="88" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="120" cy="154" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="50" cy="122" r="3.5" fill="var(--mint-deep)"/>
+                <circle cx="60" cy="48" r="3.5" fill="var(--mint-deep)"/>
+                <!-- 9轴标签 -->
+                <text x="100" y="14" font-size="8" fill="var(--ink)" text-anchor="middle" font-weight="700">自信心</text>
+                <text x="162" y="38" font-size="8" fill="var(--ink)" text-anchor="middle">同理心</text>
+                <text x="188" y="99" font-size="8" fill="var(--ink)" text-anchor="middle">独立性</text>
+                <text x="166" y="156" font-size="8" fill="var(--ink)" text-anchor="middle">情绪稳定</text>
+                <text x="130" y="190" font-size="8" fill="var(--ink)" text-anchor="middle">社交能力</text>
+                <text x="70" y="190" font-size="8" fill="var(--ink)" text-anchor="middle">抗挫力</text>
+                <text x="34" y="156" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">消费理性</text>
+                <text x="14" y="99" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">延迟满足</text>
+                <text x="36" y="38" font-size="8" fill="var(--brand-deep)" text-anchor="middle" font-weight="700">财富责任</text>
+              </svg>
+              <div style="font-size:11px;color:var(--sub);margin-top:6px;display:flex;justify-content:center;gap:12px;">
+                <span><i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--brand);vertical-align:middle;"></i> 模拟趋势</span>
+                <span><i style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mint-deep);vertical-align:middle;"></i> 家里在练什么</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -334,46 +403,51 @@
       <div class="pg-window">
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
-          <span>Sandbox 02 · iPhone Duo 3D 双屏折叠仿真模拟器</span>
-          <span>展开态 8.1" 双屏 vs 折叠外屏</span>
+          <span>Sandbox 02 · iPhone Duo 3D 全景家庭客厅与双屏手账联动台</span>
+          <span>点击左屏热点 · 右屏联动实时响应</span>
         </div>
         <div class="pg-body">
           <div class="duo-mode-switch">
-            <button class="duo-mode-btn active" data-mode="unfolded">📖 展开态双屏 (8.1" 虚拟客厅 + 育儿手账)</button>
-            <button class="duo-mode-btn" data-mode="folded">📱 折叠态外屏 (5.4" 单手顺手记)</button>
+            <button class="duo-mode-btn active" data-mode="unfolded">📖 展开态 8.1" 双屏 (3D 家庭客厅 + 育儿手账)</button>
+            <button class="duo-mode-btn" data-mode="folded">📱 折叠态 5.4" 外屏 (单手顺手记)</button>
           </div>
           <div class="duo-stage-box" id="duoInteractiveStage" data-duo-mode="unfolded">
             <!-- 展开态 -->
             <div class="duo-device-outer duo-unfolded-view">
               <div class="duo-screen duo-screen-left">
-                <div class="duo-living-room">
-                  <span class="living-tag">🏠 3D 虚拟客厅 · 陪伴空间</span>
-                  <div class="living-mascot-spot">
-                    <img src="wenwen_happy.png" alt="问问在客厅">
-                    <br>
-                    <span class="living-bubble">🍊 欢迎回家！今天小满有记得喝水吗？</span>
-                  </div>
-                  <div style="font-size:11px;color:var(--sub);text-align:center;">左屏恒定空间 · 随自然时间变换光影</div>
+                <div class="duo-living-art">
+                  <img class="room-bg" src="assets/living-room-3d.jpg" alt="真实 3D 全景家庭客厅画卷" loading="lazy">
+                  <!-- 可点击的交互热点 -->
+                  <button class="room-hotspot hs-wall active" data-hs="wall">🖼️ 相框回忆墙</button>
+                  <button class="room-hotspot hs-mail" data-hs="mail">💌 慢递信箱</button>
+                  <button class="room-hotspot hs-mascot" data-hs="mascot">🍊 问问与小满</button>
+                  <button class="room-hotspot hs-book" data-hs="book">📖 家庭成长手账</button>
+                  <div class="room-foot-banner">👇 点击客厅内任意热点，右屏实时展开对应档案</div>
                 </div>
               </div>
               <div class="duo-hinge-seam"></div>
               <div class="duo-screen duo-screen-right">
                 <div class="duo-journal-pane">
                   <div class="journal-header">
-                    <strong>小满的成长手账</strong>
-                    <small>双屏联动分栏</small>
+                    <strong id="duoRightTitle">🖼️ 小满的纪念墙 · 副屏联动预览</strong>
+                    <small id="duoRightSub">点击左屏相框实时联动 · 导出纪念册</small>
                   </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">今日户外</span><span class="metric-badge">45/120m</span></div>
-                    <div class="metric-val" style="font-size:16px;">🌱 滨江骑车 45 分钟</div>
-                  </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">九维性格投点</span><span class="metric-badge">探索力 +1</span></div>
-                    <div class="metric-val" style="font-size:16px;">🎯 观察秋叶叶脉</div>
-                  </div>
-                  <div class="stage-metric-card" style="padding:12px;">
-                    <div class="metric-top"><span class="metric-label">问问伴聊记录</span><span class="metric-badge">本地</span></div>
-                    <div style="font-size:12px;color:var(--sub);">探讨了「孩子发脾气时如何同频共情」</div>
+                  <div id="duoRightBody">
+                    <div class="ph-card" style="margin:0">
+                      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                        <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px">
+                          <img src="assets/memory-bike.jpg" alt="" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin-bottom:6px">
+                          <b style="font-size:12.5px;display:block">第一次独立骑过石桥</b>
+                          <small style="font-size:11px;color:var(--sub)">2026-04 · 5岁2个月</small>
+                        </div>
+                        <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px">
+                          <img src="assets/memory-grad.jpg" alt="" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;margin-bottom:6px">
+                          <b style="font-size:12.5px;display:block">第一张挂上墙的画</b>
+                          <small style="font-size:11px;color:var(--sub)">2026-09 · 阳光花苗园</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rowcard"><span class="k" style="background:var(--brand-soft)">✨</span><div><b>左屏客厅相框自动轮播</b><small>Pro 解锁无限张照片与 PDF 纪念册导出</small></div></div>
                   </div>
                 </div>
               </div>
@@ -382,14 +456,16 @@
             <!-- 折叠外屏态 -->
             <div class="duo-device-outer duo-folded-view">
               <div class="duo-outer-screen">
-                <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>外屏单手模式</small></div></div>
+                <div class="ph-head"><div class="ph-avatar">🧒</div><div><b>小满</b><small>外屏 5.4" 单手速记</small></div></div>
                 <div class="ph-card" style="margin:0;box-shadow:none;border:none;background:transparent;padding:0;">
                   <div class="ttl">顺手记一笔</div>
-                  <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-                  <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
-                  <div class="ph-row"><div class="l"><b>今日心情</b></div><div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
+                  <div class="ph-row"><div class="l"><b>户外时长</b><small>45 分钟 · 目标 120</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>娱乐屏幕</b><small>30 分钟 · 上限 60</small></div><div class="ph-step"><i>−</i><i>+</i></div></div>
+                  <div class="ph-row"><div class="l"><b>今日情绪</b></div><div class="ph-moods"><i>😣</i><i>🙁</i><i>😐</i><i class="on">🙂</i><i>😄</i></div></div>
                 </div>
-                <div style="margin-top:auto;text-align:center;font-size:11px;color:var(--sub);">单手握持 · 展开即进 3D 客厅</div>
+                <div style="margin-top:auto;text-align:center;font-size:11.5px;color:var(--sub);background:var(--card);padding:8px;border-radius:12px;border:1px solid var(--line);">
+                  单手随身速记 · 展开即刻沉浸 3D 客厅
+                </div>
               </div>
             </div>
           </div>
@@ -403,32 +479,32 @@
         <div class="pg-bar">
           <span class="pg-dots"><span></span><span></span><span></span></span>
           <span>Sandbox 03 · 拍立得时光家书与未来胶囊工作台</span>
-          <span>可翻转查看封存家书</span>
+          <span>精选真实成长瞬间摄影 · 翻转查看滴蜡信件</span>
         </div>
         <div class="pg-body">
           <div class="polaroid-sandbox-grid">
             <div class="polaroid-pick-list">
               <div class="polaroid-choice active" data-memory="bike">
                 <strong>🚴 第一次独立骑过小石桥</strong>
-                <span>5 岁 2 个月 · 拆掉辅助轮的勇敢时刻</span>
+                <span>5 岁 2 个月 · 拆掉辅助轮的勇敢时刻 · 滨江公园</span>
               </div>
               <div class="polaroid-choice" data-memory="grad">
                 <strong>🎓 幼儿园向日葵班毕业礼</strong>
-                <span>6 岁 0 个月 · 想当给星星画画的宇航员</span>
+                <span>6 岁 0 个月 · 想当给星星画画的宇航员 · 向日葵园</span>
               </div>
               <div class="polaroid-choice" data-memory="leaf">
                 <strong>🍂 秋天捡的第一片银杏落叶</strong>
-                <span>4 岁 8 个月 · 大自然送给小松鼠的金扇子</span>
+                <span>4 岁 8 个月 · 大自然送给小松鼠的金扇子 · 梧桐树下</span>
               </div>
             </div>
 
             <div class="capsule-interactive-stage">
               <div class="capsule-card-wrap" id="capsuleCardWrap">
-                <!-- 正面：拍立得回忆相框 -->
+                <!-- 正面：拍立得回忆相框 (采用真实摄影，绝非AI占位头像) -->
                 <div class="capsule-front" id="polaroidFrame">
                   <div class="polaroid-tape"></div>
                   <div class="polaroid-photo-frame">
-                    <img src="wenwen_happy.png" alt="回忆瞬间照片">
+                    <img id="polaroidImg" src="assets/memory-bike.jpg" alt="真实童年里程碑摄影">
                   </div>
                   <div class="polaroid-words">
                     <h4 id="polaroidCaption">第一次独立骑过小石桥</h4>
@@ -466,28 +542,46 @@
   <h2 class="sec-title reveal">三条主线，按年龄段一起长</h2>
   <p class="sec-sub reveal">一岁不会看到零花钱，青春期不会看到刷牙打卡。孩子过生日进入新阶段，整个 App 一起换面板。</p>
   <div class="lines">
-    <div class="line mint reveal" style="--i:0"><span class="em">🌿</span><h3>身体健康</h3>
-      <ul><li>生长曲线对照国内标准百分位</li><li>疫苗按生日推算下一针，到点提醒</li><li>视力、口腔、户外与屏幕时长记录</li></ul>
-      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
-    <div class="line blue reveal" style="--i:1"><span class="em">💙</span><h3>心理成长</h3>
-      <ul><li>每个阶段的主线任务与发展主题</li><li>教养方式测评、儿童性格观察</li><li>亲子互动任务、全家挑战与纪念墙</li></ul>
-      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
-    <div class="line brand reveal" style="--i:2"><span class="em">🐷</span><h3>财商人格</h3>
-      <ul><li>0-3 岁只记养育花销与成长型投入</li><li>3 岁起成长金、心愿储蓄、劳动与报酬</li><li>亲子小生意，把钱的事玩明白</li></ul>
-      <div class="ages"><span style="opacity:.45">0-1</span><span style="opacity:.45">1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div></div>
+    <div class="line mint reveal" style="--i:0">
+      <div class="line-art">
+        <img src="assets/pillar-health.jpg" alt="身体健康 3D 概念插画" loading="lazy">
+        <span class="line-art-tag">WHO 生长曲线 · 疫苗</span>
+      </div>
+      <span class="em">🌿</span><h3>身体健康</h3>
+      <ul><li>生长曲线对照国内与 WHO 标准百分位 (P3/P50/P97)</li><li>疫苗按生日推算下一针，精确闹钟到点准时提醒</li><li>远视储备筛查、乳牙龋预防、户外与屏幕时长门控</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
+    <div class="line blue reveal" style="--i:1">
+      <div class="line-art">
+        <img src="assets/pillar-mind.jpg" alt="心理成长 3D 概念插画" loading="lazy">
+        <span class="line-art-tag">发展心理学 · 九维雷达</span>
+      </div>
+      <span class="em">💙</span><h3>心理成长</h3>
+      <ul><li>每个阶段的主线任务、发展敏感期与情商主题</li><li>教养方式测评预填、九维性格雷达同帧因果推演</li><li>每周亲子互动任务、习惯挑战与无限张照片纪念墙</li></ul>
+      <div class="ages"><span>0-1</span><span>1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
+    <div class="line brand reveal" style="--i:2">
+      <div class="line-art">
+        <img src="assets/pillar-money.jpg" alt="财商人格 3D 概念插画" loading="lazy">
+        <span class="line-art-tag">成长金 · 心愿储蓄</span>
+      </div>
+      <span class="em">🐷</span><h3>财商人格</h3>
+      <ul><li>0-3 岁只记养育花销与成长投入；3 岁自动开启成长金</li><li>心愿储蓄罐、阶梯攒钱与区分「需要」还是「想要」</li><li>分内责任 vs 劳动报酬、亲子小生意与财富责任感</li></ul>
+      <div class="ages"><span style="opacity:.45">0-1</span><span style="opacity:.45">1-3</span><span>3-6</span><span>6-12</span><span>12-18</span></div>
+    </div>
   </div>
 </div></section>
 
 <section id="features" style="background:var(--bg2)"><div class="wrap">
   <h2 class="sec-title reveal">六件让养娃这件事更有底的事</h2>
-  <p class="sec-sub reveal">每一样都围绕同一个闭环：建档 → 分龄内容与记录 → 阶段报告 → AI 探讨。</p>
+  <p class="sec-sub reveal">每一样都围绕同一个闭环：建档 → 分龄内容与记录 → 阶段报告 → AI 探讨。（点击卡片即可查看真实实机截图）</p>
   <div class="grid">
-    <div class="feat reveal" style="--i:0"><div class="ic">📅</div><h3>按年龄段展开</h3><p>内容按 0-1、1-3、3-6、6-12、12-18 分段，一张阶段表统一决定该出现什么。依据国内儿科与发展心理学标准整理。</p></div>
-    <div class="feat reveal" style="--i:1"><div class="ic">✍️</div><h3>今天记一笔</h3><p>户外、屏幕、亲子任务、刷牙、今日情绪一张卡点一下就记上，没有完成度的压力。要填表的都一步到位。</p></div>
-    <div class="feat reveal" style="--i:2"><div class="ic">🎛️</div><h3>性格成长模拟器</h3><p>六个教养滑块拖一下，九维性格雷达同帧变化。起点按你的教养方式测评预填，旁边叠一组来自真实记录的对照点。</p></div>
-    <div class="feat reveal" style="--i:3"><div class="ic">🍊</div><h3>问问，用你自己的 AI Key</h3><p>会问今天心情、到点提醒，也能和你探讨一个养育问题。默认只发年龄段和授权摘要，发送前有一张卡逐条列出。</p></div>
-    <div class="feat reveal" style="--i:4"><div class="ic">⏰</div><h3>系统提醒与家庭挑战</h3><p>喝水、用药准点响，疫苗按生日排下一针。护眼、早睡、每日赞美等挑战可以并行，打卡是一份达标清单。</p></div>
-    <div class="feat reveal" style="--i:5"><div class="ic">🔐</div><h3>数据是你的</h3><p>每天自动存一份本机快照，导出加密备份，iOS 可放进你自己的 iCloud。合并导入不重复建档，覆盖可撤销。</p></div>
+    <div class="feat reveal" style="--i:0" data-shot="shots/s-home.jpg" data-cap="首页 · 今日顺手记一笔与分龄任务"><div class="ic">📅</div><h3>按年龄段展开</h3><p>内容按 0-1、1-3、3-6、6-12、12-18 分段，一张阶段表统一决定该出现什么。依据国内儿科与发展心理学标准整理。</p><span class="more">查看实机截图 →</span></div>
+    <div class="feat reveal" style="--i:1" data-shot="shots/s-home.jpg" data-cap="首页 · 顺手记一笔，户外/屏幕/刷牙一键落库"><div class="ic">✍️</div><h3>今天记一笔</h3><p>户外、屏幕、亲子任务、刷牙、今日情绪一张卡点一下就记上，没有完成度的压力。要填表的都一步到位。</p><span class="more">查看实机截图 →</span></div>
+    <div class="feat reveal" style="--i:2" data-shot="shots/s-interests.jpg" data-cap="心理成长 · 兴趣火花八维星图与性格观察"><div class="ic">🎛️</div><h3>性格成长模拟器</h3><p>六个教养滑块拖一下，九维性格雷达同帧变化。起点按你的教养方式测评预填，旁边叠一组来自真实记录的对照点。</p><span class="more">查看实机截图 →</span></div>
+    <div class="feat reveal" style="--i:3" data-shot="shots/s-report.jpg" data-cap="阶段报告 · 这半年的小满，看得到的长高与延迟满足"><div class="ic">🍊</div><h3>问问，用你自己的 AI Key</h3><p>会问今天心情、到点提醒，也能和你探讨一个养育问题。默认只发年龄段和授权摘要，发送前有一张卡逐条列出。</p><span class="more">查看实机截图 →</span></div>
+    <div class="feat reveal" style="--i:4" data-shot="shots/s-growth.jpg" data-cap="身体健康 · 生长发育曲线与体检记录"><div class="ic">⏰</div><h3>系统提醒与家庭挑战</h3><p>喝水、用药准点响，疫苗按生日排下一针。护眼、早睡、每日赞美等挑战可以并行，打卡是一份达标清单。</p><span class="more">查看实机截图 →</span></div>
+    <div class="feat reveal" style="--i:5" data-shot="shots/s-privacy.jpg" data-cap="数据与隐私 · 孩子的记录只在你的手机里"><div class="ic">🔐</div><h3>数据是你的</h3><p>每天自动存一份本机快照，导出加密备份，iOS 可放进你自己的 iCloud。合并导入不重复建档，覆盖可撤销。</p><span class="more">查看实机截图 →</span></div>
   </div>
 </div></section>
 
@@ -570,8 +664,8 @@
         </tr>
         <tr>
           <td><strong>商业模式与付费</strong></td>
-          <td><span class="badge-yes">✓ 一次买断终身享</span> 基础功能永久免费，Pro ¥128 买断无自动续费陷阱</td>
-          <td><span class="badge-no">✕ 繁重高价年订</span> 每年数百元连续订阅，停止扣费即锁定历史记录</td>
+          <td><span class="badge-yes">✓ 终身买断或灵活订阅</span> 基础功能永久免费；Pro 支持 <strong>¥188 终身买断</strong>（华为渠道 ¥69 买断），或 <strong>¥168/年（折合 ¥14/月）、¥18/月</strong> 灵活订阅，拒绝强制绑架</td>
+          <td><span class="badge-no">✕ 仅强制昂贵续费</span> 仅支持每年数百元强制扣费订阅，停止付费立刻锁定过往数年历史数据</td>
         </tr>
       </tbody>
     </table>
@@ -579,65 +673,225 @@
 </div></section>
 
 <section id="pricing" style="background:var(--bg2)"><div class="wrap">
-  <h2 class="sec-title reveal">一次买断，没有订阅</h2>
-  <p class="sec-sub reveal">基础能力免费用；进阶能力 Pro 一次解锁、终生可用；专家技能包按主题小额单独买断。</p>
-  <div class="grid pricing">
-    <div class="card reveal" style="--i:0"><p class="tier">免费</p><div class="big">¥0</div><h3>能真正用起来</h3>
-      <p>建档、分龄内容、今天记一笔、系统提醒、阶段报告基础版。不限时间，没有广告。</p></div>
-    <div class="card featured reveal" data-badge="推荐" style="--i:1"><p class="tier">Pro · 一次买断</p><div class="big">付一次，永久</div><h3>全部进阶能力</h3>
-      <p>同一商店账号下永久有效，换机点「恢复购买」即可取回。没有订阅，没有续费管理，以后调价也不影响已购权益。具体解锁清单以 App 内付费页为准。</p></div>
-    <div class="card reveal" style="--i:2"><p class="tier">专家技能包</p><div class="big">按主题小额</div><h3>给问问的脑组件</h3>
-      <p>单独买断，装上后问问在对应话题上更在行。不含在 Pro 里，也不含模型费用。</p></div>
+  <div class="sec-head" style="text-align:center;margin-bottom:24px;">
+    <span class="kicker">Transparent Commercial Pricing · 透明商业定价</span>
+    <h2 class="sec-title" style="margin:10px 0 8px;">透明无套路的付费方案</h2>
+    <p class="sec-sub">核心功能永久免费无广告 · Pro 提供「终身买断」与「灵活订阅」两种选择，丰俭由人</p>
   </div>
-  <p class="note">价格由各应用商店按你所在地区展示。购买、退款和发票都由商店处理，不经过我们。</p>
+
+  <div class="pricing-head-controls">
+    <div class="billing-switch-wrap">
+      <span style="font-size:12.5px;font-weight:700;color:var(--sub);margin:0 6px;">订阅版计费周期：</span>
+      <button class="billing-opt active" type="button" data-bill="yearly">按年付 <span class="save-pill">立省 22%</span></button>
+      <button class="billing-opt" type="button" data-bill="monthly">按月付</button>
+    </div>
+  </div>
+
+  <div class="pricing-grid">
+    <!-- 方案 1: 基础版 -->
+    <div class="price-card reveal" style="--i:0">
+      <span class="tier-tag">🌱 基础版</span>
+      <h3>永久免费</h3>
+      <p class="tier-desc">核心记录与分龄陪伴开箱即用，适合单孩家庭日常顺手记录，永无任何贴片广告干扰。</p>
+      <div class="price-num-row"><span class="amt">¥0</span><span class="unit">/ 永久免费</span></div>
+      <div class="price-sub-note">零门槛 · 基础能力终身可用</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span>1 个孩子成长档案与专属主线面板</span></li>
+        <li><i>✓</i><span>0-18 岁分龄内容、今日记一笔一键落库</span></li>
+        <li><i>✓</i><span>身体生长曲线与生日疫苗智能排期</span></li>
+        <li><i>✓</i><span>每天自动生成一份本地 SQLite 数据快照</span></li>
+        <li><i>✓</i><span>可读 JSON 明文全量数据导出与可撤销导入</span></li>
+        <li><i>✓</i><span class="muted">纪念墙限存 10 张时光瞬间照片</span></li>
+        <li><i>✓</i><span class="muted">写给孩子的封存时光信限存 3 封</span></li>
+        <li><i>✓</i><span class="muted">阶段报告仅查看文字摘要</span></li>
+      </ul>
+      <a class="price-cta" href="#download">即刻免费体验</a>
+    </div>
+
+    <!-- 方案 2: Pro 终身买断版 (Featured) -->
+    <div class="price-card featured reveal" style="--i:1">
+      <span class="ribbon">👑 最受欢迎 · 8合1 终身尊享</span>
+      <span class="tier-tag">👑 Pro 终身买断版</span>
+      <h3>一次买断 · 永久尊享</h3>
+      <p class="tier-desc">付一次，孩子 0-18 岁全生命周期陪伴到底。同一商店账号下永久有效，后续功能升级全免。</p>
+      <div class="price-num-row"><span class="amt">¥188</span><span class="unit">/ 一次性买断</span></div>
+      <div class="price-sub-note">永久有效 · 无后续扣费陷阱 (华为渠道版为 ¥69)</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span><strong>多孩档案不限</strong>：二胎三胎左右一甩无缝切换</span></li>
+        <li><i>✓</i><span><strong>无限纪念墙</strong>：存下孩子每一个发光瞬间，支持导出高清纪念册</span></li>
+        <li><i>✓</i><span><strong>写给孩子的时光信不限</strong>：滴蜡封存、夹带照片寄往 18 岁成人礼</span></li>
+        <li><i>✓</i><span><strong>全周期成长趋势与星图</strong>：解锁历次报告全文对比与深入建议</span></li>
+        <li><i>✓</i><span><strong>自定义宝贝专属头像</strong>：成长相片自由取景裁剪</span></li>
+        <li><i>✓</i><span><strong>iCloud 私有同步与加密备份</strong>：换机重装无缝还原，本地端到端加密</span></li>
+        <li><i>✓</i><span><strong>家庭跨设备共享</strong>：同一商店账号多台 iPhone/iPad/Mac 一键恢复</span></li>
+        <li><i>✓</i><span><strong>BYOK AI 专属解读</strong>：解锁问问对阶段报告的深度分析与建议</span></li>
+      </ul>
+      <a class="price-cta" href="#download">一键买断全部进阶特权</a>
+    </div>
+
+    <!-- 方案 3: Pro 灵活订阅版 -->
+    <div class="price-card reveal" style="--i:2">
+      <span class="tier-tag">⚡ Pro 灵活订阅版</span>
+      <h3>随需随用 · 弹性订阅</h3>
+      <p class="tier-desc">适合短期体验或习惯订阅的用户，在订阅期内享有与 Pro 买断版完全一致的 8 大进阶特权。</p>
+      <div class="price-num-row">
+        <span class="amt" id="subPriceAmt" data-yearly="¥168" data-monthly="¥18">¥168</span>
+        <span class="unit" id="subPriceUnit" data-yearly-unit="/ 年" data-monthly-unit="/ 月">/ 年</span>
+      </div>
+      <div class="price-sub-note" id="subPriceNote" data-yearly-note="折合 ¥14 / 月 · 较按月连续订阅立省 22%" data-monthly-note="按月灵活自动续费 · 可随时在系统设置中取消">折合 ¥14 / 月 · 较按月连续订阅立省 22%</div>
+      <ul class="price-perks">
+        <li><i>✓</i><span>订阅期内解锁 Pro 全部 8 大专属高级进阶特权</span></li>
+        <li><i>✓</i><span>无限多孩档案、无限纪念墙与时光信滴蜡封存</span></li>
+        <li><i>✓</i><span>每半年报告对比解读、兴趣星图与深度趋势</span></li>
+        <li><i>✓</i><span>iCloud 私有加密同步与换机智能合并还原</span></li>
+        <li><i>✓</i><span>随时可在 iOS 系统设置 / 订阅管理中一键取消</span></li>
+        <li><i>✓</i><span>中途升级终身版可无缝承接，无需担心数据丢失</span></li>
+      </ul>
+      <a class="price-cta" href="#download">开启 Pro 订阅体验</a>
+    </div>
+  </div>
+
+  <!-- 专家技能包横向卡片 -->
+  <div class="skill-addon-banner reveal">
+    <div>
+      <span class="eyebrow" style="font-size:12px;padding:3px 9px;">🧠 按需选装</span>
+      <h3 style="font-size:18px;font-weight:900;color:var(--ink);margin:8px 0 4px;">专家技能包 · ¥6 / 个独立买断</h3>
+      <p style="font-size:13.5px;color:var(--sub);line-height:1.6;">针对特定成长话题深度调优的 AI 知识组件，装上后问问在对应主题上更在行。按需单独买断，不绑架主套餐，也不含模型 API 费用。</p>
+    </div>
+    <div class="skill-addon-chips">
+      <span>🌙 睡眠与安抚 · ¥6</span>
+      <span>😤 情绪与发脾气 · ¥6</span>
+      <span>🎒 入园适应 · ¥6</span>
+      <span>🐷 财商启蒙 · ¥6</span>
+      <span>📚 学习习惯 · ¥6</span>
+      <span>🗣️ 青春期沟通 · ¥6</span>
+    </div>
+  </div>
+
+  <div class="pricing-trust-bar">
+    <span>🔒 商店官方扣款与发票（Apple / Huawei）</span>
+    <span>🔄 换机一键「恢复购买」</span>
+    <span>🛡️ 本地加密无隐私泄露</span>
+    <span>❌ 绝无隐藏扣费</span>
+  </div>
 </div></section>
 
-<section id="screens"><div class="wrap">
-  <h2 class="sec-title reveal">看看它长什么样</h2>
-  <p class="sec-sub reveal">成长页的今日速览、性格成长模拟器、疫苗与日常提醒。真实界面截图上架后替换进来。</p>
-  <div class="screens">
-    <div class="scr reveal" style="--i:0">
-      <div class="glance">
-        <div class="gl"><div class="k" style="background:var(--mint-soft)">🌿</div><small>健康</small><b>108.5<i>cm</i></b><div class="n">身高 · 3 天前</div></div>
-        <div class="gl"><div class="k" style="background:var(--blue-soft)">💙</div><small>心理</small><b style="font-size:13px;line-height:1.3">情绪识别与命名</b><div class="n">本阶段主题</div></div>
-        <div class="gl"><div class="k" style="background:var(--brand-soft)">🐷</div><small>财商</small><b>¥26</b><div class="n">零花钱余额</div></div>
-      </div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">📈</div><div><b>生长曲线</b><small>身高体重对照 P3 / P50 / P97</small></div></div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">💉</div><div><b>疫苗提醒</b><small>按生日推算下一针</small></div></div>
-      <div class="rowcard"><div class="k" style="background:var(--blue-soft)">🧠</div><div><b>心理成长</b><small>阶段主题 · 亲子互动</small></div></div>
-      <div class="cap">成长页 · 今日速览，顶部下拉换一组</div>
+<!-- 真实实机截图画廊 (#shots) 与 灯箱 (#lb) -->
+<section id="shots"><div class="wrap">
+  <div class="shots-head-bar">
+    <div>
+      <span class="kicker">Real Device Experience · 实机真容</span>
+      <h2 class="sec-title" style="text-align:left;margin:6px 0 2px;">看看真实上架界面的样子</h2>
+      <p style="color:var(--sub);font-size:14.5px;">告别示意原型，直接浏览来自 iPhone 旗舰与折叠屏真实界面的高清样张（点击可放大查看）</p>
     </div>
-    <div class="scr reveal" style="--i:1">
-      <svg class="radar" viewBox="0 0 260 250" role="img" aria-label="九维性格雷达示意">
-        <g fill="none" stroke="var(--line)" stroke-width="1">
-          <polygon points="130,25 197,49 232,110 219,178 165,225 95,225 41,178 28,110 63,49"/>
-          <polygon points="130,58 175,74 198,115 189,160 153,192 107,192 71,160 62,115 85,74"/>
-          <polygon points="130,91 152,99 164,120 159,143 141,159 119,159 101,143 96,120 108,99"/>
-        </g>
-        <polygon points="130,45 186,60 214,116 200,168 160,208 100,205 58,170 46,112 78,62" fill="rgba(255,138,91,.22)" stroke="var(--brand)" stroke-width="2.2" stroke-linejoin="round"/>
-        <polygon points="130,62 172,72 196,118 190,158 150,190 106,188 72,160 60,116 92,70" fill="none" stroke="var(--blue)" stroke-width="1.4" stroke-dasharray="4 3"/>
-        <g fill="var(--amber)" stroke="var(--card)" stroke-width="1.4"><circle cx="130" cy="70" r="4"/><circle cx="205" cy="118" r="4"/><circle cx="156" cy="196" r="4"/><circle cx="66" cy="164" r="4"/><circle cx="52" cy="112" r="4"/></g>
-        <g font-size="9.5" fill="var(--sub)" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif">
-          <text x="130" y="14">自信心</text><text x="212" y="42">同理心</text><text x="248" y="112">独立性</text><text x="236" y="192">情绪稳定</text>
-          <text x="168" y="243">社交能力</text><text x="92" y="243">抗挫力</text><text x="24" y="192" fill="var(--brand-deep)">消费理性</text><text x="12" y="112" fill="var(--brand-deep)">延迟满足</text><text x="48" y="42" fill="var(--brand-deep)">财富责任</text>
-        </g>
-      </svg>
-      <div class="rowcard" style="justify-content:space-between"><span style="font-size:12px"><span style="display:inline-block;width:10px;height:4px;background:var(--brand);border-radius:2px;vertical-align:middle"></span> 当前 &nbsp;<span style="display:inline-block;width:10px;height:4px;background:var(--blue);border-radius:2px;vertical-align:middle"></span> 对比方案 &nbsp;<span style="display:inline-block;width:8px;height:8px;background:var(--amber);border-radius:50%;vertical-align:middle"></span> 家里在练什么</span></div>
-      <div class="cap">性格成长模拟器 · 趋势模拟，不给分数</div>
+    <div class="shots-filter-tabs">
+      <button class="shot-tab active" data-filter="all">全部界面</button>
+      <button class="shot-tab" data-filter="duo">iPhone Duo 展开态</button>
+      <button class="shot-tab" data-filter="daily">日常与报告</button>
+      <button class="shot-tab" data-filter="grow">健康与心理</button>
+      <button class="shot-tab" data-filter="priv">隐私与安全</button>
     </div>
-    <div class="scr reveal" style="--i:2">
-      <div class="nextcard"><small>下一针 · 还有 12 天</small><b>麻腮风疫苗 第 2 剂</b><div class="btns"><span>加入日历</span><span>已接种</span></div></div>
-      <div class="tiles">
-        <div class="tile"><div class="k">💧</div>喝水提醒<small>每天 · 09:00 / 15:00</small></div>
-        <div class="tile"><div class="k">💊</div>用药提醒<small>未开启</small></div>
-        <div class="tile"><div class="k">🩺</div>体检 / 牙科<small>每半年 · 12-03</small></div>
-        <div class="tile"><div class="k">👁️</div>视力复查<small>未开启</small></div>
+  </div>
+
+  <div class="shots-rail">
+    <!-- Duo 展开态真实大截图 1 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-home.jpg" data-cap="iPhone Duo 展开态 · 3D 全景虚拟客厅 + 今日顺手记">
+      <img src="shots/s-duo-home.jpg" alt="iPhone Duo 展开态首页" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">iPhone Duo 8.1"</span>
+        <strong>3D 全景家庭客厅</strong>
+        <span>左屏客厅时光流动，右屏今日顺手记一笔</span>
       </div>
-      <div class="rowcard"><div class="k" style="background:var(--mint-soft)">🗓️</div><div><b>接种时间表</b><small>已种 14 / 计划 22</small></div></div>
-      <div class="cap">疫苗与日常提醒 · 全部本机排期</div>
+    </div>
+
+    <!-- Duo 展开态真实大截图 2 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-report.jpg" data-cap="iPhone Duo 展开态 · 3D 全景客厅 + 这半年的小满阶段报告">
+      <img src="shots/s-duo-report.jpg" alt="iPhone Duo 展开态阶段报告" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">阶段报告</span>
+        <strong>这半年的小满 · 对比总结</strong>
+        <span>身高的稳步长高与延迟满足的微小进步</span>
+      </div>
+    </div>
+
+    <!-- Duo 展开态真实大截图 3 -->
+    <div class="shot-card wide" data-cat="duo" data-shot="shots/s-duo-memory.jpg" data-cap="iPhone Duo 展开态 · 3D 全景客厅 + 小满的相框回忆墙">
+      <img src="shots/s-duo-memory.jpg" alt="iPhone Duo 展开态纪念墙" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">时光相框</span>
+        <strong>小满的纪念墙</strong>
+        <span>按月归档孩子发光瞬间，一键导出成长纪念册</span>
+      </div>
+    </div>
+
+    <!-- 单屏 1: 首页顺手记 -->
+    <div class="shot-card" data-cat="daily" data-shot="shots/s-home.jpg" data-cap="首页 · 5岁2个月 学龄前期「今天记一笔」">
+      <img src="shots/s-home.jpg" alt="养好娃 首页截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">首页核心</span>
+        <strong>今天记一笔</strong>
+        <span>教育是农业，不是工业 · 户外/护眼/情绪顺手记</span>
+      </div>
+    </div>
+
+    <!-- 单屏 2: 阶段报告 -->
+    <div class="shot-card" data-cat="daily" data-shot="shots/s-report.jpg" data-cap="阶段报告 · 看得见的身高与习惯变化">
+      <img src="shots/s-report.jpg" alt="阶段报告截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">半年总结</span>
+        <strong>这半年的小满</strong>
+        <span>长高 1.5 cm · 第一次为一件东西攒钱</span>
+      </div>
+    </div>
+
+    <!-- 单屏 3: 生长发育曲线 -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-growth.jpg" data-cap="身体健康 · WHO 7岁以下儿童生长发育曲线">
+      <img src="shots/s-growth.jpg" alt="生长发育曲线截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">生长曲线</span>
+        <strong>权威百分位对标</strong>
+        <span>P3 / P50 / P97 对照，近一年增速与异常偏离预警</span>
+      </div>
+    </div>
+
+    <!-- 单屏 4: 兴趣火花八维星图 -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-interests.jpg" data-cap="心理成长 · 兴趣火花星图与个人成熟阶段">
+      <img src="shots/s-interests.jpg" alt="兴趣星图截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">心理与潜能</span>
+        <strong>兴趣火花星图</strong>
+        <span>艺术、建造、自然、故事八个方向记录，不给孩子打分</span>
+      </div>
+    </div>
+
+    <!-- 单屏 5: 3条主线面板导航 -->
+    <div class="shot-card" data-cat="grow" data-shot="shots/s-hub.jpg" data-cap="成长中心 · 身体健康、心理成长、财商人格分龄面板">
+      <img src="shots/s-hub.jpg" alt="成长中心导航截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">成长主枢纽</span>
+        <strong>今日速览与分龄面板</strong>
+        <span>健康、心理、财商三条线一目了然，动态门控</span>
+      </div>
+    </div>
+
+    <!-- 单屏 6: 纯本地隐私 -->
+    <div class="shot-card" data-cat="priv" data-shot="shots/s-privacy.jpg" data-cap="隐私声明 · 孩子的记录只在你的手机里">
+      <img src="shots/s-privacy.jpg" alt="本地隐私声明截图" loading="lazy">
+      <div class="shot-meta">
+        <span class="shot-kicker">纯本地安全</span>
+        <strong>只在你的手机里</strong>
+        <span>无账号 · 无服务器 · 绝不收集任何家庭隐私</span>
+      </div>
     </div>
   </div>
 </div></section>
+
+<!-- 点击全屏放大查看灯箱 -->
+<div id="lb" class="lightbox" aria-hidden="true" role="dialog">
+  <button id="lbClose" class="lb-close" type="button" aria-label="关闭灯箱">×</button>
+  <img id="lbImg" src="" alt="实机大图">
+  <span id="lbCap" class="lb-cap"></span>
+</div>
 
 <section><div class="wrap">
   <div class="privacy reveal">
@@ -661,7 +915,7 @@
   </details>
   <details>
     <summary>要付费吗？怎么收费？</summary>
-    <p>下载免费，建档、分龄内容、记一笔、提醒这些基础能力都能用。进阶能力由 Pro 一次买断解锁，永久可用，没有订阅、没有广告。另有按主题的专家技能包，小额单独买断，装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型费用。具体价格以你所在地区的商店页为准，换机后在付费页点「恢复购买」即可取回权益。</p>
+    <p>下载免费，建档、分龄内容、记一笔、提醒、本机快照与 JSON 导出等核心能力永久免费、无广告。进阶能力（多孩档案、无限纪念墙、无限封时光信、半年对比报告、全周期趋势回看、iCloud 私有同步与加密备份）由 Pro 解锁，提供两种灵活方式：既可选择 ¥188 一次性终身买断（永久有效，华为应用市场渠道版为 ¥69 单档买断），也可选择 ¥168/年（折合 ¥14/月，立省 22%）或 ¥18/月的自动续费订阅，订阅可随时在系统设置中取消。另有 6 个按主题的专家技能包（各 ¥6 单独买断），装上后问问在对应话题上更在行；技能包不含在 Pro 里，也不含模型推理费用。换机后在同一商店账号下点「恢复购买」即可一键取回全部权益。</p>
   </details>
   <details>
     <summary>AI 功能需要什么？会发什么数据出去？</summary>

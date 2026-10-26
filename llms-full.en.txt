@@ -9,7 +9,7 @@
 
 - **Product**: Grow Together / yanghaowa, 养好娃 App, Grow Together Parenting, Yanghaowa
 - **One-liner**: Age-staged parenting for 0-18: body, mind and money sense, with all data kept on your phone
-- **Description**: Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free; Pro is a one-time purchase that unlocks everything for life.
+- **Description**: Grow Together is a local-first parenting companion for parents of children aged 0 to 18. It tracks and guides three threads by age band: physical health, emotional growth and money sense, closing the loop from profile to age-staged content and logs, stage reports and AI discussion. No account, no server: every family record stays on your own phone, and AI runs on a model key you bring, with a preview before anything is sent. Core features are free forever; Pro unlocks everything via a one-time lifetime purchase or flexible yearly and monthly subscriptions.
 - **Platforms**: iOS / Android
 - **Developer**: yanghaowa
 - **App Store**: https://apps.apple.com/app/id6810539038
@@ -24,7 +24,7 @@
 | **Accounts and servers** | No account, no server; data stays on the phone | Sign-up required; family data uploaded to the cloud |
 | **AI** | Bring your own key, preview before sending, only age band and allowed summaries | Platform-run models with family records sent along |
 | **Content organisation** | Five age bands from 0 to 18, three threads unfolding per band | Focus on infants, or a single topic |
-| **Pricing** | Free core, one-time Pro for life, small one-time skill packs | Monthly or yearly subscription |
+| **Pricing** | Free core forever, Pro via $27.99 one-time lifetime or $24.99/yr & $2.99/mo subscriptions, plus $0.99 skill packs | Mandatory recurring subscription only, locking history when cancelled |
 | **Data portability** | Readable JSON export, merge import, undoable overwrite | Tied to the account, no export |
 
 ---
@@ -66,7 +66,7 @@ A local-first parenting companion for parents of children aged 0 to 18. It follo
 There is no account and no server of ours. Every record lives in a local database on your phone, and the app contains no analytics or ad SDK. The only network call is the AI request made with your own key, which by default sends the age band and trend summaries, with a card listing each item before it goes. Backup files are yours to keep, optionally passphrase-encrypted.
 
 ### Is it paid? How does pricing work?
-The download is free and the basics work: profiles, age-staged content, one-tap logging and reminders. Advanced features are unlocked by Pro, a one-time purchase that lasts for life, with no subscription and no ads. Topic skill packs are small separate one-time purchases that make the assistant sharper on that topic; they are not part of Pro and do not include model costs. Prices are shown in your local store, and "Restore purchases" brings everything back on a new phone.
+Downloading is free and core features work forever with zero ads: child profile, age-staged content, one-tap logging, reminders, local snapshots and plain JSON export. Advanced features (unlimited child profiles, unlimited memory wall, unlimited sealed time capsules, half-year comparison reports, full-history trends, iCloud private sync and encrypted .yhw backup) are unlocked by Pro with two flexible options: a one-time $27.99 (¥188) lifetime purchase (¥69 one-time on Huawei AppGallery), or a $24.99/year (¥168/yr, saving 22%) or $2.99/month (¥18/mo) auto-renewable subscription that you can cancel anytime in system settings. Six topic skill packs ($0.99 / ¥6 each, one-time) make Wenwen sharper on specific topics; they are separate from Pro and exclude model API costs. Tap "Restore purchases" on a new phone to bring everything back.
 
 ### What does the AI need, and what does it send?
 You enter an API key from a model provider in the app; usage is billed between you and that provider. Requests include only the child's age band and trend summaries within scopes you allow, such as growth percentile ranges, habit check-in days and task completion rates; never names, birthdays or exact measurements, and money data is off by default. Each scope has its own switch, and a card lists every injected item before sending.

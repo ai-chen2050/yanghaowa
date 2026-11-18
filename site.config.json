@@ -40,7 +40,7 @@
     "ga4": "G-1CQNQNPK1Y",
     "baidu": "b3a7b6fedcba22d39897693d6f716035",
     "//updated": "内容有实质变化时手动改；生成物的 lastmod / 最后更新都取它，CI 才能复现同一份输出",
-    "updated": "2026-10-26"
+    "updated": "2026-11-18"
   },
   "locales": {
     "default": "zh-CN",
@@ -175,6 +175,24 @@
     "web": "",
     "github": "",
     "contact": "mailto:blake.chen94@gmail.com"
+  },
+  "community": {
+    "//": "售后与用户社群（中文展示个人微信名片，英文展示 Telegram 专属 Topic 与二维码）",
+    "wechat": {
+      "id": "ai-chen2050",
+      "qrImage": "wechat-qr.png",
+      "remark": "养好娃"
+    },
+    "telegram": {
+      "inviteUrl": "https://t.me/+c-uVm7YXBzY3NGVl",
+      "topicId": 14,
+      "topicTitle": "Grow Together",
+      "topicEmoji": "👶",
+      "iconCustomEmojiId": "5377675010259297233",
+      "topicUrl": "",
+      "groupName": "Grow Together Community",
+      "qrImage": "telegram-qr.svg"
+    }
   },
   "features": [
     {

@@ -2,7 +2,7 @@ SHELL := /usr/bin/env bash
 .DEFAULT_GOAL := help
 PORT ?= 4000
 
-.PHONY: help geo geo-check devlog legal-huawei build serve deploy all
+.PHONY: help geo geo-check devlog legal-huawei community build serve deploy all
 
 help: ## 显示本帮助
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
@@ -19,6 +19,10 @@ devlog: ## devlog/src/*.md → devlog/*.html + 索引页
 
 legal-huawei: ## 从 privacy/terms 生成去掉 AI-ONLY 段的华为渠道版（*.huawei*.html），跑完 make build
 	python3 tools/make_channel_legal.py --channel huawei
+
+community: ## 同步个人微信名片并用 TG 官方 Bot API 自动创建专属 Topic 交流群，再重建全站
+	python3 tools/setup_community.py
+	$(MAKE) build
 
 build: devlog geo ## 全量重建（顺序有讲究：先生成日记页，再生成 sitemap）
 	@echo "✅ 站点已重建"

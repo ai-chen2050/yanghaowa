@@ -10,6 +10,7 @@
 - **Platforms**: iOS / Android
 - **App Store**: https://apps.apple.com/app/id6810539038
 - **Huawei AppGallery**: https://appgallery.huawei.com/app/C118942261
+- **Telegram Community**: https://t.me/+c-uVm7YXBzY3NGVl
 
 ## Core Features
 

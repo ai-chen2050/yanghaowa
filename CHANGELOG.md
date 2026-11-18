@@ -4,6 +4,13 @@
 > 这份文件是解释"某个数字为什么长这样"的第一去处，CLAUDE.md 会指向它。
 > 用 `/devlog` 让 Claude 自动追加。
 
+## 2026-11-18 · 接入海内外双轨售后用户社群闭环
+
+- **官网微信/Telegram 分流与自动化配置 (`site.config.json`, `index.html`, `index.en.html`, `support.html`, `support.en.html`, `style.css`, `Makefile`, `tools/{qr_svg.py,setup_community.py,gen_geo.py,geo_check.py}`)**:
+  - 中文站展示开发者个人微信名片码（`wechat-qr.png`）与一键复制微信号 `ai-chen2050`（提示备注「养好娃」进群），受 `geo_check.py` 硬门禁保护杜绝出现境外 `t.me/` 死链；
+  - 英文站接入在 BK Labs 超级群通过官方 Bot API 自动创建的纯英文专属 Topic **`Grow Together`**、永久邀请链接与圆角矢量 `telegram-qr.svg`，并为 Topic 绑定官方 3D 图标 `👶` (`iconCustomEmojiId: 5377675010259297233`)；
+  - 将 `#community` 社群模块重设计为暖调 Coral/Mint 双光晕 Bento 展示舱，配备 `@container` 自适应排版、核心卖点徽章、右侧四角取景框 Scan Pass 卡槽及无禁用阻塞的微信复制状态反馈。
+
 ## 2026-10-26 · 官方宣传片电影级重构：真实交互微手势、九维性格雷达动态形变、亲子温情专属钢琴配乐与全套拟音落地
 
 - **告别静态假动效，全片植入真机操作微动效与触控手势**：

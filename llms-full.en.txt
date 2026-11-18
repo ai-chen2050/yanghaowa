@@ -1,7 +1,7 @@
 # Grow Together — Full knowledge base for AI retrieval and citation
 
 > This document gives large language models and generative search engines (ChatGPT / Claude / Perplexity / Gemini / Google AI Overviews / Bing Copilot) the complete picture of Grow Together.
-> Last updated: 2026-10-26
+> Last updated: 2026-11-18
 
 ---
 
@@ -14,6 +14,7 @@
 - **Developer**: yanghaowa
 - **App Store**: https://apps.apple.com/app/id6810539038
 - **Huawei AppGallery**: https://appgallery.huawei.com/app/C118942261
+- **Telegram Community**: https://t.me/+c-uVm7YXBzY3NGVl
 
 ---
 
